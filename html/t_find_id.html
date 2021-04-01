@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximun-scale=3.0, minimum-scale=0.5">
+
+<link rel="stylesheet" href="../css/base/reset.css">
+<link rel="stylesheet" href="../css/base/common.css">
+
+<link rel="stylesheet" href="../css/src/t_find_id.css">
+
+<!--[if IE]>
+<script src="./ie/html5shive/dist/html5shive.min.js"></script>
+<script src="./ie/pie/PIE.js"></script>
+<script src="./ie/respond/dist/respond.min.js"></script>
+<![endif]-->
+
+<title> Trading ProV1 </title>
+</head>
+<body>
+<!-- layout -->
+<div id="wrap">
+  <h1>ID/PW 찾기</h1>
+
+  <div id="tabBox">
+    <ul class="tab">
+      <li class="current" data-tab="tab1"><a href="#">아이디 찾기</a></li>
+      <li data-tab="tab2"><a href="#">비밀번호 찾기</a></li>
+    </ul>
+
+    <div id="tab1" class="tab_content current">
+      <!-- ================================ 아이디 찾기 탭 ================================ -->
+      <div class="id_find_tab">
+        <input type="radio" class="n-radio" id="phoneRadioBtn" data-type="phone" name="findIDType">
+        <label for="phoneRadioBtn" onclick="changeFndTarget('phone')"> 휴대전화
+        </label>
+        <!--
+        <input type="radio" class="n-radio" id="emailRadioBtn" data-type="email" name="findIDType">
+        <label for="emailRadioBtn" onclick="changeFndTarget('email')"> 이메일
+        </label>
+        -->
+      </div>
+
+      
+      <!-- 아이디 찾기(휴대전화 인증으로 찾기) -->
+      <div class="n-form-item">
+        <input type="text" class="n-input tel-area" id="memberName" name="memberName" placeholder="이름 입력" style="padding-right: 0px;">
+        <p class="n-validation" id="searchValidMemberName" style="display: none">이름을 입력해 주세요</p>
+      </div>
+
+      <div class="n-form-item tel-area" id="input-div">
+        <input type="tel" class="n-input" id="phoneNumber" name="phoneNumber" placeholder="휴대전화 입력(-없이)" minlength="10" maxlength="11">
+        <p class="n-validation" id="searchValidPhone" style="display: none">번호 형식이 올바르지 않습니다</p>
+        <button type="button" class="btn" id="sendCertPhoneBtn">인증요청</button>
+        <button type="button" class="btn" id="reSendCertPhoneBtn" style="display: none">다시받기</button>
+      </div>
+
+      <div class="n-form-item tel-cert-area" id="phoneCertification">
+        <input type="text" class="n-input" placeholder="인증번호 입력" id="certNumber" minlength="5" maxlength="5">
+        <button type="button" class="btn" id="authSmsBtn">확인</button>
+        <p class="n-validation" id="searchValidCertNumber" style="display: none"></p>
+      </div>
+
+      <!-- 아이디 찾기(이메일 인증으로 찾기) -->
+      <!--
+      <input type="email" class="n-input" id="email" placeholder="이메일 입력" style="display: none">
+      <p class="n-validation" id="searchValidEmail">번호 형식이 올바르지 않습니다</p>
+      <p id="selfCertMessage" class="margin-bottom" style="display: none">본인명의의 휴대폰으로 아이디를 찾는 방법입니다.<br>기존에 본인인증을 완료한 아이디만 찾으실 수 있습니다.</p>
+      -->
+      <div class="member-btn">
+        <button type="button" class="n-btn btn-primary" id="searchIdBtn" disabled>아이디 찾기</button>
+      </div>
+      
+    </div>
+
+    <!-- ================================ 비밀번호 찾기 탭 ================================ -->
+    <div id="tab2" class="tab_content">
+      <div class="pw_find_tab">
+        <input type="radio" class="n-radio" id="phoneRadioBtn" name="findPWType" checked>
+        <label for="phoneRadioBtn" onclick="changeFndTarget('phone')">휴대전화</label>
+        <!--
+        <input type="radio" class="n-radio" id="emailRadioBtn" name="findPWType">
+        <label for="emailRadioBtn" onclick="changeFndTarget('email')">이메일</label>
+        -->
+      </div>
+
+      <p id="selfCertMessage" class="margin-bottom" style="display: none">본인명의의 휴대폰으로 비밀번호를 찾는 방법입니다.<br>기존에 본인인증을 완료한 아이디만 찾으실 수 있습니다.</p>
+      <div class="n-form-item">
+          <input type="text" class="n-input" placeholder="아이디 입력" id="memberId" name="memberId" minlength="3" maxlength="20" value="" style="padding-right: 0px;">
+          <p class="n-validation" id="searchValidMemberId" style="display: none">번호 형식이 올바르지 않습니다</p>
+      </div>
+
+      <div class="n-form-item">
+          <input type="text" class="n-input" id="memberName" name="memberName" placeholder="이름 입력" style="padding-right:0px;">
+          <p class="n-validation" id="searchValidMemberName" style="display: none;">이름을 입력해 주세요</p>
+      </div>
+
+      <div class="n-form-item tel-area" id="input-div">
+          <input type="tel" class="n-input" placeholder="휴대전화 입력(-없이)" minlength="10" maxlength="11" id="phoneNumber" name="phoneNumber">
+          <p class="n-validation" id="searchValidPhone" style="display: none"></p>
+          <button type="button" class="btn" id="sendCertPhoneBtn">인증요청</button>
+          <button type="button" class="btn" id="reSendCertPhoneBtn" style="display: none">다시받기</button>
+      </div>
+
+     
+      <div class="n-form-item tel-cert-area" id="phoneCertification" style="display: none">
+          <input type="text" class="n-input" placeholder="인증번호 입력" id="certNumber" minlength="5" maxlength="5">
+          <button type="button" class="btn" id="authSmsBtn">확인</button>
+      </div>
+
+      <!--
+      <div>
+          <input type="email" class="n-input input" placeholder="이메일 입력" id="email" style="display: none">
+          <p class="n-validation" id="searchValidEmail" style="display: none"></p>
+      </div>
+      -->
+
+      <div class="member-btn">
+          <button type="button" class="n-btn btn-primary" id="searchPasswordBtn" disabled>비밀번호 찾기</button>
+      </div>
+
+      <div class="n-layer-dimm"></div>
+
+    </div>
+  </div>
+
+</div>
+
+<!--script -->
+  <script src="../js/base/jquery-3.5.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+
+  <script src="../js/src/t_find_id.js"></script>
+  <script src="../js/src/t_find_pw.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* t_login.css */
+#wrap{
+  width:100%; height:auto;
+  background-color: #f5f6f7;
+}
+
+  .loginBox{
+    position: fixed;
+    top:0; left:0; right:0; bottom:0;
+    margin:auto;
+    width:300px; height:400px;
+    padding:25px 0; box-sizing: border-box;
+  }
+
+    .logo{
+      width:200px; height:100px;
+      margin:auto; 
+      background-image: url(../../img/image/fabicon.png);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    h1{
+      width:100%; height:50px;
+      text-align: center; line-height: 50px;
+      font-size:1.5rem;
+    }
+
+    .login_form{
+      margin-top: 20px;
+      width:100%; height:150px;
+    }
+
+      .form_box{
+        width:100%; height:60px;
+      }
+
+      .form_box > span{
+        display: block;
+        width:100%; height:30px;
+        font-size:1.2rem;
+      }
+
+      .form_box > input{
+        width:100%; height:25px;
+        border:2px solid #ccc;
+        box-sizing: border-box;
+      }
+
+    .login{
+      width:100%; height:30px;
+      border-radius: 0;
+      background-color: #333;
+      margin-bottom: 20px;
+      color:#fff;
+    }
+
+    .login_find{
+      width:100%; height:20px;
+    }
+
+      .login_find ul{width:100%; height:100%; line-height: 20px; }
+      .login_find li{
+        float:left;
+        width:120px; height:20px; 
+        text-align: center;
+        border-right: 2px solid #333;
+        box-sizing: border-box;
+      }
+
+      .login_find li:nth-child(1){width:90px;}
+      .login_find li:nth-child(2){width:90px;}
+      .login_find li:nth-child(3){border-right: 0;}
+
+
+

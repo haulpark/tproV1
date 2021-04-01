@@ -1,0 +1,141 @@
+/* t_join_check.css */
+
+#wrap {
+  width: 600px; height:auto;
+  margin:auto; 
+  padding:5rem; box-sizing: border-box;
+  border:10px solid #f5f6f7;
+  margin-top: 50px; 
+}
+
+h1{
+  text-align: center; margin-bottom:56px;
+}
+
+ .joinBox {
+	width: 460px; height:auto; min-height:500px;
+	margin:auto;
+ }
+
+ .joinBox > form,
+ .joinBox fieldset { width: 100%; height:auto; }
+
+.user_set {	 margin-bottom: 38px; }
+.user_info { margin-bottom: 18px;}
+.user_certi { margin-bottom:30px; }
+
+
+.joinBox dl {
+	width: 100%; height:auto; min-height: 78px;
+	margin-bottom: 16px;
+}
+.joinBox dl:last-of-type{
+	margin-bottom: 0;
+}
+
+.joinBox dl.error .end_icon,
+.joinBox dl.error .confirm_text{display:block;	color:#d00; }
+
+.joinBox dl.success .end_icon,
+.joinBox dl.success .confirm_text {display:block;	color:#4a98d3; }
+
+.joinBox dt{ 
+	width: 100%; height: 18px; margin-bottom: 10px; 
+	font-size:1rem; font-weight: bold;
+	text-indent:0.2rem;
+}
+.input_area{ 
+	position: relative;
+	width: 100%; height: 50px; 
+	background-color: #fff;
+	padding-right: 10px;
+	border:1px solid #dadada;
+	box-sizing: border-box;
+}
+
+.end_icon > span {	display:none; }
+.input_area.error strong>span {	
+	display:inline-block; color:#d00;
+}
+
+.input_area div {
+	float:left;
+	padding:10px; box-sizing: border-box;
+	width: 100%; height: 100%;
+}
+
+.user_set .input_area div {	width: 70%; }
+
+.birth .input_area {
+	border:0;
+	background-color: transparent;
+}
+
+.birth .input_area div {
+	float:left; 
+	width:30%; 
+	margin-right:5%;
+	background-color: #fff;
+	border:1px solid #dadada;
+}
+
+.birth .input_area div:last-of-type {
+	margin-right:0;
+}
+
+.user_certi .input_area {
+	margin-bottom:10px;
+}
+.user_certi .input_area:last-of-type{
+	margin-bottom: 0;
+}
+
+.confirm_send .input_area{
+	height:60px;
+	padding-right: 0;
+}
+
+.confirm_send .input_area input{
+	cursor: pointer;
+	background-color: #4a98d3;
+	color:#fff;
+	font-size:1.5rem;
+	border-radius:0;
+}
+
+.input_area input,
+.input_area select{
+	display: block;
+	width:100%;  height: 100%;
+	box-sizing: border-box;
+	border:0;
+	border-radius:0.2rem;
+}
+
+.input_area input:focus,
+.input_area select:focus{
+	border:2px solid #333;
+}
+
+.end_icon {
+	float:right;
+	padding-top:10px;
+	color:inherit;
+}
+.end_icon i{
+	margin-left:0.5rem;
+	color:inherit;
+}
+
+label[for="mobileCerti"]{display: block; width:100%; height:100%; opacity: 0.3; }
+#mobileCerti{display: none;}
+
+/* ----------------------- */
+
+.confirm_text {
+	display: none;
+	width: 100%; height:25px;
+	font-size:0.875rem;
+	line-height: 25px;
+	color:#777;
+}

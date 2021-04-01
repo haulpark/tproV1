@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximun-scale=3.0, minimum-scale=0.5">
+
+<link rel="stylesheet" href="../css/base/reset.css">
+<link rel="stylesheet" href="../css/base/common.css">
+
+<link rel="stylesheet" href="../css/src/t_join_check.css">
+
+<!--[if IE]>
+<script src="./ie/html5shive/dist/html5shive.min.js"></script>
+<script src="./ie/pie/PIE.js"></script>
+<script src="./ie/respond/dist/respond.min.js"></script>
+<![endif]-->
+
+<title> Trading ProV1 </title>
+</head>
+<body>
+<!-- layout -->
+<div id="wrap">
+  <h1>회원가입</h1>
+  <div class="joinBox">
+    <form action="#" method="POST">
+      <fieldset class="user_set">
+        <legend class="hidden">계정 설정</legend>
+        <dl>
+          <dt>
+            <label for="userId">
+              <span class="hidden">사용할 </span>
+              아이디
+              <span class="hidden">를 입력해주세요.</span>
+            </label>
+          </dt>
+          <dd class="input_area">
+            <div>
+              <input type="text" maxlength="20" required autofocus
+                     name="userId" id="userId" value="" />
+            </div>
+          </dd>
+          <dd class="confirm_text">내용을 입력하세요.</dd>
+        </dl>
+        <dl>
+          <dt><label for="userPw">비밀번호</label></dt>
+          <dd class="input_area">
+            <div>
+              <input type="password" required id="userPw" name="userPw" value="" />
+            </div>
+            <strong  class="end_icon"><span>사용불가</span><i class="fas fa-lock"></i></strong>
+          </dd>
+          <dd class="confirm_text">내용을 입력하세요.</dd>
+        </dl>
+        <dl>
+          <dt><label for="userPw2">비밀번호 재확인</label></dt>
+          <dd class="input_area">
+            <div>
+              <input type="password" required id="userPw2" name="userPw2" value="">
+            </div>
+            <strong  class="end_icon">
+              <i class="fas fa-lock"></i></strong>
+          </dd>
+          <dd class="confirm_text">내용을 입력하세요.</dd>
+        </dl>
+      </fieldset>
+
+      <fieldset class="user_info">
+        <legend class="hidden">개인 정보</legend>
+        <dl>
+          <dt><label for="userName">이름</label></dt>
+          <dd class="input_area">
+            <div>
+              <input type="text" required id="userName" name="userName" value="">
+            </div>
+          </dd>
+          <dd class="confirm_text">내용을 입력하세요.</dd>
+        </dl>
+        <dl class="birth">
+          <dt><label for="birthYear">생년월일</label></dt>
+          <dd class="input_area">
+            <!-- <input type="text" id="userBirth" name="userBirth" value=""> -->
+            <div>
+              <input type="text" name="birthYear" id="birthYear" value=""
+              required	placeholder="년(4자)">
+            </div>
+            <div>
+              <label for="birthMonth" class="hidden">생일 중 월 선택</label>
+              <select name="birthMonth" id="birthMonth">
+                <option>월</option>
+                <option value="01">1 월</option>
+                <option value="02">2 월</option>
+                <option value="03">3 월</option>
+                <option value="04">4 월</option>
+                <option value="05">5 월</option>
+                <option value="06">6 월</option>
+                <option value="07">7 월</option>
+                <option value="08">8 월</option>
+                <option value="09">9 월</option>
+                <option value="10">10 월</option>
+                <option value="11">11 월</option>
+                <option value="12">12 월</option>
+              </select>
+            </div>
+            <div>
+              <label for="birthDay" class="hidden">생일 중 날짜 입력</label>
+              <input type="text" name="birthDay" id="birthDay" value=""
+              required	placeholder="일">
+            </div>
+          </dd>
+          <dd class="confirm_text">내용을 입력하세요.</dd>
+        </dl>
+        <dl>
+          <dt><label for="userGender">성별</label></dt>
+          <dd class="input_area">
+            <div>
+              <select name="userGender" id="userGender">
+                <option>성별</option>
+                <option value="female">여성</option>
+                <option value="male">남성</option>
+              </select>
+            </div>
+          </dd>
+          <dd class="confirm_text">내용을 입력하세요.</dd>
+        </dl>
+        <dl>
+          <dt><label for="userOtherMail">본인확인 이메일</label></dt>
+          <dd class="input_area">
+            <div>
+              <input type="email" id="userOtherMail" name="userOtherMail" value=""
+                   required="required" placeholder="이메일을 입력하세요.">
+            </div>
+          </dd>
+          <dd class="confirm_text">내용을 입력하세요.</dd>
+        </dl>
+      </fieldset>
+      
+      <fieldset class="confirm_send">
+        <legend class="hidden">최종 확인 및 전송</legend>
+        <div class="input_area">
+            <input type="submit" name="confirm_send_btn" value="본인인증하고 회원가입">
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+
+
+<!--script -->
+  <script src="../js/base/jquery-3.5.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+
+  <script src="../js/src/t_join_check.js"></script>
+</body>
+</html>

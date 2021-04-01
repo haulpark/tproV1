@@ -1,0 +1,111 @@
+/* t_find_id.css */
+
+#wrap {
+  position: fixed;
+  top:0; right:0; left:0; bottom:0;
+  width: 400px; height:700px;
+  margin:auto;
+  padding:2rem; box-sizing: border-box;
+  border:10px solid #f5f6f7;
+}
+
+h1{
+  text-align: center; margin-bottom:56px;
+}
+
+
+/* ----- tabBox ------------------------ */
+#tabBox{
+  width: 100%; height:auto;
+  margin:auto; 
+}
+
+  .tab{
+    width:100%; height:40px;
+    margin:auto; margin-bottom: 10px;
+  }
+
+    .tab li{
+      float:left; width:50%; height:40px; 
+      background-color: #f5f6f7;
+    }
+
+      .tab li a{
+        display:inline-block;
+        text-align: center;
+        text-decoration: none;
+        line-height: 40px;
+        
+      }
+
+  .tab_content{
+    display:none;
+    width:100%; height:200px;
+  }
+
+    ul.tab li.current{
+      background-color: #333;
+      color:#fff;
+      border:1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .tab_content.current{
+      display:block;
+    }
+
+/* ----- id_find_tab ------------------------ */
+
+.id_find_tab{
+  width:100%; height:30px;
+  line-height: 30px;
+  margin:10px 0;
+}
+
+  .id_find_tab > input{
+    width:10px; height:10px;
+  }
+
+.n-form-item{
+  position: relative;
+  width:100%; height:60px;
+}
+
+  .n-form-item > input{
+    width:100%; height:40px;
+  }
+
+  .n-form-item > p {
+    font-size:0.9rem; color:red;
+  }
+
+  .n-form-item > button {
+    position: absolute;
+    width:60px; height:25px;
+    top: 10%; right:5%;
+  }
+
+  .member-btn{
+    width:100%; height:50px;
+  }
+
+    .member-btn > button{
+      width:100%; height:100%;
+      background-color: #f5f6f7;
+      color:#333; font-weight: bold;
+    }
+
+
+/* ----- pw_find_tab ------------------------ */
+
+.pw_find_tab{
+  width:100%; height:30px;
+  line-height: 30px;
+  margin:10px 0;
+}
+
+  .pw_find_tab > input{
+    width:10px; height:10px;
+  }
+
+  
