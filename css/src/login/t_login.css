@@ -15,7 +15,7 @@
     .logo{
       width:200px; height:100px;
       margin:auto; 
-      background-image: url(../../img/image/fabicon.png);
+      background-image: url(../../../img/image/fabicon.png);
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: contain;
