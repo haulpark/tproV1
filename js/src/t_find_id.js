@@ -1,4 +1,4 @@
-//t_find.js
+//t_find_id.js
 
 $(function(){
 

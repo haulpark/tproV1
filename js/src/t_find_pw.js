@@ -1,2 +1,2 @@
-//t_find.js
+//t_find_pw.js
 
