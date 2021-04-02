@@ -1,14 +1,14 @@
 /* t_main.css */
 
 #wrap{
-  width:100%; height:100%;
+  width:100%; height:auto; overflow: hidden;
 
 }
 
   /* ====================== #headBox ====================== */
   #headBox{
     position: relative;
-    width:100%; height:120px;
+    width:100%; height:9vw;
     box-shadow:0 0.5rem 0.5rem #ccc;
     padding:10px 30px; box-sizing: border-box;
   }
@@ -16,31 +16,30 @@
     .logo{
       float:left;
       margin:auto;
-      height:100px;
+      height:8vw;
       background-color: #333;
     }
 
     .title{
-      height:50px;
+      height:4vw;
       font-weight: bold;
       font-size:1.5rem;
-      line-height: 50px;
+      line-height: 4vw;
     }
 
     .unb{
-      height:50px;
+      height:4vw;
       text-align: right;
       font-size:1.2rem;
-      line-height:2rem;
+      line-height:2.5vw;
     }
 
     .slideBar{
-      height:50px;
+      height:3vw;
       margin-left: 10px;
       border:2px solid #ccc;
       box-sizing: border-box;
-      line-height: 45px;
-      
+      line-height: 2.5vw;
     }
 
 
@@ -48,19 +47,47 @@
 
   /* ====================== #viewBox ====================== */
   #viewBox{
-    width:100%; height:45vw;
+    width:100%; height:44vw;
     padding:30px; box-sizing: border-box;
     background-color: #f5f6f7;
   }
 
-  .deal{
-    float:left;
-    width:38%; height:100%;
-    background-color: #ccc;
-  }
+    .deal{
+      float:left;
+      position: relative;
+      width:38%; height:100%;
+      background-color: #ccc;
+      
+    }
 
-  .board{
-    float:right;
-    width:60%; height:100%;
-    background-color: #eee;
-  }
+      .deal_txt{
+        position: absolute;
+        top:25%; margin: auto;
+        width:100%; height:50%;
+        text-align: center;
+      }
+
+        .deal_title{
+          font-size:4rem;
+          padding-bottom: 10px;
+        }
+
+        .deal_story{
+          font-size:2rem;
+        }
+
+        .deal_btn{
+          position: absolute;
+          top:60%; left:0; right:0; margin:auto;
+          width:150px; height:50px;
+          background-color: #4a96d2;
+          color:#fff;
+          font-size:1.2rem;
+          border-radius: 10px;
+        }
+
+    .board{
+      float:right;
+      width:60%; height:100%;
+      background-color: #eee;
+    }
