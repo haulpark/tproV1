@@ -22,63 +22,65 @@
 <body>
 <!-- layout -->
 <div id="wrap">
-  <h1>회원가입</h1>
-  <div id="formBox">
-    <form action="#" method="POST">
-      <fieldset class="all_check">
-        <legend>전체 동의확인</legend>
-        <input type="checkbox" name="allCheck" id="allCheck" value="전체동의" />
-        <div class="check_area">
-          <!--<i class="fas fa-check-circle"></i>-->
-          <label for="allCheck">					
-            이용약관, 개인정보 수집 및 이용, 메일 수신(선택)에 모두 동의합니다.</label>
-        </div>
-      </fieldset>
+  <div class="joinBox">
+    <h1>회원가입</h1>
+    <div id="formBox">
+      <form action="#" method="POST">
+        <fieldset class="all_check">
+          <legend>전체 동의확인</legend>
+          <input type="checkbox" name="allCheck" id="allCheck" value="전체동의" />
+          <div class="check_area">
+            <!--<i class="fas fa-check-circle"></i>-->
+            <label for="allCheck">					
+              이용약관, 개인정보 수집 및 이용, 메일 수신(선택)에 모두 동의합니다.</label>
+          </div>
+        </fieldset>
 
-      <fieldset class="require_check">
-        <legend>필수 동의 확인</legend>
-        <input type="checkbox" name="termsService" id="termsService" value="네이버이용약관동의확인" required />
-        <div class="check_area">
-          <!-- <i class="fas fa-check-circle"></i> -->
-          <label for="termsService">					
-            이용약관 동의 <strong>(필수)</strong></label>
-        </div>
-        <div class="terms">
-          이용약관에 대한 안내문이 들어갈 곳입니다.
-        </div>
+        <fieldset class="require_check">
+          <legend>필수 동의 확인</legend>
+          <input type="checkbox" name="termsService" id="termsService" value="네이버이용약관동의확인" required />
+          <div class="check_area">
+            <!-- <i class="fas fa-check-circle"></i> -->
+            <label for="termsService">					
+              이용약관 동의 <strong>(필수)</strong></label>
+          </div>
+          <div class="terms">
+            이용약관에 대한 안내문이 들어갈 곳입니다.
+          </div>
 
 
-        <input type="checkbox" name="termsPrivacy" id="termsPrivacy" value="개인정보 수집 이용 동의" required />
-        <div class="check_area">
-          <!-- <i class="fas fa-check-circle"></i> -->
-          <label for="termsPrivacy">개인정보 수집 및 이용에 대한 안내 <strong>(필수)</strong></label>
-        </div>
-        <div class="terms">
-          개인정보의 수집 및 이용에 대한 안내문이 들어갈 곳입니다.
-        </div>
-      </fieldset>
+          <input type="checkbox" name="termsPrivacy" id="termsPrivacy" value="개인정보 수집 이용 동의" required />
+          <div class="check_area">
+            <!-- <i class="fas fa-check-circle"></i> -->
+            <label for="termsPrivacy">개인정보 수집 및 이용에 대한 안내 <strong>(필수)</strong></label>
+          </div>
+          <div class="terms">
+            개인정보의 수집 및 이용에 대한 안내문이 들어갈 곳입니다.
+          </div>
+        </fieldset>
 
-      <fieldset class="option_check">
-        <legend>선택 동의 확인</legend>
-        <input type="checkbox" name="termsAlert" id="termsAlert" value="개인정보 수집 이용 동의" />
-        <div class="check_area">
-          <!-- <i class="fas fa-check-circle"></i> -->
-          <label for="termsAlert">이벤트 등 프로모션 알림 메일 수신 <strong>(선택)</strong></label>
-        </div>
-        <div class="terms">
-          알림 메일 수신에 대한 안내문이 들어갈 곳입니다.
-          
-        </div>
-      </fieldset>
+        <fieldset class="option_check">
+          <legend>선택 동의 확인</legend>
+          <input type="checkbox" name="termsAlert" id="termsAlert" value="개인정보 수집 이용 동의" />
+          <div class="check_area">
+            <!-- <i class="fas fa-check-circle"></i> -->
+            <label for="termsAlert">이벤트 등 프로모션 알림 메일 수신 <strong>(선택)</strong></label>
+          </div>
+          <div class="terms">
+            알림 메일 수신에 대한 안내문이 들어갈 곳입니다.
+            
+          </div>
+        </fieldset>
 
-      <p class="error">이용약관과 개인정보 수집 및 이용에 대한 안내 모두 동의해주세요. </p>
+        <p class="error">이용약관과 개인정보 수집 및 이용에 대한 안내 모두 동의해주세요. </p>
 
-      <fieldset class="send_cancle">
-        <legend>내용 동의사항 전송 및 취소</legend>
-        <button type="reset"><a href="./t_login.html">취소</a></button>
-        <button type="submit">확인</button>
-      </fieldset>
-    </form>
+        <fieldset class="send_cancle">
+          <legend>내용 동의사항 전송 및 취소</legend>
+          <button type="reset"><a href="./t_login.html">취소</a></button>
+          <button type="submit">확인</button>
+        </fieldset>
+      </form>
+    </div>
   </div>
 </div>
 <!--script -->
