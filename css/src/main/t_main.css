@@ -45,6 +45,8 @@
       font-size:1.3rem;
     }
 
+  .mob_slideBar{display:none;}
+
 
 
 
@@ -136,31 +138,107 @@
 /* width: 0 ~ 639px (Mob S 기준) */
 @media screen and (max-width: 639px) {
 
-  #headBox{
-    height:100px;
-  }
+    /* =====#headBox===== */
 
+    #headBox{
+      height:80px;
+      padding:20px 20px; box-sizing: border-box;
+    }
+  
       .logo{
-        width:80px; height:80px;
+        width:44px; height:44px; 
       }
-
-      .title{margin-left: 20px;}
-
+  
+      .title{
+        float:left;
+        width:200px; height:20px;
+        font-size:1.2rem;
+        margin-top: 10px;
+      }
+  
       .unb{
         display:none;
       }
       
       .mob_icon{
+        float:right;
         display:block;
-        position: absolute;
-        width:8px; height:80px;
-        top:10%; right:3%;
-        background-color: #333;
+        margin-top: 5px;
+        width:32px; height:32px;
+        background-image: url(../../../img/icons/user.png);
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
+  
       .slideBar{
-        width:350px;
-        font-size:0.8rem;
+        display:none;
       }
+
+    #slideBox{
+      position: relative; z-index:1000;
+      top:5vw;
+      width:100%; height:30px;
+    }
+
+      .mob_slideBar{
+        display: block;
+        width:90%; height:100%; 
+        margin:auto;
+        background-color: #f5f6f7;
+        line-height:30px;
+        padding-left: 10px;
+        font-size:0.9rem;
+      }
+  
+    /* =====#viewBox===== */
+  
+    #viewBox{
+      height:auto;
+      margin-top: 7vw;
+      padding:10px;
+    }
+
+    /* ===== #viewBox -- .deal ===== */
+  
+    .deal{
+      float:none; margin:auto;
+      width:100%; height:450px; margin-bottom: 25px;}
+  
+    .deal_txt{
+       margin-top: 80px;
+    }
+  
+      .deal_title{
+        font-size:2rem;
+      }
+  
+      .deal_story{
+        font-size:1.2rem;
+      }
+  
+      .deal_btn{
+        width:120px; height:40px;
+        background-color: #4a96d2;
+        border-radius: 10px;
+      }
+  
+        .deal_btn > a > span{
+          line-height:35px;
+          color:#fff; font-size:1rem;}
+  
+    /* ===== #viewBox -- .board ===== */
+  
+    .board{width:100%; height:700px; margin-bottom: 25px;}
+  
+      .board_tab{
+        height:40px;
+      }
+    
+        .board_tab li{
+          font-size:1.2rem; 
+          line-height:40px;
+        }
 
   
 }
@@ -203,16 +281,18 @@
       font-size:0.8rem;
     }
 
-  /* =====#viewBox===== */
+  /* ===== #viewBox -- .deal ===== */
 
   #viewBox{
     height:auto;
   }
 
-  .deal{width:100%; height:40vw; margin-bottom: 25px;}
+  .deal{
+    float:none; margin:auto;
+    width:50vw; height:500px; margin-bottom: 25px;}
 
   .deal_txt{
-     margin-top: 6vw;
+     margin-top: 10vw;
   }
 
     .deal_title{
@@ -224,7 +304,6 @@
     }
 
     .deal_btn{
-      margin-top: 3vw;
       width:120px; height:40px;
       background-color: #4a96d2;
       border-radius: 10px;
@@ -234,7 +313,7 @@
         line-height:35px;
         color:#fff; font-size:1rem;}
 
-
+  /* ===== #viewBox -- .board ===== */
   .board{width:100%; height:100vw; margin-bottom: 25px;}
 
     .board_tab{
@@ -246,6 +325,8 @@
         line-height:40px;
       }
 }
+
+
 
 /* width: 1081 ~ 1280px (태블릿 환경 기준) */
 @media screen and (min-width: 1081px) and (max-width: 1280px) {
