@@ -16,9 +16,6 @@
 
 <link rel="stylesheet" href="../../css/src/main/main_base.css">
 
-
-
-
 <!--[if IE]>
 <script src="./ie/html5shive/dist/html5shive.min.js"></script>
 <script src="./ie/pie/PIE.js"></script>
@@ -88,6 +85,11 @@
         </ul>
 
         <div id="tab-1" class="tab-content current">
+
+          <div class="graph">
+            <canvas id="myChart"></canvas>
+          </div>
+        
           <table id="data">
             <thead>
               <tr>
@@ -97,32 +99,33 @@
                 <th>순위</th>
               </tr>
             </thead>
+
             <tbody>
               <tr>
                 <th>금일</th>
-                <td>180,000,000</td>
-                <td>180,000</td>
-                <td>35/832</td>
+                <td class="td_1">180,000,000 ₩ </td>
+                <td class="td_1">180,000 ₩ </td>
+                <td class="td_1">35/832</td>
               </tr>
 
               <tr>
                 <th>주간</th>
-                <td>780,000,000</td>
-                <td>1,280,000</td>
+                <td>780,000,000 ₩ </td>
+                <td>1,280,000 ₩ </td>
                 <td>15/832</td>
               </tr>
 
               <tr>
                 <th>월간</th>
-                <td>3,180,000,000</td>
-                <td>11,420,000</td>
-                <td>11/832</td>
+                <td class="td_1">3,180,000,000 ₩ </td>
+                <td class="td_1">11,420,000 ₩ </td>
+                <td class="td_1">11/832</td>
               </tr>
 
               <tr>
                 <th>누적</th>
-                <td>60,180,000,000</td>
-                <td>180,000,000</td>
+                <td>60,180,000,000 ₩ </td>
+                <td>180,000,000 ₩ </td>
                 <td>5/832</td>
               </tr>
             </tbody>
@@ -142,7 +145,7 @@
   <script src="../../js/base/jquery-3.5.1.min.js"></script>
   <script src="../../js/base/jquery-ui.min.js"></script>
 
-  <script src="../../Visuallize/js/visualize.jQuery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <script src="../../js/src/main/t_main.js"></script>
   <script src="../../js/src/main/t_main_graph.js"></script>

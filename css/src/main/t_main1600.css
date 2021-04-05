@@ -14,13 +14,52 @@
     .deal_story{
       font-size:1.8rem;
     }
-
+    
     .board_tab{
-      height:60px;
+      width:100%; height:40px;
     }
-  
-      .board_tab li{
-        font-size:1.5rem; 
-        line-height:60px;
+
+      .board_tab ul{
+        width:100%; height:100%;
       }
+
+      .board_tab li{
+        float:left; width:20%; height:100%;
+        font-size:1.2rem; text-align: center;
+        line-height:40px;
+      }
+
+      .board_tab li.current span{
+        display: inline-block;
+        line-height: 30px;
+        width:100px; height:40px;
+        border-radius: 15px;
+        border:3px solid #ccc;
+      }
+
+
+      #tab-1{
+        width:100%; height:570px;
+     }
+
+     #myChart{
+       width:90%; height:120px;
+     }
+
+       #data{
+         width:80%; height:10vw; 
+         margin:auto;
+       }
+
+       #data > thead > tr > td, th{
+         font-size:1rem; text-align: center;
+         background-color: #366f9c;
+         color:#fff;
+       }
+
+       #data > tbody > tr > td{
+         font-size:1.2rem; text-align: right;
+       }
+       
+       .td_1{background-color: #f5f6f7;}
 }

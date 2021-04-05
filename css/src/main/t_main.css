@@ -178,8 +178,12 @@
           display:inherit;
         }
 
-      #contents_1{
+      #tab_1{
          width:100%; height:570px;
+      }
+
+      .graph{
+        width:90%; margin:20px auto;
       }
 
         #data{
@@ -187,4 +191,17 @@
           margin:auto; font-size:1.4rem;
         }
 
+        #data > thead > tr > td, th{
+          font-size:1rem; text-align: center;
+          background-color: #366f9c;
+          color:#fff;
+        }
+
+        #data > tbody > tr > td{
+          font-size:1.2rem; text-align: right;
+        }
         
+        .td_1{background-color: #f5f6f7;}
+
+        
+.visualize-key{display:none;}
