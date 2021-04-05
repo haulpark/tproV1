@@ -17,10 +17,10 @@
       float:left;
       margin:auto;
       height:8vw;
-      background-image: url(../../../img/image/logo.png);
+      background-image: url(../../../img/image/main_logo.png);
       background-position: 50% 50%;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 80%;
     }
 
     .title{
