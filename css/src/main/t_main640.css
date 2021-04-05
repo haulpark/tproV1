@@ -1,0 +1,196 @@
+/*  ============================================ 반응형 ============================================ */
+/* width: 0 ~ 639px (Mob S 기준) */
+@media screen and (max-width: 639px) {
+
+  /* =====#headBox===== */
+
+  #headBox{
+    height:80px;
+    padding:20px 20px; box-sizing: border-box;
+  }
+
+    .logo{
+      width:44px; height:44px; 
+    }
+
+    .title{
+      float:left;
+      width:200px; height:20px;
+      font-size:1.2rem;
+      margin-top: 10px;
+    }
+
+    .unb{
+      display:none;
+    }
+    
+    .mob_icon{
+      float:right;
+      display:block;
+      margin-top: 5px;
+      width:32px; height:32px;
+      background-image: url(../../../img/icons/user.png);
+      background-position: 50% 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .slideBar{
+      display:none;
+    }
+
+  #slideBox{
+    position: relative; z-index:1000;
+    top:5vw;
+    width:100%; height:30px;
+  }
+
+    .mob_slideBar{
+      display: block;
+      width:90%; height:100%; 
+      margin:auto;
+      background-color: #f5f6f7;
+      line-height:30px;
+      padding-left: 10px;
+      font-size:0.9rem;
+    }
+
+  /* =====#viewBox===== */
+
+  #viewBox{
+    height:auto;
+    margin-top: 7vw;
+    padding:10px;
+  }
+
+  .board_head{
+    height:150px;
+  }
+
+   .class_ex{
+     float:left; height:70px;
+     font-size:0.8rem;  
+     margin-top: 10px;   
+     margin-left: 20px;
+    }
+
+      .class_ex p{
+        line-height: 10px;
+      }
+
+      .board_tab{
+        width:100%; height:40px;
+      }
+
+        .tabs{
+          float:left; width:20%; height:100%;
+          font-size:0.5rem; text-align: center;
+          line-height:10px;
+        }
+
+        .board_tab li.current span{
+          line-height: 24px;
+          width:80px; height:30px;
+          border-radius: 20px;
+          border:2px solid #ccc;
+        }
+  /* ===== #viewBox -- .deal ===== */
+
+  .deal{
+    float:none; margin:auto;
+    width:100%; height:450px; margin-bottom: 25px;}
+
+  .deal_txt{
+     margin-top: 80px;
+  }
+
+    .deal_title{
+      font-size:2rem;
+    }
+
+    .deal_story{
+      font-size:1.2rem;
+    }
+
+    .deal_btn{
+      width:120px; height:40px;
+      background-color: #4a96d2;
+      border-radius: 10px;
+    }
+
+      .deal_btn > a > span{
+        line-height:35px;
+        color:#fff; font-size:1rem;}
+
+  /* ===== #viewBox -- .board ===== */
+
+  .board{width:100%; height:700px; margin-bottom: 25px;}
+
+    .class{
+      float:left;
+      width:300px; height:50px;}
+    
+      .class p{
+        margin:0; padding:0;
+        margin-left: 20px;
+      }
+
+      .class_t{
+        float:left;
+        font-size:4rem;
+        
+      }
+
+      .class_p{
+        font-size:1.5rem;
+        line-height:110px;
+      }
+
+    .class_ex{
+      float:left; height:0px;
+      font-size:0.8rem;
+      margin-top: 40px;
+    }
+
+      .class_ex p{
+        line-height: 10px;
+      }
+
+      .class_ex p span{
+        font-weight: bold;
+      }
+
+
+    .board_tab{
+      height:40px;
+    }
+
+
+    .board_tab ul{
+      width:100%; height:100%;
+    }
+
+    .board_tab li{
+      float:left; width:20%; height:100%;
+      font-size:1.1rem; text-align: center;
+      line-height:40px;
+    }
+
+    .board_tab li.current span{
+      display: inline-block;
+      line-height: 25px;
+      width:65px; height:32px;
+      border-radius: 10px;
+      border:2px solid #ccc;
+    }
+
+    .tab-content{
+      display:none;
+    }
+
+    .tab-content.current{
+      display:inherit;
+    }
+
+
+}

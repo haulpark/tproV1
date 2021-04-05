@@ -1,0 +1,26 @@
+/* width: 1281 ~ 1600px (노트북 환경 기준) */
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+
+  .slideBar{font-size:1.1rem;}
+
+  .deal_txt{
+     margin-top: 8vw;
+  }
+
+    .deal_title{
+      font-size:3.2rem;
+    }
+
+    .deal_story{
+      font-size:1.8rem;
+    }
+
+    .board_tab{
+      height:60px;
+    }
+  
+      .board_tab li{
+        font-size:1.5rem; 
+        line-height:60px;
+      }
+}
