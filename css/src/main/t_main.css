@@ -6,6 +6,73 @@
 
 .visualize-key{display:none;}
 
+/* ================ tab Box 기능 구현 ======================= */
+      /* ================ 상단탭 ======================= */
+      .board_tab{
+        width:100%; height:80px;
+      }
+
+        .board_tab ul{
+          width:100%; height:100%;
+        }
+
+        .board_tab li{
+          float:left; width:20%; height:100%;
+          font-size:1.8rem; text-align: center;
+          line-height:80px;
+        }
+
+        .board_tab li.current span{
+          display: inline-block;
+          line-height: 40px;
+          width:120px; height:50px;
+          border-radius: 20px;
+          border:3px solid #ccc;
+        }
+
+        .tab-content{
+          display:none;
+        }
+
+        .tab-content.current{
+          display:inherit;
+        }
+
+      #tab_1{
+         width:100%; height:570px;
+      }
+
+      /* ================ 하단탭 ======================= */
+  
+      .side_tab_box{
+        margin-left: 20px;
+        width:280px; height:30px;
+      }
+
+        .side_tab_box ul{
+          width:100%; height:100%;
+        }
+
+        .side_tab_box li{
+          float:left; width:70px; 
+          font-size:1.2rem; line-height: 15px;
+        }
+
+        .side_tab_box li.current{
+          border-bottom:3px solid #366f9c;
+          box-sizing: border-box;
+        }
+
+        .side_tab_content{
+          display:none;
+        }
+
+        .side_tab_content.current{
+          display:inherit;
+        }
+
+/* ================ //tab Box 기능 구현 ===================== */
+
 /* ====================== #headBox ====================== */
   #headBox{
     position: relative;
@@ -149,42 +216,6 @@
             font-weight: bold;
           }
 
-
-
-      .board_tab{
-        width:100%; height:80px;
-      }
-
-        .board_tab ul{
-          width:100%; height:100%;
-        }
-
-        .board_tab li{
-          float:left; width:20%; height:100%;
-          font-size:1.8rem; text-align: center;
-          line-height:80px;
-        }
-
-        .board_tab li.current span{
-          display: inline-block;
-          line-height: 40px;
-          width:120px; height:50px;
-          border-radius: 20px;
-          border:3px solid #ccc;
-        }
-
-        .tab-content{
-          display:none;
-        }
-
-        .tab-content.current{
-          display:inherit;
-        }
-
-      #tab_1{
-         width:100%; height:570px;
-      }
-
       .graph{
         width:40%; margin:20px auto;
       }
@@ -207,24 +238,7 @@
         .td_1{background-color: #f5f6f7;}
 
     
-  /* ============ .deal_2 ============ */
-    .period_setting{
-      margin-left: 20px;
-      width:280px; height:30px;
-    }
-
-      .period_setting ul{
-        width:100%; height:100%;
-      }
-
-      .period_setting li{
-        float:left; width:70px; 
-        font-size:1rem; line-height: 15px;
-      }
-
-      .period_setting li:hover{border-bottom:3px solid #506ea5; box-sizing: border-box;}
-      .period_setting li:active{border-bottom:3px solid #506ea5; box-sizing: border-box;}
-
+  /* ============ .deal_2 : 거래내역 ============ */
     .period_content{
       width:300px; height:50px;
       margin-top: 10px; margin-left: 20px;
@@ -238,10 +252,17 @@
       .period_content dt{width:100%; height:25px; font-size:1rem; border-bottom:1px solid #ccc; box-sizing: border-box;}
       .period_content dd{width:100%; height:25px; font-size:0.9rem;}
 
-    .periodBox{
-
+    #periodBox{
+      margin:auto;
+      margin-top: 20px;
+      width:90%; height:200px;
     }
-  
+
+      #periodBox > thead > tr > th {width:100px; height:20px;}
+      #periodBox > 
+
+
+  /* ============ .deal_3 : 거래순위 ============ */
 
 
         

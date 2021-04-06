@@ -16,6 +16,8 @@
 
 <link rel="stylesheet" href="../../css/src/main/main_base.css">
 
+
+
 <!--[if IE]>
 <script src="./ie/html5shive/dist/html5shive.min.js"></script>
 <script src="./ie/pie/PIE.js"></script>
@@ -84,6 +86,7 @@
           <li class="tab-link" data-tab="tab-5"><span>내 정보</span></li>
         </ul>
 
+        <!-- ============== tab-1 : 홈 ========================= -->
         <div id="tab-1" class="tab-content current">
 
           <div class="graph" >
@@ -131,68 +134,307 @@
             </tbody>
           </table>
         </div>
-
+        <!-- ============== tab-2 : 거래내역 ========================= -->
         <div id="tab-2" class="tab-content">
-          <div class="period_setting">
-            <ul>
-              <li>일일</li>
-              <li>주간</li>
-              <li>월</li>
-              <li>기간설정</li>
+          <div class="side_tab_box">
+            <ul class="side_tabs">
+              <li class="side_tab_link current" data-tab="side_tab_1">일일</li>
+              <li class="side_tab_link" data-tab="side_tab_2">주간</li>
+              <li class="side_tab_link" data-tab="side_tab_3">월</li>
+              <li class="side_tab_link" data-tab="side_tab_4">기간설정</li>
             </ul>
           </div>
 
-          <div class="period_content">
-            <ul>
-              <li>
-                <dl>
-                  <dt>거래수</dt>
-                  <dd>53</dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt>거래금액</dt>
-                  <dd>532,351,000원</dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt>수수료</dt>
-                  <dd>552,000원</dd>
-                </dl>
-              </li>
+          <div id="side_tab_1" class="container side_tab_content current">
+            <div class="period_content">
+              <ul>
+                <li>
+                  <dl>
+                    <dt>거래수</dt>
+                    <dd>53</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>거래금액</dt>
+                    <dd>532,351,000원</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>수수료</dt>
+                    <dd>552,000원</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+
+            <table id="periodBox">
+              <!-- thead -->
+              <thead>
+                <tr>
+                  <th class="p_th_title">No</th>
+                  <th>거래종류</th>
+                  <th>거래코인</th>
+                  <th>거래금액</th>
+                  <th>거래종료시간</th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>거래인ID</th>
+                  <th>수량</th>
+                  <th>거래수익</th>
+                  <th>거래상태</th>
+                </tr>
+              </thead>
+              <!-- tbody -->
+              <tbody>
+                <tr>
+                  <th>151</th>
+                  <td>판매</td>
+                  <td>CRE</td>
+                  <td>1,800,000 ₩</td>
+                  <td>210521(12:00)</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>Jcsoft_egleKim</td>
+                  <td>500</td>
+                  <td>3,000 ₩</td>
+                  <td>정상</td>
+                </tr>
+                <!-- tr-1 -->
+                <tr>
+                  <th>152</th>
+                  <td>구매</td>
+                  <td>CRE</td>
+                  <td>1,797,000 ₩</td>
+                  <td>210521(11:58)</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>DAL_parkbon</td>
+                  <td>500</td>
+                  <td>0 ₩</td>
+                  <td>정상</td>
+                </tr>
+                <!-- tr-2 -->
+                <tr>
+                  <th>153</th>
+                  <td>판매</td>
+                  <td>CRE</td>
+                  <td>1,800,000 ₩</td>
+                  <td>210521(12:00)</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>Jcsoft_egleKim</td>
+                  <td>500</td>
+                  <td>3,000 ₩</td>
+                  <td>정상</td>
+                </tr>
+                <!-- tr-3 -->
+                <tr>
+                  <th>154</th>
+                  <td>구매</td>
+                  <td>CRE</td>
+                  <td>1,797,000 ₩</td>
+                  <td>210521(11:58)</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td>DAL_parkbon</td>
+                  <td>500</td>
+                  <td>0 ₩</td>
+                  <td>정상</td>
+                </tr>
+                <!-- tr-4 -->
+              </tbody>
+            </table>
+            <hr />
+            <div class="text-center">
+              <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="side_tab_2" class="container side_tab_content"></div>
+          <div id="side_tab_3" class="container side_tab_content"></div>
+          <div id="side_tab_4" class="container side_tab_content"></div>
+        </div>
+
+        <!-- ============== tab-3 : 거래순위 ========================= -->
+        <div id="tab-3" class="tab-content">
+          <div class="side_tab_box">
+            <ul class="side_tabs">
+              <li class="side_tab_link current" data-tab="side_tab_1">일일</li>
+              <li class="side_tab_link" data-tab="side_tab_2">주간</li>
+              <li class="side_tab_link" data-tab="side_tab_3">월</li>
+              <li class="side_tab_link" data-tab="side_tab_4">기간설정</li>
             </ul>
           </div>
-          
-          <table id="periodBox">
-            <thead>
-              <tr>
-                <th>거래종류</th>
-                <th>거래코인</th>
-                <th>거래금액</th>
-                <th>거래종료시간</th>
-              </tr>
-              <tr>
-                <th>거래인ID</th>
-                <th>수량</th>
-                <th>거래수익</th>
-                <th>거래상태</th>
-              </tr>
-            </thead>
 
-            <tbody>
+          <div id="side_tab_1" class="container side_tab_content current">
+            <table>
+              <thead>
+                <tr>
+                  <th>순위</th>
+                  <th>ID</th>
+                  <th>거래금액</th>
+                  <th>보너스</th>
+                </tr>
+              </thead>
 
-            </tbody>
-          </table>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>박대장</td>
+                  <td>500,000,000 ₩</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>박대장</td>
+                  <td>490,000,000 ₩</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>박대장</td>
+                  <td>480,000,000 ₩</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>박대장</td>
+                  <td>470,000,000 ₩</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>박대장</td>
+                  <td>460,000,000 ₩</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <hr />
 
+            <div class="text-center">
+              <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+              </ul>
+            </div>
 
+            <table>
+              <thead>
+                <tr>
+                  <th>내 순위</th>
+                  <th>조강군</th>
+                  <th>거래금액</th>
+                  <th>보너스</th>
+                </tr>
+              </thead>
+              <tbody>
+                <td>54</td>
+                <td></td>
+                <td>77,777,777 ₩</td>
+                <td>-</td>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="side_tab_2" class="container side_tab_content"></div>
+          <div id="side_tab_3" class="container side_tab_content"></div>
+          <div id="side_tab_4" class="container side_tab_content"></div>
 
         </div>
-        <div id="tab-3" class="tab-content">거래순위 내용</div>
-        <div id="tab-4" class="tab-content">상점 내용</div>
-        <div id="tab-5" class="tab-content">내정보 내용</div>
-      </div>
+
+        <!-- ============== tab-4 : 상점 ========================= -->
+        <div id="tab-4" class="tab-content">
+          <div class="side_tab_box">
+            <ul class="side_tabs">
+              <li class="side_tab_link current" data-tab="side_tab_1">전체</li>
+              <li class="side_tab_link" data-tab="side_tab_2">충전</li>
+              <li class="side_tab_link" data-tab="side_tab_3">편의</li>
+            </ul>
+          </div>
+
+          <div id="side_tab_1" class="container side_tab_content current">
+            <ul>
+              <li>100만 거래가능 (베이직)</li>
+              <li>300만 거래가능 (프로)</li>
+              <li>500만 거래가능 (프리미엄)</li>
+              <li>1000만 거래가능 (빅핸드)</li>
+              <li>30일 Free Ip</li>
+              <li>30일 고정IP+1</li>
+              <li>30일 휴대폰거래</li>
+              <li>우선매칭권</li>
+            </ul>
+          </div>
+
+          <div id="side_tab_2" class="container side_tab_content"></div>
+          <div id="side_tab_3" class="container side_tab_content"></div>
+        </div>
+
+        <!-- ============== tab-5 : 내 정보 ========================= -->
+        <div id="tab-5" class="tab-content">
+          <div class="side_tab_box">
+            <ul class="side_tabs">
+              <li class="side_tab_link current" data-tab="side_tab_1">기본등록정보</li>
+              <li class="side_tab_link" data-tab="side_tab_2">거래등록정보</li>
+              <li class="side_tab_link" data-tab="side_tab_3">거래내역자료</li>
+              <li class="side_tab_link" data-tab="side_tab_3">상품구매내역</li>
+            </ul>
+          </div>
+
+          <div id="side_tab_1" class="container side_tab_content current">
+            <table>
+              <tbody>
+                <tr>
+                  <th>이름</th>
+                  <td>박지훈</td>
+                </tr>
+                <tr>
+                  <th>아이디</th>
+                  <td>parkBon</td>
+                </tr>
+                <tr>
+                  <th>전화</th>
+                  <td>01077469000</td>
+                </tr>
+                <tr>
+                  <th>이메일</th>
+                  <td>Haulpark@gamil.com</td>
+                </tr>
+                <tr>
+                  <th>등록센터</th>
+                  <td>서울강남센터</td>
+                </tr>
+                <tr>
+                  <th>가입일</th>
+                  <td>2021.04.06</td>
+                </tr>
+                <tr>
+                  <th>추천인</th>
+                  <td>김진철(Eagler)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="side_tab_2" class="container side_tab_content"></div>
+          <div id="side_tab_3" class="container side_tab_content"></div>
+          <div id="side_tab_4" class="container side_tab_content"></div>
+        </div>
     </div>
   </section>
 </div>
@@ -201,6 +443,8 @@
 <!--script -->
   <script src="../../js/base/jquery-3.5.1.min.js"></script>
   <script src="../../js/base/jquery-ui.min.js"></script>
+
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
