@@ -145,7 +145,7 @@
             </ul>
           </div>
 
-          <div id="side_tab_1" class="container side_tab_content current">
+          <div id="side_tab_1" class="side_tab_content current">
             <div class="period_content">
               <ul>
                 <li>
@@ -174,10 +174,10 @@
               <thead>
                 <tr>
                   <th class="p_th_title">No</th>
-                  <th>거래종류</th>
-                  <th>거래코인</th>
-                  <th>거래금액</th>
-                  <th>거래종료시간</th>
+                  <th class="p_th_title_1">거래종류</th>
+                  <th class="p_th_title_2">거래코인</th>
+                  <th class="p_th_title_3">거래금액</th>
+                  <th class="p_th_title_4">거래종료시간</th>
                 </tr>
                 <tr>
                   <th></th>
@@ -189,7 +189,7 @@
               </thead>
               <!-- tbody -->
               <tbody>
-                <tr>
+                <tr class="p_tr_bg">
                   <th>151</th>
                   <td>판매</td>
                   <td>CRE</td>
@@ -204,7 +204,7 @@
                   <td>정상</td>
                 </tr>
                 <!-- tr-1 -->
-                <tr>
+                <tr class="p_tr_bg">
                   <th>152</th>
                   <td>구매</td>
                   <td>CRE</td>
@@ -219,7 +219,7 @@
                   <td>정상</td>
                 </tr>
                 <!-- tr-2 -->
-                <tr>
+                <tr class="p_tr_bg">
                   <th>153</th>
                   <td>판매</td>
                   <td>CRE</td>
@@ -234,7 +234,7 @@
                   <td>정상</td>
                 </tr>
                 <!-- tr-3 -->
-                <tr>
+                <tr class="p_tr_bg">
                   <th>154</th>
                   <td>구매</td>
                   <td>CRE</td>
@@ -251,8 +251,8 @@
                 <!-- tr-4 -->
               </tbody>
             </table>
-            <hr />
-            <div class="text-center">
+            <br />
+            <div class="p_indicator">
               <ul class="pagination">
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
@@ -262,23 +262,25 @@
               </ul>
             </div>
           </div>
-          <div id="side_tab_2" class="container side_tab_content"></div>
-          <div id="side_tab_3" class="container side_tab_content"></div>
-          <div id="side_tab_4" class="container side_tab_content"></div>
+
+          <div id="side_tab_2" class="side_tab_content"></div>
+          <div id="side_tab_3" class="side_tab_content"></div>
+          <div id="side_tab_4" class="side_tab_content"></div>
+          
         </div>
 
         <!-- ============== tab-3 : 거래순위 ========================= -->
         <div id="tab-3" class="tab-content">
-          <div class="side_tab_box">
-            <ul class="side_tabs">
-              <li class="side_tab_link current" data-tab="side_tab_1">일일</li>
-              <li class="side_tab_link" data-tab="side_tab_2">주간</li>
-              <li class="side_tab_link" data-tab="side_tab_3">월</li>
-              <li class="side_tab_link" data-tab="side_tab_4">기간설정</li>
+          <div class="side_tab_lank_box">
+            <ul class="side_tabs_lank">
+              <li class="side_tab_link_lank current" data-tab="side_tab_lank_1">일일</li>
+              <li class="side_tab_link_lank" data-tab="side_tab_lank_2">주간</li>
+              <li class="side_tab_link_lank" data-tab="side_tab_lank_3">월</li>
+              <li class="side_tab_link_lank" data-tab="side_tab_lank_4">기간설정</li>
             </ul>
           </div>
-
-          <div id="side_tab_1" class="container side_tab_content current">
+  
+          <div id="side_tab_lank_1" class="side_tab_content_lank_2 current">
             <table>
               <thead>
                 <tr>
@@ -353,9 +355,9 @@
             </table>
           </div>
 
-          <div id="side_tab_2" class="container side_tab_content"></div>
-          <div id="side_tab_3" class="container side_tab_content"></div>
-          <div id="side_tab_4" class="container side_tab_content"></div>
+          <div id="side_tab_lank_2" class="side_tab_content_lank_2"></div>
+          <div id="side_tab_lank_3" class="side_tab_content_lank_2"></div>
+          <div id="side_tab_lank_4" class="side_tab_content_lank_2"></div>
 
         </div>
 
@@ -449,6 +451,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <script src="../../js/src/main/t_main.js"></script>
+  <script src="../../js/src/main/t_main_tab.js"></script>
   <script src="../../js/src/main/t_main_graph.js"></script>
 </body>
 </html>
