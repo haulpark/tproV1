@@ -60,11 +60,11 @@
     
 
           .graph{
-            width:80%; margin:20px auto;
+            width:40%; height:150px; margin:10px auto;
           }
 
           #myChart{
-            width:90vw; height:20vh;
+            width:100px; height:100px;
           }
         
           #data{ width:90%; height:5vw; }
