@@ -46,7 +46,7 @@
   
       .side_tab_box{
         margin-left: 20px;
-        width:280px; height:30px;
+        width:auto; height:30px;
       }
 
         .side_tab_box ul{
@@ -54,7 +54,7 @@
         }
 
         .side_tab_box li{
-          float:left; width:70px; 
+          float:left; width:120px; 
           font-size:1.2rem; line-height: 15px;
         }
 
@@ -266,10 +266,10 @@
         .td_1{background-color: #f5f6f7;}
 
     
-  /* ============ .deal_2 : 거래내역 ============ */
+  /* ============ .board_2 : 거래내역 ============ */
     .period_content{
       width:300px; height:50px;
-      margin-top: 10px; margin-left: 20px;
+      margin-top: 40px; margin-left: 20px;
       margin-bottom: 10px;
     }
 
@@ -308,7 +308,7 @@
         font-size:1rem; line-height: 15px;
       }
 
-  /* ============ .deal_3 : 거래순위 ============ */
+  /* ============ .board_3 : 거래순위 ============ */
 
     .lankBox{
       width:90%; height:200px;
@@ -342,7 +342,7 @@
       .mylankBox > tbody > tr > td{font-weight: normal; height:30px; font-size:1rem; text-align: center;}
 
 
-  /* ============ .deal_4 : 상점 ============ */
+  /* ============ .board_4 : 상점 ============ */
 
     .all_store{
       width:800px; height:100%;
@@ -363,7 +363,16 @@
       .all_store li:nth-child(5), li:nth-child(6), li:nth-child(7){padding-top: 60px;}
       .all_store li:nth-child(8){padding-top: 75px;}
 
-    
+  /* ============ .board_5 : 나의 정보 ============ */
+
+    .profile{
+      width:70%; height:90%;
+      margin:auto; margin-top: 100px;
+    }
+
+      .profile > tbody > tr {height:30px;}
+      .profile > tbody > tr > th{width:30%; font-weight: normal;}
+      .profile > tbody > tr > td{width:70%; font-size:1rem; padding-left:10px}
 
 
 
