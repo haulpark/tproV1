@@ -1,0 +1,51 @@
+/* t_deposit.css */
+
+#wrap{
+  width:100%; height:100%;
+}
+
+  .ch_box{
+    margin:auto; margin-top: 30px;
+    width:90%; height:100px;
+  }
+
+    .ch_box ul{width:100%; height:100%;}
+    .ch_box li{float:left; width:33%; height:50px;}
+    .ch_box dl{width:100%; height:100%; text-align: center; line-height:50px; border-bottom:1px solid #ccc; box-sizing: border-box;}
+    .ch_box li:nth-child(4) dl, li:nth-child(5) dl, li:nth-child(6) dl{border-bottom: 0;}
+    .ch_box dt{float:left; width:50%; height:100%; border-right:1px solid #ccc; box-sizing: border-box;}
+    .ch_box li:nth-child(2n){background-color: #f5f6f7;}
+    .ch_box dd{float:right; width:50%; height:100%; border-right:1px solid #ccc; box-sizing: border-box;}
+    .ch_box li:nth-child(3n) dd{border-right: 0;}
+
+  .ch_title{
+    position: absolute;
+    width:100%; text-align: center;
+    top:35%; font-size:1.8rem;
+  }
+  
+  .ch_btn{
+    position: absolute;
+    width:260px; height:50px;
+    bottom:20%; left:0; right:0; margin:auto;
+  }
+
+    .ch_btn > button{
+      width:120px; height:40px;
+      border-radius: 15px;
+      font-size:1rem; color:#fff;
+      transition:transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    }
+
+    .no{
+      float:left; background-color: #EC2F4B;
+      box-shadow:0 4px 6px #bf263d;
+    }
+    .yes{
+      float:right; background-color: #4998D3;
+      box-shadow:0 4px 6px #36709c;
+    }
+
+    .ch_btn > button > a{
+      line-height: 40px; text-align: center;
+    }

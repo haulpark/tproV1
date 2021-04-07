@@ -1,0 +1,51 @@
+/* t_request.css */
+
+  #wrap{
+    width:100%; height:100%;
+  }
+
+    .rq_box{
+      margin:auto; margin-top: 30px;
+      width:90%; height:100px;
+    }
+
+      .rq_box ul{width:100%; height:100%;}
+      .rq_box li{float:left; width:33%; height:50px;}
+      .rq_box dl{width:100%; height:100%; text-align: center; line-height:50px; border-bottom:1px solid #ccc; box-sizing: border-box;}
+      .rq_box li:nth-child(4) dl, li:nth-child(5) dl, li:nth-child(6) dl{border-bottom: 0;}
+      .rq_box dt{float:left; width:50%; height:100%; border-right:1px solid #ccc; box-sizing: border-box;}
+      .rq_box li:nth-child(2n){background-color: #f5f6f7;}
+      .rq_box dd{float:right; width:50%; height:100%; border-right:1px solid #ccc; box-sizing: border-box;}
+      .rq_box li:nth-child(3n) dd{border-right: 0;}
+
+    .rq_title{
+      position: absolute;
+      width:100%; text-align: center;
+      top:40%; font-size:2rem;
+    }
+
+    .rq_btn{
+      position: absolute;
+      width:260px; height:50px;
+      bottom:20%; left:0; right:0; margin:auto;
+    }
+
+      .rq_btn > button{
+        width:120px; height:40px;
+        border-radius: 15px;
+        font-size:1rem; color:#fff;
+        transition:transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+      }
+
+      .no{
+        float:left; background-color: #EC2F4B;
+        box-shadow:0 4px 6px #bf263d;
+      }
+      .yes{
+        float:right; background-color: #4998D3;
+        box-shadow:0 4px 6px #36709c;
+      }
+
+      .rq_btn > button > a{
+        line-height: 40px; text-align: center;
+      }
