@@ -425,8 +425,37 @@
       .profile > tbody > tr > th{width:30%; font-weight: normal;}
       .profile > tbody > tr > td{width:70%; font-size:1rem; padding-left:10px}
 
+    
+    .exBox{
+      width:60%; height:100px; margin:auto;
+      margin-top: 150px; 
+      padding:10px 25px; box-sizing: border-box;
+      position: relative;
+    }
 
+      .ex_id{
+        float:left; width:20%; height:80px;
+        line-height: 80px; font-size:1.3rem;
+        text-align: center; border-bottom:2px solid #f5f6f7;}
 
+      .ex_date{
+        width:100%; height:80px;
+        line-height: 80px; font-size:1.3rem;
+        margin:auto;
+      }
 
-        
+        .ex_date > span{float:left; margin-left: 50px;}
+        .ex_input_date{float:right;}
+        .ex_input_date > input{width:150px; font-size:1rem; }
+
+      .ex_btn{
+        position: absolute;
+        left:0; right:0;
+        width:120px; height:40px;
+        margin:auto; margin-top: 20px; background-color: #4998D3;
+        color:#fff; font-size:1.2rem;
+        transition:transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+        box-shadow:0 4px 6px #36709c;
+        border-radius: 15px;
+      }
 
