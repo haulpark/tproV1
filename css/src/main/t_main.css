@@ -1,7 +1,7 @@
 /* t_main.css */
 
 #wrap{
-  width:100%; height:auto; overflow: hidden;
+  width:100%; height:100%; overflow: hidden;
 }
 
 .visualize-key{display:none;}
@@ -376,6 +376,10 @@
         width:20px; font-size:1rem; line-height: 30px;
       }
 
+      /* 어디서 오류난지 모르겠음 */
+      .lank_indicator li:nth-child(6){padding:0;}
+      .lank_indicator li:nth-child(7){padding:0;}
+
       .lank_indicator a{color:#333;}
 
     .mylankBox{
@@ -407,6 +411,9 @@
 
       .all_store li:nth-child(5), li:nth-child(6), li:nth-child(7){padding-top: 60px;}
       .all_store li:nth-child(8){padding-top: 75px;}
+
+      .conven_store li{padding-top:60px;}
+      .conven_store li:last-child{padding-top:75px;}
 
   /* ============ .board_5 : 나의 정보 ============ */
 
