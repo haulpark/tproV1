@@ -33,13 +33,9 @@
     top:35%; font-size:1.8rem;
   }
 
-  .start_wait{
-    position: absolute;
-    width:100%; text-align: center;
-    top:58%; font-size:1.7rem;
-  }
-
-    #timer{color:#00647f; font-weight: bold; font-size:1.8rem;}
+    .start_title > p > span{
+      font-weight: bold;
+    }
 
   
   .start_btn{

@@ -35,7 +35,7 @@
   
   .cf_btn{
     position: absolute;
-    width:260px; height:50px;
+    width:120px; height:50px;
     bottom:20%; left:0; right:0; margin:auto;
   }
 
@@ -46,10 +46,6 @@
       transition:transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
     }
 
-    .no{
-      float:left; background-color: #EC2F4B;
-      box-shadow:0 4px 6px #bf263d;
-    }
     .yes{
       float:right; background-color: #4998D3;
       box-shadow:0 4px 6px #36709c;

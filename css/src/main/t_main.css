@@ -197,6 +197,19 @@
       box-sizing: border-box;
       line-height: 2.5vw;
       font-size:1.3rem;
+      animation-duration: 3s;
+      animation-name: slidein;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes slidein {
+      from {
+        opacity:0;
+      }
+    
+      to {
+       opacity: 1;
+     }
     }
 
   .mob_slideBar{display:none;}
@@ -228,6 +241,17 @@
       .user_percent{
         width:100%; height:15px;
         background-color: #4A96D2;
+        animation-name: percent;
+      }
+
+      @keyframes percent {
+        from {
+          width:0;
+        }
+      
+        to {
+         width:58%;
+       }
       }
 
       .board_head{
