@@ -28,8 +28,22 @@
       width:150px; height:50px;
       background-color: #4a96d2;
       border-radius: 10px;
+      transition:transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+      background-color: #4998D3;
+      box-shadow:0 4px 6px #36709c;
     }
 
       .deal_btn > a > span{
         line-height:45px;
-        color:#fff; font-size:1.2rem;}
+        color:#fff; font-size:1.2rem;
+      }
+
+@media screen and (max-width: 639px) {
+  .deal_title{font-size:2.8rem;}
+  .deal_story{font-size:1.5rem;}
+
+  .deal_btn{
+    width:120px; height:45px;
+    font-size:1rem;
+  }
+}
