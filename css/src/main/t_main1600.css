@@ -1,65 +1,187 @@
 /* width: 1281 ~ 1600px (노트북 환경 기준) */
 @media screen and (min-width: 1281px) and (max-width: 1600px) {
 
+  /* =================== #headBox ===================*/
+
+  #headBox{height:8vw;}
+  .title{font-size:1.4rem;}
+  .unb{font-size:1.2rem;}
   .slideBar{font-size:1.1rem;}
 
-  .deal_txt{
-     margin-top: 8vw;
+  /* =================== #viewBox ===================*/
+  /* ============= deal(좌) 화면 ============== */
+
+
+
+  /* ========= #board_홈 화면 ========= */
+   #tab-1{
+     width:100%; height:570px;
   }
 
-    .deal_title{
-      font-size:3.2rem;
+  .graph{
+    width:50%; margin:10px auto;
+  }
+
+    #data{
+      width:70%; height:10vw; 
+      margin:auto;
     }
 
-    .deal_story{
-      font-size:1.8rem;
-    }
-    
-    .board_tab{
-      width:100%; height:40px;
+    #data > thead > tr > td, th{
+      font-size:1rem; text-align: center;
+      background-color: #366f9c;
+      color:#fff;
     }
 
-      .board_tab ul{
-        width:100%; height:100%;
-      }
-
-      .board_tab li{
-        float:left; width:20%; height:100%;
-        font-size:1.2rem; text-align: center;
-        line-height:40px;
-      }
-
-      .board_tab li.current span{
-        display: inline-block;
-        line-height: 30px;
-        width:100px; height:40px;
-        border-radius: 15px;
-        border:3px solid #ccc;
-      }
-
-
-      #tab-1{
-        width:100%; height:570px;
-     }
-
-     .graph{
-       width:50%; margin:10px auto;
-     }
-
-       #data{
-         width:70%; height:10vw; 
-         margin:auto;
-       }
-
-       #data > thead > tr > td, th{
-         font-size:1rem; text-align: center;
-         background-color: #366f9c;
-         color:#fff;
-       }
-
-       #data > tbody > tr > td{
-         font-size:1.2rem; text-align: right;
-       }
+    #data > tbody > tr > td{
+      font-size:0.9rem; text-align: right;
+    }
        
-       .td_1{background-color: #f5f6f7;}
+    .td_1{background-color: #f5f6f7;}
+
+  /* ========= #board_tab(상단 탭) ========= */
+
+  .board_tab{
+    width:100%; height:40px;
+  }
+
+    .board_tab ul{
+      width:100%; height:100%;
+    }
+
+    .board_tab li{
+      float:left; width:20%; height:100%;
+      font-size:1.2rem; text-align: center;
+      line-height:40px;
+    }
+
+    .board_tab li.current span{
+      display: inline-block;
+      line-height: 30px;
+      width:100px; height:40px;
+    }
+ /* ========= #side_tab(하단 탭)_1 ========= */
+
+  .side_tab_box{
+    margin-left: 20px;
+    width:auto; height:30px;
+  }
+
+    .side_tab_box li{
+      float:left; width:60px; 
+      font-size:1rem; line-height: 15px;
+    }
+
+ /* ========= #side_tab(하단 탭)_2 ========= */
+
+  .side_tab_lank_box{
+    margin-left: 20px;
+    width:auto; height:30px;
+  }
+
+    .side_tab_lank_box li{
+      float:left; width:60px; 
+      font-size:1rem; line-height: 15px;
+    }
+
+ /* ========= #side_tab(하단 탭)_3 ========= */
+
+ .side_tab_store_box{
+  margin-left: 20px;
+  width:auto; height:30px;
+}
+
+  .side_tab_store_box li{
+    float:left; width:60px; 
+    font-size:1rem; line-height: 15px;
+  } 
+ /* ========= #side_tab(하단 탭)_4 ========= */
+
+ .side_tab_myinfo_box{
+  margin-left: 20px;
+  width:auto; height:30px;
+}
+
+  .side_tab_myinfo_box li{
+    float:left; width:100px; 
+    font-size:1rem; line-height: 15px;
+  }
+
+  /* ============ .board_2 : 거래내역 ============ */
+  .period_content{
+    width:500px; height:40px;
+    margin-top: 10px; margin-left: 20px;
+    margin-bottom: 5px; font-size:0.9rem;
+  }
+      .period_content dt{height:20px; font-size:0.9rem;}
+      .period_content dd{height:20px; font-size:0.8rem;}
+
+
+  #periodBox{
+    width:90%; height:100px;
+    margin:auto;
+    margin-top: 10px;
+  }
+
+    #periodBox > thead > tr > th{font-size:0.8rem;}
+
+    #periodBox > tbody > tr > th{font-size:0.8rem;}
+    #periodBox > tbody > tr > td{font-size:0.7rem;}
+
+  .p_indicator{height:10px;}
+
+    .p_indicator >.pagination li{font-size:0.9rem;}
+
+/* ============ .board_3 : 거래순위 ============ */
+
+  .lankBox{
+    width:90%; height:100px;
+    margin-top: 20px; margin-bottom: 10px;
+  }
+
+    .lankBox > tbody > tr > td{text-align: center; font-size:1rem;}
+    .lankBox > tbody > tr:first-child{background-color: #ddd;}
+    .lankBox > tbody > tr:nth-child(3), tr:nth-child(5){background-color: #f5f6f7;}
+
+  .lank_indicator{
+    width:180px; height:10px;
+    margin:auto; margin-bottom: 20px;
+  }
+
+    .lank_indicator ul{width:100%; height:100%;}
+    .lank_indicator li{width:20px; font-size:1rem; line-height: 30px;}
+
+/* ============ .board_4 : 상점 ============ */
+
+  .all_store{
+    width:90%; height:100%;
+    margin: auto; margin-top: 20px;
+  }
+
+    .all_store li{
+      float:left; width:120px; height:120px;
+      margin-right: 20px; margin-bottom: 20px;
+      padding-top:35px;
+      border:3px solid #ccc; line-height: 10px;
+    }
+
+    .all_store li:nth-child(5), li:nth-child(6), li:nth-child(7){padding-top: 40px;}
+    .all_store li:nth-child(8){padding-top: 50px;}
+
+    .conven_store li{padding-top:45px;}
+    .conven_store li:last-child{padding-top:50px;}
+
+/* ============ .board_5 : 나의 정보 ============ */
+
+  .profile{
+    width:70%; height:90%;
+    margin:auto; margin-top: 30px;
+  }
+
+  .exBox{
+    width:90%; height:100px; margin:auto;
+    margin-top: 50px; 
+    padding:10px 25px; box-sizing: border-box;
+    position: relative;
+  }
 }

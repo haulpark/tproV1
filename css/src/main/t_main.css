@@ -1,7 +1,7 @@
 /* t_main.css */
 
 #wrap{
-  width:100%; height:100%; overflow: hidden;
+  width:100%; height:auto; overflow: hidden;
 }
 
 .visualize-key{display:none;}
@@ -158,7 +158,7 @@
 
 /* ====================== #headBox ====================== */
   #headBox{
-    width:100%; height:9vw;
+    width:100%; height:7vw;
     box-shadow:0 0.5rem 0.5rem #ccc;
     padding:10px 30px; box-sizing: border-box;
   }
@@ -166,35 +166,36 @@
     .logo{
       float:left;
       margin:auto;
-      height:8vw;
-      background-image: url(../../../img/image/main_logo.png);
+      height:6vw;
+      background-image: url(../../../img/image/logo_whale.png);
       background-position: 50% 50%;
       background-repeat: no-repeat;
-      background-size: 80%;
+      background-size: 100%;
     }
 
     .title{
-      height:4vw;
+      height:3vw;
       font-weight: bold;
-      font-size:1.5rem;
-      line-height: 4vw;
+      font-size:1.8rem;
+      line-height: 3vw;
     }
 
     .unb{
-      height:4vw;
+      height:3vw;
       text-align: right;
       font-size:1.2rem;
-      line-height:2.5vw;
+      line-height:2vw;
     }
 
     .mob_icon{display:none;}
 
     .slideBar{
+      float:left;
       height:3vw;
       margin-left: 10px;
       border:2px solid #ccc;
       box-sizing: border-box;
-      line-height: 2.5vw;
+      line-height: 3vw;
       font-size:1.3rem;
       animation-duration: 3s;
       animation-name: slidein;
