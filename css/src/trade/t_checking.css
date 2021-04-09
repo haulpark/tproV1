@@ -282,3 +282,23 @@
     width:100%; text-align: center;
     top:60%; font-size:1.7rem;
   }
+
+@media screen and (max-width: 639px) {
+  .loading{top:30%;}
+
+  .check_box{font-size:0.7rem;}
+
+  .check_title{top:60%; font-size:1.3rem;}
+}
+
+@media screen and (min-width: 640px) and (max-width:1080px) {
+
+  .loading{top:30%;}
+
+  .check_box{font-size:1rem;}
+
+}
+
+@media screen and (min-width: 1081px){
+  .check_box{font-size:1.3rem;}
+}

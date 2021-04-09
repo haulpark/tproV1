@@ -49,3 +49,27 @@
     .ch_btn > button > a{
       line-height: 40px; text-align: center;
     }
+
+@media screen and (max-width: 639px) {
+  .ch_box{font-size:0.7rem;}
+
+  .ch_title{top:38%; font-size:1.3rem;}
+
+  .ch_wait{top:65%;}
+
+  .ch_btn{
+    bottom:10%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width:1080px) {
+  .ch_box{font-size:1rem;}
+
+  .ch_btn{
+    bottom:10%;
+  }
+}
+
+@media screen and (min-width: 1081px){
+  .ch_box{font-size:1.3rem;}
+}
