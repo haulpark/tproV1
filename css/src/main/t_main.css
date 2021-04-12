@@ -4,6 +4,8 @@
   width:100%; height:auto; overflow: hidden;
 }
 
+.mob_menu{display:none;}
+
 .visualize-key{display:none;}
 
 /* ================ tab Box 기능 구현 ======================= */
@@ -167,7 +169,7 @@
       float:left;
       margin:auto;
       height:6vw;
-      background-image: url(../../../img/image/logo_whale.png);
+      background-image: url(../../../img/image/corepay_logo.png);
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: 100%;
@@ -415,6 +417,32 @@
 
       .conven_store li{padding-top:60px;}
       .conven_store li:last-child{padding-top:75px;}
+
+    .store_modal{
+      position: relative;
+      margin:auto; z-index:1000;
+      width:90%; height:20vw; background:rgba(66, 80, 103, 0.9);
+      padding:2vw; box-sizing: border-box;
+      display:none;
+    }
+
+      .store_modal_content{
+        position: absolute;
+        width:90%; height:auto;
+        color:#fff;}
+      
+        .store_modal_title{font-size:2rem;}
+        .store_modal_ex{font-size:1rem;}
+
+      .store_modal > button{
+        position: absolute; z-index:1001;
+        top:5%; right:3%;
+        background-color: transparent;
+        color:#fff; font-size:2rem;
+      }
+
+    
+
 
   /* ============ .board_5 : 나의 정보 ============ */
 

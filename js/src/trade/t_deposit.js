@@ -3,7 +3,7 @@
 (function($){
 
   // 타이머 
-  var time = 239; // -1초 (html에 04:30 띄웠음)
+  var time = 269; // -1초 (html에 04:30 띄웠음)
   var min = " ";
   var sec = " ";
 

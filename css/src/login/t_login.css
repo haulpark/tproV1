@@ -15,7 +15,7 @@
     .logo{
       width:200px; height:100px;
       margin:auto; 
-      background-image: url(../../../img/image/fabicon.png);
+      background-image: url(../../../img/image/corepay_logo.png);
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: contain;
@@ -51,7 +51,7 @@
     .login{
       width:100%; height:30px;
       border-radius: 0;
-      background-color: #333;
+      background-color: #4694D1;
       margin-bottom: 20px;
       color:#fff;
     }
@@ -72,6 +72,3 @@
       .login_find li:nth-child(1){width:90px;}
       .login_find li:nth-child(2){width:90px;}
       .login_find li:nth-child(3){border-right: 0;}
-
-
-
