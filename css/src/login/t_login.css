@@ -8,7 +8,7 @@
     position: absolute;
     top:0; left:0; right:0; bottom:0;
     margin:auto; 
-    width:300px; height:400px;
+    width:300px; height:500px;
     padding:25px 0; box-sizing: border-box;
   }
 
@@ -33,42 +33,46 @@
     }
 
       .form_box{
-        width:100%; height:60px;
+        width:100%; height:80px;
       }
 
       .form_box > span{
         display: block;
         width:100%; height:30px;
-        font-size:1.2rem;
+        font-size:1.1rem;
       }
 
       .form_box > input{
-        width:100%; height:25px;
-        border:2px solid #ccc;
+        width:100%; height:40px;
+        border:1px solid #ccc;
         box-sizing: border-box;
       }
 
     .login{
-      width:100%; height:30px;
+      width:100%; height:40px;
       border-radius: 0;
       background-color: #4694D1;
+      margin-top: 30px;
       margin-bottom: 20px;
       color:#fff;
+      font-size:1.1rem;
     }
 
     .login_find{
       width:100%; height:20px;
     }
 
-      .login_find ul{width:100%; height:100%; line-height: 20px; }
+      .login_find ul{width:240px; margin:auto; height:100%; line-height: 20px; }
       .login_find li{
         float:left;
-        width:120px; height:20px; 
+        font-size:0.9rem;
+        width:100px; height:20px; 
         text-align: center;
-        border-right: 2px solid #333;
+        border-right: 1px solid #ccc;
+        color:#333;
         box-sizing: border-box;
       }
 
-      .login_find li:nth-child(1){width:90px;}
-      .login_find li:nth-child(2){width:90px;}
+      .login_find li:nth-child(1){width:70px;}
+      .login_find li:nth-child(2){width:70px;}
       .login_find li:nth-child(3){border-right: 0;}

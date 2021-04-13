@@ -5,15 +5,6 @@
 	var tl = $('#termsLocation');
 	var ta = $('#termsAlert');
 
-	var tsTerms = ts.nextAll('.terms').eq(0);
-	var tpTerms = tp.nextAll('.terms').eq(0);
-	var tlTerms = tl.nextAll('.terms').eq(0);
-	var taTerms = ta.nextAll('.terms').eq(0);
-
-	tsTerms.load('../terms/termsService.html');
-	tpTerms.load('../terms/termsPrivacy.txt');
-	tlTerms.load('../terms/termsLocation.txt');
-	taTerms.load('../terms/termsAlert.txt');
 // =======================================================
 var inputCk = $('input[type="checkbox"]');
 var inputCheckList = [ts, tp, tl, ta];
