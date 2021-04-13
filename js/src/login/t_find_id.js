@@ -33,7 +33,7 @@ $(function(){
             $("#searchValidPhone").hide();
         } else {
             $("#searchValidPhone").show();
-            $("#searchValidPhone").text('번호 형식이 올바르지 않습니다');
+            $("#searchValidPhone").text('전화번호 형식이 올바르지 않습니다');
             $("#searchIdBtn").prop("disabled", true);
         }
 
@@ -41,18 +41,6 @@ $(function(){
             $("#searchIdBtn").prop('disabled', true);
         }
     });
-
-    /*
-    $('#email').on("keyup", function () {
-        emailValidEventHandler();
-    });
-
-    $('#email').on("paste", function () {
-        setTimeout(function () {
-            emailValidEventHandler();
-        }, 10);
-    })
-    */
 
     $('#sendCertPhoneBtn, #reSendCertPhoneBtn').on("click", function () {
 
@@ -151,22 +139,6 @@ $(function(){
             $("#requestPhoneNumber").val($("#phoneNumber").val());
             moveSearchResult('phone');
         }
-        /*
-        if ($('#emailRadioBtn').prop('checked')) {
-            mss.my.ajax.call(
-                {
-                    async: false,
-                    type: "POST",
-                    url: "/api/member/v3/search/send/id/email",
-                    data : {"email" : $("#email").val(), "referer" : referer},
-                    success: function(response) {
-                        $("#requestIsSendEmail").val(response.success);
-                        moveSearchResult('email');
-                    }
-                }
-            );
-        }
-        */
     });
 });
 
@@ -194,20 +166,6 @@ function hideInValidMsg(target) {
     $("#" + target).text('').hide();
 }
 
-/*
-function emailValidEventHandler() {
-    if (emailValidation()) {
-        $("#searchValidEmail").hide();
-        $("#searchIdBtn").prop("disabled", false);
-    } else {
-        $("#searchValidEmail").show();
-        $("#searchValidEmail").text('이메일주소를 다시 확인해 주세요');
-        $("#searchIdBtn").prop("disabled", true);
-    }
-}
-*/
-
-
 function getTokenMemberIds() {
     var token = '';
     mss.my.ajax.call(
@@ -231,14 +189,6 @@ function getTokenMemberIds() {
 
 var changeFndTarget = function(t){
     switch(t){
-        case 'email':
-            $(".tel-area").hide();
-            $("#selfCertMessage").hide();
-            $(".tel-cert-area").hide();
-            $('#memberName, #phoneNumber, #certNumber').val('');
-            $("#email").show();
-            $("#searchIdBtn").prop("disabled", true);
-            break;
         case 'phone':
             $('#email').val('');
             $("#email").hide();
@@ -259,7 +209,6 @@ var changeFndTarget = function(t){
             break;
     }
     $("#searchValidPhone").hide();
-    $("#searchValidEmail").hide();
     $(".n-validation").text('');
 }
 
@@ -277,16 +226,50 @@ function phoneValidation() {
     return true;
 }
 
-/*
-function emailValidation() {
-    var email = $('#email').val();
-    var emailRegExp = new RegExp('^[_a-zA-Z0-9-\\.]+@[\\.a-zA-Z0-9-]+\\.[a-zA-Z]+$');
-    if(!emailRegExp.test(email)){
-        return false;
-    }
-    return true;
-}
-*/
+
+        var timer = null;
+        var isRunning = false;
+        $(function(){
+
+                $("#sendCertPhoneBtn").click(function(e){
+                var display = $('.time');
+                var leftSec = 2;
+                // 남은 시간
+                // 이미 타이머가 작동중이면 중지
+                if (isRunning){
+                    clearInterval(timer);
+                    display.html("");
+                    startTimer(leftSec, display);
+                }else{
+                startTimer(leftSec, display);
+                    
+                }
+            });
+        })
+
+            
+        function startTimer(count, display) {
+                    
+                    var minutes, seconds;
+                    timer = setInterval(function () {
+                    minutes = parseInt(count / 60, 10);
+                    seconds = parseInt(count % 60, 10);
+            
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+            
+                    display.html(minutes + ":" + seconds);
+            
+                    // 타이머 끝
+                    if (--count < 0) {
+                    display.html("시간초과");
+                    $("#searchVailidCertNumber").style.display = 'block';
+                    isRunning = false;
+                    }
+                }, 1000);
+                    isRunning = true;
+        }
+
 });
 
 

@@ -32,42 +32,32 @@
     <div id="tab1" class="tab_content current">
       <!-- ================================ 아이디 찾기 탭 ================================ -->
       <div class="id_find_tab">
-        <input type="radio" class="n-radio" id="phoneRadioBtn" data-type="phone" name="findIDType">
-        <label for="phoneRadioBtn" onclick="changeFndTarget('phone')"> 휴대전화
-        </label>
-        <!--
-        <input type="radio" class="n-radio" id="emailRadioBtn" data-type="email" name="findIDType">
-        <label for="emailRadioBtn" onclick="changeFndTarget('email')"> 이메일
-        </label>
-        -->
+        <p>휴대전화 인증</p>
       </div>
 
       
       <!-- 아이디 찾기(휴대전화 인증으로 찾기) -->
       <div class="n-form-item">
-        <input type="text" class="n-input tel-area" id="memberName" name="memberName" placeholder="이름 입력" style="padding-right: 0px;">
+        <label for="idname">이름</label>
+        <input type="text" class="n-input tel-area" id="memberName" name="memberName" placeholder="이름을 입력해주세요." style="padding-right: 0px;">
         <p class="n-validation" id="searchValidMemberName" style="display: none">이름을 입력해 주세요</p>
       </div>
 
       <div class="n-form-item tel-area" id="input-div">
-        <input type="tel" class="n-input" id="phoneNumber" name="phoneNumber" placeholder="휴대전화 입력(-없이)" minlength="10" maxlength="11">
-        <p class="n-validation" id="searchValidPhone" style="display: none">번호 형식이 올바르지 않습니다</p>
+        <label for="idphone">휴대전화번호</label>
+        <input type="tel" class="n-input" id="phoneNumber" name="phoneNumber" placeholder="휴대전화번호를 입력해주세요.(-없이)" minlength="10" maxlength="11">
         <button type="button" class="btn" id="sendCertPhoneBtn">인증요청</button>
         <button type="button" class="btn" id="reSendCertPhoneBtn" style="display: none">다시받기</button>
+        
       </div>
 
       <div class="n-form-item tel-cert-area" id="phoneCertification">
-        <input type="text" class="n-input" placeholder="인증번호 입력" id="certNumber" minlength="5" maxlength="5">
-        <button type="button" class="btn" id="authSmsBtn">확인</button>
-        <p class="n-validation" id="searchValidCertNumber"></p>
+        <label for="idnumber">인증번호</label>
+        <input type="text" class="n-input" placeholder="인증번호를 입력해주세요." id="certNumber" minlength="5" maxlength="5">
+        <div class="time">01:00</div>
+        <p class="n-validation" id="searchValidCertNumber">유효시간이 초과되었습니다.</p>
       </div>
 
-      <!-- 아이디 찾기(이메일 인증으로 찾기) -->
-      <!--
-      <input type="email" class="n-input" id="email" placeholder="이메일 입력" style="display: none">
-      <p class="n-validation" id="searchValidEmail">번호 형식이 올바르지 않습니다</p>
-      <p id="selfCertMessage" class="margin-bottom" style="display: none">본인명의의 휴대폰으로 아이디를 찾는 방법입니다.<br>기존에 본인인증을 완료한 아이디만 찾으실 수 있습니다.</p>
-      -->
       <div class="member-btn">
         <button type="button" class="n-btn btn-primary" id="searchIdBtn" disabled>아이디 찾기</button>
       </div>
@@ -77,46 +67,37 @@
     <!-- ================================ 비밀번호 찾기 탭 ================================ -->
     <div id="tab2" class="tab_content">
       <div class="pw_find_tab">
-        <input type="radio" class="n-radio" id="phoneRadioBtn" name="findPWType" checked>
-        <label for="phoneRadioBtn" onclick="changeFndTarget('phone')">휴대전화</label>
-        <!--
-        <input type="radio" class="n-radio" id="emailRadioBtn" name="findPWType">
-        <label for="emailRadioBtn" onclick="changeFndTarget('email')">이메일</label>
-        -->
+        <p>휴대전화 인증</p>
       </div>
 
       <p id="selfCertMessage" class="margin-bottom" style="display: none">본인명의의 휴대폰으로 비밀번호를 찾는 방법입니다.<br>기존에 본인인증을 완료한 아이디만 찾으실 수 있습니다.</p>
       <div class="n-form-item">
-          <input type="text" class="n-input" placeholder="아이디 입력" id="memberId" name="memberId" minlength="3" maxlength="20" value="" style="padding-right: 0px;">
-          <p class="n-validation" id="searchValidMemberId" style="display: none">번호 형식이 올바르지 않습니다</p>
+        <label for="idphone">아이디</label>
+          <input type="text" class="n-input" placeholder="아이디를 입력해주세요." id="memberId" name="memberId" minlength="3" maxlength="20" value="" style="padding-right: 0px;">
+          <p class="n-validation" id="searchValidMemberId" style="display: none">아이디가 올바르지 않습니다.</p>
       </div>
 
       <div class="n-form-item">
-          <input type="text" class="n-input" id="memberName" name="memberName" placeholder="이름 입력" style="padding-right:0px;">
+        <label for="idphone">이름</label>
+          <input type="text" class="n-input" id="memberName" name="memberName" placeholder="이름을 입력해주세요." style="padding-right:0px;">
           <p class="n-validation" id="searchValidMemberName" style="display: none;">이름을 입력해 주세요</p>
       </div>
 
       <div class="n-form-item tel-area" id="input-div">
-          <input type="tel" class="n-input" placeholder="휴대전화 입력(-없이)" minlength="10" maxlength="11" id="phoneNumber" name="phoneNumber">
-          <p class="n-validation" id="searchValidPhone" style="display: none"></p>
+        <label for="idphone">휴대전화번호</label>
+          <input type="tel" class="n-input" placeholder="휴대전화번호를 입력해주세요.(-없이)" minlength="10" maxlength="11" id="phoneNumber" name="phoneNumber">
           <button type="button" class="btn" id="sendCertPhoneBtn">인증요청</button>
           <button type="button" class="btn" id="reSendCertPhoneBtn" style="display: none">다시받기</button>
+          <p class="n-validation" id="searchValidPhone" style="display: none">전화번호 형식이 올바르지 않습니다.</p>
       </div>
 
      
       <div class="n-form-item tel-cert-area" id="phoneCertification">
-          <input type="text" class="n-input" placeholder="인증번호 입력" id="certNumber" minlength="5" maxlength="5">
-          <button type="button" class="btn" id="authSmsBtn">확인</button>
+        <label for="idphone">인증번호</label>
+          <input type="text" class="n-input" placeholder="인증번호를 입력해주세요." id="certNumber" minlength="5" maxlength="5">
       </div>
 
-      <!--
-      <div>
-          <input type="email" class="n-input input" placeholder="이메일 입력" id="email" style="display: none">
-          <p class="n-validation" id="searchValidEmail" style="display: none"></p>
-      </div>
-      -->
-
-      <div class="member-btn">
+      <div class="memberPw-btn">
           <button type="button" class="n-btn btn-primary" id="searchPasswordBtn" disabled>비밀번호 찾기</button>
       </div>
 
