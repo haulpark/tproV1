@@ -1,8 +1,9 @@
 /* t_join_check.css */
 
 #wrap {
-	position: relative;
-  width:100%; height:100%;
+	width:100%; height:100%;
+	color:#333;
+	padding:40px 0; 
 }
 
 h1{
@@ -10,13 +11,10 @@ h1{
 }
 
  .joinBox {
-	position: absolute;
-	top:0; left:0; right:0; bottom:0;
-	width: 600px; height:1000px;
+	width: 582px; height:auto;
   margin:auto;
-  padding:5rem; box-sizing: border-box;
+  padding:5rem 2rem; box-sizing: border-box;
   border:10px solid #f5f6f7;
-  margin-top: 30px; 
  }
 
  .joinBox > form,
@@ -25,6 +23,8 @@ h1{
 .user_set {	 margin-bottom: 38px; }
 .user_info { margin-bottom: 18px;}
 .user_certi { margin-bottom:30px; }
+
+
 
 
 .joinBox dl {
@@ -36,14 +36,16 @@ h1{
 }
 
 .joinBox dl.error .end_icon,
-.joinBox dl.error .confirm_text{display:block;	color:#d00; }
+.joinBox dl.error .confirm_text{display:block;	color:#ae0000; }
 
 .joinBox dl.success .end_icon,
 .joinBox dl.success .confirm_text {display:block;	color:#4a98d3; }
 
+.joinBox dl.success .input_area{border:2px solid #4a98d3;}
+
 .joinBox dt{ 
 	width: 100%; height: 18px; margin-bottom: 10px; 
-	font-size:1rem; font-weight: bold;
+	font-size:1rem;
 	text-indent:0.2rem;
 }
 .input_area{ 
@@ -55,9 +57,8 @@ h1{
 	box-sizing: border-box;
 }
 
-.end_icon > span {	display:none; }
 .input_area.error strong>span {	
-	display:inline-block; color:#d00;
+	display:inline-block; color:#ae0000;
 }
 
 .input_area div {
@@ -93,7 +94,8 @@ h1{
 }
 
 .confirm_send .input_area{
-	height:60px;
+	width:280px; height:60px;
+	margin:auto; margin-top: 50px;
 	padding-right: 0;
 }
 
@@ -101,7 +103,7 @@ h1{
 	cursor: pointer;
 	background-color: #4a98d3;
 	color:#fff;
-	font-size:1.5rem;
+	font-size:1.2rem;
 	border-radius:0;
 }
 
@@ -121,7 +123,7 @@ h1{
 
 .end_icon {
 	float:right;
-	padding-top:10px;
+	padding-top:12px;
 	color:inherit;
 }
 .end_icon i{
@@ -129,40 +131,44 @@ h1{
 	color:inherit;
 }
 
-label[for="mobileCerti"]{display: block; width:100%; height:100%; opacity: 0.3; }
-#mobileCerti{display: none;}
+.end_icon i{
+	display:none;
+}
 
 /* ----------------------- */
 
 .confirm_text {
 	display: none;
+	margin-top: 5px;
 	width: 100%; height:25px;
 	font-size:0.875rem;
-	line-height: 25px;
+	line-height: 15px;
 	color:#777;
+	word-break:keep-all;
 }
-
-
-
 /*  ============================================ 반응형 ============================================ */
 /* width: 0 ~ 639px (모바일 환경 기준) */
 @media screen and (max-width: 639px) {
-  
+
+	#wrap{padding:0;}
+
+	.joinBox {
+		width: 100%; height:auto;
+		margin:auto;
+		padding:3rem 1rem; box-sizing: border-box;
+		border:10px solid #f5f6f7;
+	 }
+
+	 .confirm_send .input_area{
+		width:200px; height:50px;
+		margin:auto; margin-top: 50px;
+		padding-right: 0;
+	}
+
+		.confirm_send .input_area input{
+			font-size:1.1rem;
+	}
+
+
 }
 
-/* width: 641 ~ 1280px (태블릿 환경 기준) */
-@media screen and (min-width: 641px) and (max-width: 1280px) {
-
-}
-
-
-/* width: 1281 ~ 1600px (노트북 환경 기준) */
-@media screen and (min-width: 1281px) and (max-width: 1600px) {
-
-}
-
-
-/* width: 1601 ~ a (PC 환경 기준) */
-@media screen and (min-width: 1601px) {
-
-}

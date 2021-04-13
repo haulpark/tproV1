@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../../css/base/common.css">
 
 <link rel="stylesheet" href="../../css/src/login/t_join_check.css">
+<link rel="stylesheet" href="../../fonts/fontawesome5/css/all.min.css">
 
 <!--[if IE]>
 <script src="./ie/html5shive/dist/html5shive.min.js"></script>
@@ -37,7 +38,7 @@
           <dd class="input_area">
             <div>
               <input type="text" maxlength="20" required autofocus
-                     name="userId" id="userId" value="" />
+                     name="userId" id="userId" value="" placeholder="아이디를 입력해주세요."/>
             </div>
           </dd>
           <dd class="confirm_text">내용을 입력하세요.</dd>
@@ -46,17 +47,17 @@
           <dt><label for="userPw">비밀번호</label></dt>
           <dd class="input_area">
             <div>
-              <input type="password" required id="userPw" name="userPw" value="" />
+              <input type="password" required id="userPw" name="userPw" value="" placeholder="비밀번호를 입력해주세요" />
             </div>
-            <strong  class="end_icon"><span>사용불가</span><i class="fas fa-lock"></i></strong>
+            <strong  class="end_icon"><i class="fas fa-lock"></i></strong>
           </dd>
-          <dd class="confirm_text">내용을 입력하세요.</dd>
+          <dd class="confirm_text"></dd>
         </dl>
         <dl>
           <dt><label for="userPw2">비밀번호 재확인</label></dt>
           <dd class="input_area">
             <div>
-              <input type="password" required id="userPw2" name="userPw2" value="">
+              <input type="password" required id="userPw2" name="userPw2" value="" placeholder="비밀번호를 한 번 더 입력해주세요.">
             </div>
             <strong  class="end_icon">
               <i class="fas fa-lock"></i></strong>
@@ -71,7 +72,7 @@
           <dt><label for="userName">이름</label></dt>
           <dd class="input_area">
             <div>
-              <input type="text" required id="userName" name="userName" value="">
+              <input type="text" required id="userName" name="userName" value="" placeholder="이름을 입력해주세요.">
             </div>
           </dd>
           <dd class="confirm_text">내용을 입력하세요.</dd>
@@ -81,8 +82,7 @@
           <dd class="input_area">
             <!-- <input type="text" id="userBirth" name="userBirth" value=""> -->
             <div>
-              <input type="text" name="birthYear" id="birthYear" value=""
-              required	placeholder="년(4자)">
+              <input type="text" name="birthYear" id="birthYear" value="" required	placeholder="년(4자)">
             </div>
             <div>
               <label for="birthMonth" class="hidden">생일 중 월 선택</label>
