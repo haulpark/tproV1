@@ -1,17 +1,189 @@
 /* t_main.css */
 
 #wrap{
-  width:100%; height:auto; overflow: hidden;
+  width:100%; height:auto;
+  overflow: hidden;
+  padding:50px; box-sizing: border-box;
+  background-color: #fbfbfb;
 }
 
 .mob_menu{display:none;}
 
 .visualize-key{display:none;}
 
+/* =================================== #headBox =================================== */
+  #headBox{
+    width:80%; height:7vw;
+    margin:auto;
+    box-shadow:0 0.5rem 1rem #ccc;
+    padding:5px 30px; box-sizing: border-box;
+  }
+
+    .logo{
+      float:left;
+      margin:auto;
+      height:6vw;
+      background-image: url(../../../img/image/trade_logo.png);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 90%;
+    }
+
+    .title{
+      height:3vw;
+      font-weight: bold;
+      font-size:1.8rem;
+      line-height: 3vw;
+    }
+
+    .mob_icon{display:none;}
+
+    .slideBar{
+      float:left;
+      height:3vw;
+      margin-left: 10px;
+      border:2px solid #ccc;
+      box-sizing: border-box;
+      line-height: 3vw;
+      font-size:1.3rem;
+      animation-duration: 3s;
+      animation-name: slidein;
+      animation-iteration-count: infinite;
+    }
+
+    .slideBar_act{color:#4A96D2; font-weight: bold;}
+    
+    @keyframes slidein {
+      from {
+        opacity:0;
+      }
+    
+      to {
+       opacity: 1;
+     }
+    }
+
+  .mob_slideBar{display:none;}
+
+    .unb{
+      color:#333;
+      font-weight:300;
+      height:3vw;
+      text-align: right;
+      font-size:1.2rem;
+      line-height:1.5vw;
+
+    }
+
+    .unb_bold{font-weight:bold;}
+    .unb_act{font-weight:bold; color:#4A96D2;}
+
+
+/* ================================== #noticeBox =================================== */
+#noticeBox{
+  width:80%; height:200px;
+  margin:auto; margin-top: 30px;
+  box-shadow:0 0.5rem 1rem #ccc;
+}
+
+
+/* =================================== #viewBox =================================== */
+  #viewBox{
+    width:80%; height:700px;
+    margin:auto; margin-top: 30px;
+  }
+
+  /* ============ .deal ============ */
+    .deal{
+      float:left;
+      width:30%; height:700px;
+      box-shadow:0 0.5rem 1rem #ccc;
+      
+    }
+    /* ============ .board ============ */
+    .board{
+      float:right;
+      width:67%; height:700px;
+      box-shadow:0 0.5rem 1rem #ccc; 
+      padding:30px; box-sizing: border-box;
+    }
+
+      .user_percent{
+        width:100%; height:20px;
+        background-color: #4A96D2;
+        animation:load 3s normal forwards;
+      }
+
+      @keyframes load{
+        0% {width:0;}
+        100% {width:58%;}
+      }
+
+      .board_head{
+        width:100%; height:100px;
+        background: rgba(70, 148, 209, 0.1);
+      }
+
+        .class{
+          float:left;
+          width:160px; height:80px;}
+        
+          .class p{
+            margin:0; padding:0;
+            margin-top: 10px;
+            margin-left: 20px;
+          }
+
+          .class_t{
+            float:left;
+            font-size:4rem;
+            font-weight: bold;
+          }
+
+          .class_p{
+            font-size:1.5rem;
+            line-height:110px;
+          }
+
+        .class_ex{
+          float:left; height:60px;
+          font-size:1.6rem;
+          margin-top: 25px;
+        }
+
+          .class_ex p{
+            line-height: 20px;
+          }
+
+          .class_ex p span{
+            font-weight: bold;
+          }
+
+      .graph{
+        width:40%; margin:20px auto;
+      }
+
+        #data{
+          width:80%; height:180px; 
+          margin:auto; font-size:1.4rem;
+        }
+
+        #data > thead > tr > td, th{
+          font-size:1rem; text-align: center;
+          background-color: #1e5e96;
+          color:#fff;
+        }
+
+        #data > tbody > tr > td{
+          font-size:1.2rem; text-align: right;
+        }
+        
+        .td_1{background-color: #f5f6f7;}
+
 /* ================ tab Box 기능 구현 ======================= */
       /* ================ 상단탭 ======================= */
       .board_tab{
-        width:100%; height:80px;
+        width:100%; height:60px;
       }
 
         .board_tab ul{
@@ -21,14 +193,15 @@
         .board_tab li{
           float:left; width:20%; height:100%;
           font-size:1.8rem; text-align: center;
-          line-height:80px;
+          line-height:60px; color:#333;
+          font-weight: 400;
         }
 
         .board_tab li.current span{
           display: inline-block;
           line-height: 40px;
           width:120px; height:50px;
-          border-bottom: 3px solid #166F96;
+          color:#366f9c; font-weight: 500;
         }
 
         .tab-content{
@@ -40,13 +213,13 @@
         }
 
       #tab_1{
-         width:100%; height:570px;
+         width:100%; height:auto;
       }
 
       /* ================ 하단탭_1 ======================= */
   
       .side_tab_box{
-        margin-left: 20px;
+        margin-left: 5.5vw;
         width:auto; height:30px;
       }
 
@@ -60,8 +233,7 @@
         }
 
         .side_tab_box li.current{
-          border-bottom:3px solid #366f9c;
-          box-sizing: border-box;
+          color:#4A96D2; font-weight: 500;
         }
 
         .side_tab_content{
@@ -157,204 +329,53 @@
             }
 
 /* ================ //tab Box 기능 구현 ===================== */
-
-/* ====================== #headBox ====================== */
-  #headBox{
-    width:100%; height:7vw;
-    box-shadow:0 0.5rem 0.5rem #ccc;
-    padding:10px 30px; box-sizing: border-box;
-  }
-
-    .logo{
-      float:left;
-      margin:auto;
-      height:6vw;
-      background-image: url(../../../img/image/corepay_logo.png);
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-
-    .title{
-      height:3vw;
-      font-weight: bold;
-      font-size:1.8rem;
-      line-height: 3vw;
-    }
-
-    .unb{
-      height:3vw;
-      text-align: right;
-      font-size:1.2rem;
-      line-height:2vw;
-    }
-
-    .mob_icon{display:none;}
-
-    .slideBar{
-      float:left;
-      height:3vw;
-      margin-left: 10px;
-      border:2px solid #ccc;
-      box-sizing: border-box;
-      line-height: 3vw;
-      font-size:1.3rem;
-      animation-duration: 3s;
-      animation-name: slidein;
-      animation-iteration-count: infinite;
-    }
-    
-    @keyframes slidein {
-      from {
-        opacity:0;
-      }
-    
-      to {
-       opacity: 1;
-     }
-    }
-
-  .mob_slideBar{display:none;}
-
-
-
-
-/* ====================== #viewBox ====================== */
-  #viewBox{
-    width:100%; height:44vw;
-    padding:30px; box-sizing: border-box;
-  }
-
-  /* ============ .deal ============ */
-    .deal{
-      float:left;
-      width:38%; height:100%;
-      border:10px solid #f5f6f7;
-      box-sizing: border-box;
-      
-    }
-    /* ============ .board ============ */
-    .board{
-      float:right;
-      width:60%; height:100%;
-      border:10px solid #f5f6f7; box-sizing: border-box;
-    }
-
-      .user_percent{
-        width:100%; height:15px;
-        background-color: #4A96D2;
-        animation:load 3s normal forwards;
-      }
-
-      @keyframes load{
-        0% {width:0;}
-        100% {width:58%;}
-      }
-
-      .board_head{
-        width:100%; height:100px;
-        border-bottom: 2px solid #aaa;
-        box-sizing: border-box;
-        background: rgba(194, 228, 255, 0.2);
-      }
-
-        .class{
-          float:left;
-          width:160px; height:80px;}
-        
-          .class p{
-            margin:0; padding:0;
-            margin-left: 20px;
-          }
-
-          .class_t{
-            float:left;
-            font-size:4rem;
-            
-          }
-
-          .class_p{
-            font-size:1.5rem;
-            line-height:110px;
-          }
-
-        .class_ex{
-          float:left; height:80px;
-          font-size:1.5rem;
-          margin-top: 20px;
-        }
-
-          .class_ex p{
-            line-height: 20px;
-          }
-
-          .class_ex p span{
-            font-weight: bold;
-          }
-
-      .graph{
-        width:40%; margin:20px auto;
-      }
-
-        #data{
-          width:80%; height:180px; 
-          margin:auto; font-size:1.4rem;
-        }
-
-        #data > thead > tr > td, th{
-          font-size:1rem; text-align: center;
-          background-color: #366f9c;
-          color:#fff;
-        }
-
-        #data > tbody > tr > td{
-          font-size:1.2rem; text-align: right;
-        }
-        
-        .td_1{background-color: #f5f6f7;}
-
     
   /* ============ .board_2 : 거래내역 ============ */
+  /* ======= 거래 수/ 거래금액 / 수수료 표 ======= */
     .period_content{
+      float:right;
       width:300px; height:50px;
-      margin-top: 40px; margin-left: 20px;
       margin-bottom: 10px;
     }
 
       .period_content ul{width:100%; height:100%;}
-      .period_content li{width:100px; height:100%; border-right:1px solid #ccc; box-sizing: border-box;}
+      .period_content li{width:100px; height:100%; border-right:2px solid #ddd; box-sizing: border-box;}
       .period_content li:last-child{border-right: 0;}
       .period_content dl{width:100%; height:100%;}
-      .period_content dt{width:100%; height:25px; font-size:1rem; border-bottom:1px solid #ccc; box-sizing: border-box;}
+      .period_content dt{width:100%; height:25px; font-size:1rem; border-bottom:2px solid #ddd; box-sizing: border-box;}
       .period_content dd{width:100%; height:25px; font-size:0.9rem;}
 
+  /* ======= 거래내역 표 ======= */
     #periodBox{
-      width:90%; height:200px;
-      margin:auto;
-      margin-top: 20px;
+      width:100%; height:auto; margin:auto;
     }
 
       #periodBox {border:2px solid #ccc;}
-      #periodBox > thead > tr > th{font-size:0.9rem; font-weight: normal;}
-        .p_th_title{width:20%;}
-        .p_th_title_1{width:20%;}
+      #periodBox > thead > tr > th{font-size:1rem; font-weight: normal;}
+        .p_th_title{width:10%;}
+        .p_th_title_1{width:10%;}
         .p_th_title_2{width:10%;}
-        .p_th_title_3{width:35%;}
+        .p_th_title_3{width:25%;}
         .p_th_title_4{width:15%;}
 
-      #periodBox > tbody > tr > th{font-size:0.9rem; font-weight: normal;}
-      #periodBox > tbody > tr > td{font-size:0.8rem; font-weight: normal; text-align: center;}
+      #periodBox > tbody > tr > th{font-size:1rem; font-weight: normal;}
+      #periodBox > tbody > tr > td{font-size:1rem; font-weight: normal; text-align: center;}
       #periodBox > tbody > tr > td:nth-child(4){text-align: right;}
-        .p_tr_bg{background-color:#f5f6f7;}
+        .p_tr_bg{background: rgba(211, 223, 240, 0.6)};
 
     .p_indicator{
-      width:200px; height:30px;
-      margin:auto;
+      width:180px; height:30px;
+      margin:auto; margin-top: 20px;
     }
 
-      .p_indicator >.pagination li{
-        font-size:1rem; line-height: 15px;
-      }
+    .p_indicator ul{width:100%; height:100%}
+    .p_indicator li{width:20px; font-size:1rem; line-height: 30px;}
+
+    /* 어디서 오류난지 모르겠음 */
+    .p_indicator li:nth-child(6){padding:0;}
+    .p_indicator li:nth-child(7){padding:0;}
+
+    .p_indicator a{color:#333;}
 
   /* ============ .board_3 : 거래순위 ============ */
 
