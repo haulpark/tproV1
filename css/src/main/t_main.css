@@ -2,7 +2,6 @@
 
 #wrap{
   width:100%; height:auto;
-  overflow: hidden;
   padding:50px; box-sizing: border-box;
   background-color: #fbfbfb;
 }
@@ -217,10 +216,16 @@
       }
 
       /* ================ 하단탭_1 ======================= */
+
+      #tab-2{position: relative;}
   
       .side_tab_box{
-        margin-left: 5.5vw;
-        width:auto; height:30px;
+        display: none;
+        position: absolute;
+        left:24.444%;
+        width:100px; height:120px;
+        background-color: #fff;
+        border:1px solid #ccc;
       }
 
         .side_tab_box ul{
@@ -228,12 +233,14 @@
         }
 
         .side_tab_box li{
-          float:left; width:70px; 
-          font-size:1.2rem; line-height: 15px;
+          width:100%; height:30px; 
+          font-size:1.2rem; line-height: 30px;
+          border-bottom:1px solid #ccc; 
+          box-sizing: border-box;
         }
 
         .side_tab_box li.current{
-          color:#4A96D2; font-weight: 500;
+          background-color:#4A96D2; color:#fff; 
         }
 
         .side_tab_content{
@@ -246,23 +253,31 @@
 
       /* ================ 하단탭_2 ======================= */
 
+      #tab-3{position: relative;}
+
       .side_tab_lank_box{
-        margin-left: 20px;
-        width:280px; height:30px;
+        display: none;
+        position: absolute;
+        left:44.444%; 
+        width:100px; height:120px;
+        background-color: #fff;
+        border:1px solid #ccc;
       }
-          .side_tab_lank_box ul{
-            width:100%; height:100%;
-          }
-  
-          .side_tab_lank_box li{
-            float:left; width:70px; 
-            font-size:1.2rem; line-height: 15px;
-          }
-  
-          .side_tab_lank_box li.current{
-            border-bottom:3px solid #366f9c;
-            box-sizing: border-box;
-          }
+
+        .side_tab_lank_box ul{
+          width:100%; height:100%;
+        }
+
+        .side_tab_lank_box li{
+          width:100%; height:30px; 
+          font-size:1.2rem; line-height: 30px;
+          border-bottom:1px solid #ccc; 
+          box-sizing: border-box;
+        }
+
+        .side_tab_lank_box li.current{
+          background-color:#4A96D2; color:#fff; 
+        }
   
           .side_tab_content_lank{
             display:none;
@@ -275,22 +290,28 @@
       /* ================ 하단탭_3 ======================= */
 
         .side_tab_store_box{
-          margin-left: 20px;
-          width:280px; height:30px;
+          display:none;
+          position: absolute; z-index:100000;
+          right:25.33%; 
+          width:100px; height:90px;
+          background-color: #fff;
+          border:1px solid #ccc;
         }
-            .side_tab_store_box ul{
-              width:100%; height:100%;
-            }
-    
-            .side_tab_store_box li{
-              float:left; width:70px; 
-              font-size:1.2rem; line-height: 15px;
-            }
-    
-            .side_tab_store_box li.current{
-              border-bottom:3px solid #366f9c;
-              box-sizing: border-box;
-            }
+
+          .side_tab_store_box ul{
+            width:100%; height:100%;
+          }
+
+          .side_tab_store_box li{
+            width:100%; height:30px; 
+            font-size:1.2rem; line-height: 30px;
+            border-bottom:1px solid #ccc; 
+            box-sizing: border-box;
+          }
+
+          .side_tab_store_box li.current{
+            background-color:#4A96D2; color:#fff; 
+          }
     
             .side_tab_content_store{
               display:none;
@@ -302,23 +323,31 @@
 
         /* ================ 하단탭_4 ======================= */
 
+        #tab-5{position: relative;}
+
         .side_tab_myinfo_box{
-          margin-left: 20px;
-          width:auto; height:30px;
+
+          position: absolute; z-index:100000;
+          right:4%; 
+          width:100px; height:150px;
+          background-color: #fff;
+          border:1px solid #ccc;
         }
-            .side_tab_myinfo_box ul{
-              width:100%; height:100%;
-            }
-    
-            .side_tab_myinfo_box li{
-              float:left; width:120px; 
-              font-size:1.2rem; line-height: 15px;
-            }
-    
-            .side_tab_myinfo_box li.current{
-              border-bottom:3px solid #366f9c;
-              box-sizing: border-box;
-            }
+
+          .side_tab_myinfo_box ul{
+            width:100%; height:100%;
+          }
+
+          .side_tab_myinfo_box li{
+            width:100%; height:30px; 
+            font-size:1.2rem; line-height: 30px;
+            border-bottom:1px solid #ccc; 
+            box-sizing: border-box;
+          }
+
+          .side_tab_myinfo_box li.current{
+            background-color:#4A96D2; color:#fff; 
+          }
     
             .side_tab_content_myinfo{
               display:none;
@@ -380,9 +409,8 @@
   /* ============ .board_3 : 거래순위 ============ */
 
     .lankBox{
-      width:90%; height:200px;
-      margin:auto;
-      margin-top: 50px; margin-bottom: 20px;
+      width:90%; height:100%;
+      margin:auto; 
     }
 
       .lankBox > thead > tr > th{font-weight: normal;}
@@ -419,7 +447,8 @@
 
     .all_store{
       width:800px; height:100%;
-      margin: auto; margin-top: 40px;
+      margin: auto; padding-top:40px;
+      box-sizing: border-box;
     }
 
       .all_store ul{
@@ -467,9 +496,11 @@
 
   /* ============ .board_5 : 나의 정보 ============ */
 
+  .side_tab_content_myinfo{width:100%; height:100%; padding-top: 100px; box-sizing: border-box;}
+
     .profile{
-      width:70%; height:90%;
-      margin:auto; margin-top: 100px;
+      width:70%; height:auto;
+      margin:auto; 
     }
 
       .profile > tbody > tr {height:30px;}
