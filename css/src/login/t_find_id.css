@@ -1,0 +1,108 @@
+/* t_find_idpw.css */
+
+#wrap {
+  position: fixed;
+  top:0; right:0; left:0; bottom:0;
+  width: 500px; height:700px;
+  margin:auto;
+  padding:40px; box-sizing: border-box;
+  border:10px solid #f5f6f7;
+}
+
+h1{
+  text-align: center; margin-bottom:40px;
+  font-size:1.5rem;
+}
+
+
+/* ----- tabBox ------------------------ */
+#tabBox{
+  width: 100%; height:auto;
+  margin:auto; 
+}
+
+  .tab{
+    width:60%; height:40px;
+    margin:auto; margin-bottom: 10px;
+  }
+
+    .tab li{
+      float:left; width:50%; height:40px; 
+      background-color: #E6E6E6;
+    }
+
+      .tab li a{
+        display:inline-block;
+        text-align: center;
+        text-decoration: none;
+        line-height: 40px; 
+      }
+
+  .tab_content{
+    display:none;
+    width:100%; height:200px;
+  }
+
+    ul.tab li.current{
+      background-color: #4694D1;
+      color:#fff;
+      box-sizing: border-box;
+    }
+
+    .tab_content.current{
+      display:block;
+    }
+
+/* ----- id_find_tab ------------------------ */
+
+.id_find_tab{
+  width:100%; height:30px;
+  line-height: 30px;
+  margin:20px 0 10px 0;
+  color:#333; font-weight: 700;
+}
+
+.n-form-item{
+  position: relative;
+  width:100%; height:92px;
+  color:#333;
+}
+
+  .n-form-item > input{
+    margin-top: 5px;
+    width:100%; height:40px;
+  }
+
+  .n-form-item > p {
+    font-size:0.9rem; color:#ae0000;
+  }
+
+  .member-btn{
+    width:240px; height:40px;
+    margin:auto; margin-top: 50px;
+  }
+
+    .member-btn > button{
+      width:240px; height:40px;
+      background-color: #4694D1; color:#fff;
+    }
+
+  
+  #phoneNumber{width:320px;}
+
+  .btn{
+    float:right;
+    width:72px; height:40px;
+    margin-top: 5px;
+    background-color: #9F9F9F;
+    color:#fff;
+    font-size:0.9rem;
+  }
+
+  .time{position: absolute; top:37%; right:5%;}
+
+/*  ============================================ 반응형 ============================================ */
+/* width: 0 ~ 639px (모바일 환경 기준) */
+@media screen and (max-width: 639px) {
+  
+}

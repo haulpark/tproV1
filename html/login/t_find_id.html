@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="../../css/base/reset.css">
 <link rel="stylesheet" href="../../css/base/common.css">
 
-<link rel="stylesheet" href="../../css/src/login/t_find_idpw.css">
+<link rel="stylesheet" href="../../css/src/login/t_find_id.css">
 
 <!--[if IE]>
 <script src="./ie/html5shive/dist/html5shive.min.js"></script>
@@ -25,8 +25,8 @@
 
   <div id="tabBox">
     <ul class="tab">
-      <li class="current" data-tab="tab1"><a href="#">아이디 찾기</a></li>
-      <li data-tab="tab2"><a href="#">비밀번호 찾기</a></li>
+      <li class="current" data-tab="tab1"><a href="./t_find_id.html">아이디 찾기</a></li>
+      <li data-tab="tab2"><a href="./t_find_pw.html">비밀번호 찾기</a></li>
     </ul>
 
     <div id="tab1" class="tab_content current">
@@ -63,50 +63,6 @@
       </div>
       
     </div>
-
-    <!-- ================================ 비밀번호 찾기 탭 ================================ -->
-    <div id="tab2" class="tab_content">
-      <div class="pw_find_tab">
-        <p>휴대전화 인증</p>
-      </div>
-
-      <!-- 비밀번호 찾기(휴대전화 인증으로 찾기) -->
-      <div class="n-form-item">
-        <label for="pwId">아이디</label>
-          <input type="text" class="n-input" placeholder="아이디를 입력해주세요." id="pwmemberId" name="memberId" minlength="3" maxlength="20" value="" style="padding-right: 0px;">
-          <p class="n-validation" id="pwsearchValidMemberId" style="display: none">존재하지 않는 아이디입니다.</p>
-      </div>
-
-      <div class="n-form-item">
-        <label for="pwName">이름</label>
-          <input type="text" class="n-input" id="pwmemberName" name="memberName" placeholder="이름을 입력해주세요." style="padding-right:0px;">
-          <p class="n-validation" id="pwsearchValidMemberName" style="display: none;">이름을 입력해 주세요</p>
-      </div>
-
-      <div class="n-form-item tel-area" id="input-div">
-        <label for="pwPhone">휴대전화번호</label>
-          <input type="tel" class="n-input" placeholder="휴대전화번호를 입력해주세요.(-없이)" minlength="10" maxlength="11" id="pwphoneNumber" name="phoneNumber">
-          <button type="button" class="btn" id="pwsendCertPhoneBtn">인증요청</button>
-          <button type="button" class="btn" id="pwreSendCertPhoneBtn" style="display: none">다시받기</button>
-          <p class="n-validation" id="pwsearchValidPhone" style="display: none">전화번호 형식이 올바르지 않습니다.</p>
-      </div>
-
-     
-      <div class="n-form-item tel-cert-area" id="pwphoneCertification">
-        <label for="pwAu">인증번호</label>
-          <input type="text" class="n-input" placeholder="인증번호를 입력해주세요." id="pwcertNumber" minlength="5" maxlength="5">
-          <div class="time">01:00</div>
-      </div>
-
-      <div class="memberPw-btn">
-          <button type="button" class="n-btn btn-primary" id="searchpwBtn" disabled>비밀번호 찾기</button>
-      </div>
-
-      <div class="n-layer-dimm"></div>
-
-    </div>
-  </div>
-
 </div>
 
 <!--script -->
@@ -114,6 +70,5 @@
   <script src="../../js/base/jquery-ui.min.js"></script>
 
   <script src="../../js/src/login/t_find_id.js"></script>
-  <script src="../../js/src/login/t_find_pw.js"></script>
 </body>
 </html>
