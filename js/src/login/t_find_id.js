@@ -59,6 +59,8 @@ $(function(){
             return false;
         }
 
+        
+
         setTimeout(function(){
             mss.my.ajax.call(
                 {
@@ -226,14 +228,13 @@ function phoneValidation() {
     return true;
 }
 
-
         var timer = null;
         var isRunning = false;
         $(function(){
 
                 $("#sendCertPhoneBtn").click(function(e){
                 var display = $('.time');
-                var leftSec = 2;
+                var leftSec = 59;
                 // 남은 시간
                 // 이미 타이머가 작동중이면 중지
                 if (isRunning){
@@ -263,14 +264,12 @@ function phoneValidation() {
                     // 타이머 끝
                     if (--count < 0) {
                     display.html("시간초과");
-                    $("#searchVailidCertNumber").style.display = 'block';
+                    $("#searchVailidCertNumber").show();
                     isRunning = false;
                     }
                 }, 1000);
                     isRunning = true;
         }
 
+
 });
-
-
-//--비밀번호 찾기----------------------------------

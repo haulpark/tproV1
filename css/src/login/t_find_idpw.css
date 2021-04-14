@@ -89,6 +89,7 @@ h1{
 
   
   #phoneNumber{width:320px;}
+  #pwphoneNumber{width:320px;}
 
   .btn{
     float:right;
@@ -100,8 +101,6 @@ h1{
   }
 
   .time{position: absolute; top:37%; right:5%;}
-
-  
 
 /* ----- pw_find_tab ------------------------ */
 
