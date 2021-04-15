@@ -99,15 +99,50 @@
       <div class="board_tab">
         <ul class="tabs">
           <li class="tab-link current" id="tab_menu_1" data-tab="tab-1"><span>홈</span></li>
-          <li class="tab-link" id="tab_menu_2" data-tab="tab-2"><span>거래내역</span></li>
-          <li class="tab-link" id="tab_menu_3" data-tab="tab-3"><span>거래순위</span></li>
-          <li class="tab-link" id="tab_menu_4" data-tab="tab-4"><span>상점</span></li>
-          <li class="tab-link" id="tab_menu_5" data-tab="tab-5"><span>내 정보</span></li>
+          <li class="tab-link" id="tab_menu_2" data-tab="tab-2">
+            <dl class="side_tab_box">
+              <dt class="side_tab_box_dt">거래내역</dt>
+              <dd class="side_tab_link current" data-tab="side_tab_1">일일</dd>
+              <dd class="side_tab_link" data-tab="side_tab_2">주간</dd>
+              <dd class="side_tab_link" data-tab="side_tab_3">월</dd>
+              <dd class="side_tab_link" data-tab="side_tab_4">기간설정</dd>
+            </dl>
+          </li>
+
+          <li class="tab-link" id="tab_menu_3" data-tab="tab-3">
+            <dl class="side_tab_lank_box">
+              <dt class="side_tab_lank_box_dt">거래순위</dt>
+              <dd class="side_tab_link_lank current" data-tab="side_tab_lank_1">일일</dd>
+              <dd class="side_tab_link_lank" data-tab="side_tab_lank_2">주간</dd>
+              <dd class="side_tab_link_lank" data-tab="side_tab_lank_3">월</dd>
+              <dd class="side_tab_link_lank" data-tab="side_tab_lank_4">기간설정</dd>
+            </dl>
+          </li>
+
+          <li class="tab-link" id="tab_menu_4" data-tab="tab-4">
+            <dl class="side_tab_store_box">
+              <dt class="side_tab_store_box_dt">상점</dt>
+              <dd class="side_tab_link_store current" data-tab="side_tab_store_1">전체</dd>
+              <dd class="side_tab_link_store" data-tab="side_tab_store_2">충전</dd>
+              <dd class="side_tab_link_store" data-tab="side_tab_store_3">편의</dd>
+            </dl>
+          </li>
+
+          <li class="tab-link" id="tab_menu_5" data-tab="tab-5">
+            <dl class="side_tab_myinfo_box">
+              <dt class="side_tab_myinfo_box_dt">내 정보</dt>
+              <dd class="side_tab_link_myinfo current" data-tab="side_tab_myinfo_1">기본등록정보</dd>
+              <dd class="side_tab_link_myinfo" data-tab="side_tab_myinfo_2">거래등록정보</dd>
+              <dd class="side_tab_link_myinfo" data-tab="side_tab_myinfo_3">거래내역자료</dd>
+              <dd class="side_tab_link_myinfo" data-tab="side_tab_myinfo_4">상품구매내역</dd>
+              <dd class="side_tab_link_myinfo" data-tab="side_tab_myinfo_5">소명자료요청</dd>
+            </dl>
+          </li>
         </ul>
+     
 
         <!-- ============== tab-1 : 홈 ========================= -->
         <div id="tab-1" class="tab-content current">
-
           <div class="graph" >
             <canvas id="myChart" width="400" height="200"></canvas>
           </div>
@@ -155,15 +190,6 @@
         </div>
         <!-- ============== tab-2 : 거래내역 ========================= -->
         <div id="tab-2" class="tab-content tab-2">
-          <div class="side_tab_box">
-            <ul class="side_tabs">
-              <li class="side_tab_link current" data-tab="side_tab_1">일일</li>
-              <li class="side_tab_link" data-tab="side_tab_2">주간</li>
-              <li class="side_tab_link" data-tab="side_tab_3">월</li>
-              <li class="side_tab_link" data-tab="side_tab_4">기간설정</li>
-            </ul>
-          </div>
-
           <div id="side_tab_1" class="side_tab_content current">
             <div class="period_content">
               <ul>
@@ -364,15 +390,6 @@
 
         <!-- ============== tab-3 : 거래순위 ========================= -->
         <div id="tab-3" class="tab-content">
-          <div class="side_tab_lank_box">
-            <ul class="side_tabs_lank">
-              <li class="side_tab_link_lank current" data-tab="side_tab_lank_1">일일</li>
-              <li class="side_tab_link_lank" data-tab="side_tab_lank_2">주간</li>
-              <li class="side_tab_link_lank" data-tab="side_tab_lank_3">월</li>
-              <li class="side_tab_link_lank" data-tab="side_tab_lank_4">기간설정</li>
-            </ul>
-          </div>
-  
           <div id="side_tab_lank_1" class="side_tab_content_lank current">
             <table class="lankBox">
               <thead>
@@ -632,13 +649,7 @@
 
         <!-- ============== tab-4 : 상점 ========================= -->
         <div id="tab-4" class="tab-content">
-          <div class="side_tab_store_box">
-            <ul class="side_tabs_store">
-              <li class="side_tab_link_store current" data-tab="side_tab_store_1">전체</li>
-              <li class="side_tab_link_store" data-tab="side_tab_store_2">충전</li>
-              <li class="side_tab_link_store" data-tab="side_tab_store_3">편의</li>
-            </ul>
-          </div>
+          
 
           <div id="side_tab_store_1" class="side_tab_content_store current">
             <div class="all_store">
@@ -692,49 +703,39 @@
 
         <!-- ============== tab-5 : 내 정보 ========================= -->
         <div id="tab-5" class="tab-content">
-          <div class="side_tab_myinfo_box">
-            <ul class="side_tabs_myinfo">
-              <li class="side_tab_link_myinfo current" data-tab="side_tab_myinfo_1">기본등록정보</li>
-              <li class="side_tab_link_myinfo" data-tab="side_tab_myinfo_2">거래등록정보</li>
-              <li class="side_tab_link_myinfo" data-tab="side_tab_myinfo_3">거래내역자료</li>
-              <li class="side_tab_link_myinfo" data-tab="side_tab_myinfo_4">상품구매내역</li>
-              <li class="side_tab_link_myinfo" data-tab="side_tab_myinfo_5">소명자료요청</li>
-            </ul>
-          </div>
-
           <div id="side_tab_myinfo_1" class="side_tab_content_myinfo current">
-            <table class="profile">
-              <tbody>
-                <tr>
-                  <th>이름</th>
-                  <td>박지훈</td>
-                </tr>
-                <tr>
-                  <th>아이디</th>
-                  <td>parkBon</td>
-                </tr>
-                <tr>
-                  <th>전화</th>
-                  <td>01077469000</td>
-                </tr>
-                <tr>
-                  <th>이메일</th>
-                  <td>Haulpark@gamil.com</td>
-                </tr>
-                <tr>
-                  <th>등록센터</th>
-                  <td>서울강남센터</td>
-                </tr>
-                <tr>
-                  <th>가입일</th>
-                  <td>2021.04.06</td>
-                </tr>
-                <tr>
-                  <th>추천인</th>
-                  <td>김진철(Eagler)</td>
-                </tr>
-              </tbody>
-            </table>
+              <table class="profile">
+                <tbody>
+                  <tr>
+                    <th>이름</th>
+                    <td>박지훈</td>
+                  </tr>
+                  <tr>
+                    <th>아이디</th>
+                    <td>parkBon</td>
+                  </tr>
+                  <tr>
+                    <th>전화</th>
+                    <td>01077469000</td>
+                  </tr>
+                  <tr>
+                    <th>이메일</th>
+                    <td>Haulpark@gamil.com</td>
+                  </tr>
+                  <tr>
+                    <th>등록센터</th>
+                    <td>서울강남센터</td>
+                  </tr>
+                  <tr>
+                    <th>가입일</th>
+                    <td>2021.04.06</td>
+                  </tr>
+                  <tr>
+                    <th>추천인</th>
+                    <td>김진철(Eagler)</td>
+                  </tr>
+                </tbody>
+              </table>
           </div>
 
           <div id="side_tab_myinfo_2" class="side_tab_content_myinfo">

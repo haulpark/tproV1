@@ -194,53 +194,7 @@
       border-radius:0; border:0;
       border-bottom:3px solid #425067;
     }
- /* ========= #side_tab(하단 탭)_1 ========= */
-
-  .side_tab_box{
-    margin-left: 20px;
-    width:auto; height:30px;
-  }
-
-    .side_tab_box li{
-      float:left; width:60px; 
-      font-size:1rem; line-height: 20px;
-    }
-
- /* ========= #side_tab(하단 탭)_2 ========= */
-
-  .side_tab_lank_box{
-    margin-left: 20px;
-    width:auto; height:30px;
-  }
-
-    .side_tab_lank_box li{
-      float:left; width:60px; 
-      font-size:1rem; line-height: 20px;
-    }
-
- /* ========= #side_tab(하단 탭)_3 ========= */
-
- .side_tab_store_box{
-  margin-left: 20px;
-  width:auto; height:30px;
-}
-
-  .side_tab_store_box li{
-    float:left; width:60px; 
-    font-size:1rem; line-height: 20px;
-  } 
- /* ========= #side_tab(하단 탭)_4 ========= */
-
- .side_tab_myinfo_box{
-  margin-left: 10px;
-  width:auto; height:30px;
-}
-
-  .side_tab_myinfo_box li{
-    float:left; width:105px; 
-    font-size:0.9rem; line-height: 20px;
-  }
-
+    
   /* ============ .board_2 : 거래내역 ============ */
   .period_content{
     width:500px; height:40px;

@@ -13,75 +13,75 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 	});
 
-	$('#tab_menu_2').click(function(){
-		$('.side_tab_box').fadeIn();
+	$('.side_tab_box_dt').click(function(){
+		$('.side_tab_link').fadeIn();
 	});
 
-	$('#tab_menu_3').click(function(){
-		$('.side_tab_lank_box').fadeIn();
-	});
-
-
-	$('#tab_menu_4').click(function(){
-		$('.side_tab_store_box').fadeIn();
+	$('.side_tab_lank_box_dt').click(function(){
+		$('.side_tab_link_lank').fadeIn();
 	});
 
 
-	$('#tab_menu_5').click(function(){
-		$('.side_tab_myinfo_box').fadeIn();
+	$('.side_tab_store_box_dt').click(function(){
+		$('.side_tab_link_store').fadeIn();
+	});
+
+
+	$('.side_tab_myinfo_box_dt').click(function(){
+		$('.side_tab_link_myinfo').fadeIn();
 	});
 
 	// ============== side tab 1 ==============
-	$('ul.side_tabs li').click(function(){
+	$('dl.side_tab_box dd').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
-		$('ul.side_tabs li').removeClass('current');
+		$('dl.side_tab_box dd').removeClass('current');
 		$('.side_tab_content').removeClass('current');
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
 
-		$('.side_tab_box').hide();
+		$('.side_tab_link').hide();
 	});
 
 	// ============== side tab 2 ==============
-	$('ul.side_tabs_lank li').click(function(){
+	$('dl.side_tab_lank_box dd').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
-		$('ul.side_tabs_lank li').removeClass('current');
+		$('dl.side_tab_lank_box dd').removeClass('current');
 		$('.side_tab_content_lank').removeClass('current');
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
 
-		$('.side_tab_lank_box').hide();
+		$('.side_tab_link_lank').hide();
 	});
 
 	// ============== side tab 3 ==============
-	$('ul.side_tabs_store li').click(function(){
+	$('dl.side_tab_store_box dd').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
-		$('ul.side_tabs_store li').removeClass('current');
+		$('dl.side_tab_store_box dd').removeClass('current');
 		$('.side_tab_content_store').removeClass('current');
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
 
-		$('.side_tab_store_box').hide();
+		$('.side_tab_link_store').hide();
 	});
 
 
 	// ============== side tab 4 ==============
-	$('ul.side_tabs_myinfo li').click(function(){
+	$('dl.side_tab_myinfo_box dd').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
-		$('ul.side_tabs_myinfo li').removeClass('current');
+		$('dl.side_tab_myinfo_box dd').removeClass('current');
 		$('.side_tab_content_myinfo').removeClass('current');
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
 
-		$('.side_tab_myinfo_box').hide();
+		$('.side_tab_link_myinfo').hide();
 	});
 
 });
