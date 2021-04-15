@@ -15,19 +15,31 @@ $(document).ready(function(){
 
 	$('.side_tab_box_dt').click(function(){
 		$('.side_tab_link').fadeIn();
+		$('.side_tab_link_lank').hide();
+		$('.side_tab_link_store').hide();
+		$('.side_tab_link_myinfo').hide();
 	});
 
 	$('.side_tab_lank_box_dt').click(function(){
+		$('.side_tab_link').hide();
 		$('.side_tab_link_lank').fadeIn();
+		$('.side_tab_link_store').hide();
+		$('.side_tab_link_myinfo').hide();
 	});
 
 
 	$('.side_tab_store_box_dt').click(function(){
+		$('.side_tab_link').hide();
+		$('.side_tab_link_lank').hide();
 		$('.side_tab_link_store').fadeIn();
+		$('.side_tab_link_myinfo').hide();
 	});
 
 
 	$('.side_tab_myinfo_box_dt').click(function(){
+		$('.side_tab_link').hide();
+		$('.side_tab_link_lank').hide();
+		$('.side_tab_link_store').hide();
 		$('.side_tab_link_myinfo').fadeIn();
 	});
 
