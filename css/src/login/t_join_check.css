@@ -24,31 +24,26 @@ h1{
 .user_info { margin-bottom: 18px;}
 .user_certi { margin-bottom:30px; }
 
-
-
-
 .joinBox dl {
 	width: 100%; height:auto; min-height: 78px;
 	margin-bottom: 16px;
 }
 .joinBox dl:last-of-type{
 	margin-bottom: 0;
-}
+} 
 
 .joinBox dl.error .end_icon,
-.joinBox dl.error .confirm_text{display:block;	color:#ae0000; }
+.joinBox dl.error .confirm_text{display:block; color:#ae0000; }
 
 .joinBox dl.success .end_icon,
 .joinBox dl.success .confirm_text {display:block;	color:#4a98d3; }
-
-.joinBox dl.success .input_area{border:2px solid #4a98d3;}
 
 .joinBox dt{ 
 	width: 100%; height: 18px; margin-bottom: 10px; 
 	font-size:1rem;
 	text-indent:0.2rem;
 }
-.input_area{ 
+.input_area{
 	position: relative;
 	width: 100%; height: 50px; 
 	background-color: #fff;
@@ -63,38 +58,12 @@ h1{
 
 .input_area div {
 	float:left;
-	padding:10px; box-sizing: border-box;
+	padding:5px; box-sizing: border-box;
 	width: 100%; height: 100%;
 }
 
-.user_set .input_area div {	width: 70%; }
-
-.birth .input_area {
-	border:0;
-	background-color: transparent;
-}
-
-.birth .input_area div {
-	float:left; 
-	width:30%; 
-	margin-right:5%;
-	background-color: #fff;
-	border:1px solid #dadada;
-}
-
-.birth .input_area div:last-of-type {
-	margin-right:0;
-}
-
-.user_certi .input_area {
-	margin-bottom:10px;
-}
-.user_certi .input_area:last-of-type{
-	margin-bottom: 0;
-}
-
 .confirm_send .input_area{
-	width:280px; height:60px;
+	width:160px; height:50px;
 	margin:auto; margin-top: 50px;
 	padding-right: 0;
 }
@@ -135,12 +104,33 @@ h1{
 	display:none;
 }
 
+.id_input{
+	float:left;
+	width:47%;
+}
+
+.email_side{
+	float:left;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+	width:6%;}
+
+.emailBox{
+	float:right;
+	width:47%;}
+
+#email{
+	width:100%; height:50px;
+	border:1px solid #ccc;
+}
+
 /* ----------------------- */
 
 .confirm_text {
 	display: none;
-	margin-top: 5px;
-	width: 100%; height:25px;
+	margin-top: 10px;
+	width: 100%; height:10px;
 	font-size:0.875rem;
 	line-height: 15px;
 	color:#777;

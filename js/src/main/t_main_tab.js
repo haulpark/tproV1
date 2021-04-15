@@ -43,6 +43,13 @@ $(document).ready(function(){
 		$('.side_tab_link_myinfo').fadeIn();
 	});
 
+	$('#tab_menu_1').click(function(){
+		$('.side_tab_link').hide();
+		$('.side_tab_link_lank').hide();
+		$('.side_tab_link_store').hide();
+		$('.side_tab_link_myinfo').hide();
+	});
+
 	// ============== side tab 1 ==============
 	$('dl.side_tab_box dd').click(function(){
 		var tab_id = $(this).attr('data-tab');

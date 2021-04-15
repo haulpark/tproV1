@@ -52,14 +52,14 @@
       </div>
 
       <div class="n-form-item tel-cert-area" id="phoneCertification">
-        <label for="idnumber">인증번호</label>
+        <label for="idnumber" class="cert_title">인증번호</label>
         <input type="text" class="n-input" placeholder="인증번호를 입력해주세요." id="certNumber" minlength="5" maxlength="5">
-        <div class="time">01:00</div>
-        <p class="n-validation" id="searchValidCertNumber">유효시간이 초과되었습니다.</p>
+        <button type="button" class="btn" id="authSmsBtn">확인</button>
+        
       </div>
 
       <div class="member-btn">
-        <button type="button" class="n-btn btn-primary" id="searchIdBtn" disabled>아이디 찾기</button>
+        <button type="submit" class="n-btn btn-primary" id="searchIdBtn" disabled>아이디 찾기</button>
       </div>
       
     </div>

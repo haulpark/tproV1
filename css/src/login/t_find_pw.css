@@ -91,8 +91,9 @@ h1{
       background-color: #4694D1; color:#fff;
     }
 
+  .pwCert{float:left; width:100%;}
   #phoneNumber{width:320px;}
-  #certNumber{width:320px;}
+  #certNumber{float:left; width:320px;}
 
   .btn{
     float:right;

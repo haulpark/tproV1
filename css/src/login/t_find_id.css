@@ -87,8 +87,9 @@ h1{
       background-color: #4694D1; color:#fff;
     }
 
-  
+  .cert_title{float:left; width:100%;}
   #phoneNumber{width:320px;}
+  #certNumber{width:320px;}
 
   .btn{
     float:right;
@@ -99,7 +100,6 @@ h1{
     font-size:0.9rem;
   }
 
-  .time{position: absolute; top:37%; right:5%;}
 
 /*  ============================================ 반응형 ============================================ */
 /* width: 0 ~ 639px (모바일 환경 기준) */

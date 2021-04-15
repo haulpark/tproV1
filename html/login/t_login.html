@@ -26,12 +26,19 @@
 
       <h1>Trading Pro V1</h1>
 
-      <form class="login_form">
-        <div class="form_box"><span>아이디</span> <input type="id"></div>
-        <div class="form_box"><span>비밀번호</span> <input type="password"></div>
-      </form>
+      <form class="login_form" action="login.jsp">
+        <div class="form_box">
+          <span>아이디</span> 
+          <input type="email" name="id" value="">
+        </div>
 
-      <button type="submit" class="login">로그인</button>
+        <div class="form_box">
+          <span>비밀번호</span>
+          <input type="password" name="pwd" value="">
+        </div>
+
+        <button type="submit" class="login">로그인</button>
+      </form>
 
       <div class="login_find">
         <ul>
