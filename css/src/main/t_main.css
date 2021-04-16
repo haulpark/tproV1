@@ -50,6 +50,8 @@
       animation-iteration-count: infinite;
     }
 
+    .slideBar > a {color:#333;}
+
     .slideBar_act{color:#4A96D2; font-weight: bold;}
     
     @keyframes slidein {
@@ -76,15 +78,6 @@
 
     .unb_bold{font-weight:bold;}
     .unb_act{font-weight:bold; color:#4A96D2;}
-
-
-/* ================================== #noticeBox =================================== */
-#noticeBox{
-  width:80%; height:200px;
-  margin:auto; margin-top: 30px;
-  box-shadow:0 0.5rem 1rem #ccc;
-}
-
 
 /* =================================== #viewBox =================================== */
   #viewBox{

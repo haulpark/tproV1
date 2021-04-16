@@ -1,0 +1,97 @@
+/* t_main_notice.css */
+
+#wrap{
+  width:100%; height:auto;
+  padding:50px; box-sizing: border-box;
+  background-color: #fbfbfb;
+}
+
+.mob_menu{display:none;}
+
+.visualize-key{display:none;}
+
+/* =================================== #headBox =================================== */
+  #headBox{
+    width:80%; height:7vw;
+    margin:auto;
+    box-shadow:0 0.5rem 1rem #ccc;
+    padding:5px 30px; box-sizing: border-box;
+  }
+
+    .logo{
+      float:left;
+      margin:auto;
+      height:6vw;
+      background-image: url(../../../img/image/trade_logo.png);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 90%;
+    }
+
+    .title{
+      height:3vw;
+      font-weight: bold;
+      font-size:1.5rem;
+      line-height: 3.5vw;
+    }
+
+    .mob_icon{display:none;}
+
+    .slideBar{
+      float:left;
+      height:3vw;
+      margin-left: 10px;
+      border:2px solid #ccc;
+      box-sizing: border-box;
+      line-height: 3vw;
+      font-size:1.2rem;
+      animation-duration: 3s;
+      animation-name: slidein;
+      animation-iteration-count: infinite;
+    }
+
+    .slideBar > a {color:#333;}
+
+    .slideBar_act{color:#4A96D2; font-weight: bold;}
+    
+    @keyframes slidein {
+      from {
+        opacity:0;
+      }
+    
+      to {
+       opacity: 1;
+     }
+    }
+
+  .mob_slideBar{display:none;}
+
+    .unb{
+      color:#333;
+      font-weight:300;
+      height:3vw;
+      text-align: right;
+      font-size:1.2rem;
+      line-height:1.5vw;
+
+    }
+
+    .unb_bold{font-weight:bold;}
+    .unb_act{font-weight:bold; color:#4A96D2;}
+
+/* =================================== #viewBox =================================== */
+#viewBox{
+  width:80%; height:717px;
+  margin:auto; margin-top: 30px;
+}
+
+  .noticeBox{
+    width:100%; height:700px;
+    box-shadow:0 0.5rem 1rem #ccc;
+    padding:10px 20px; box-sizing: border-box;
+  }
+
+    h1{font-size:1.2rem; margin-bottom: 30px;}
+
+  .pagination > li {float:left; width:40px;}
+
