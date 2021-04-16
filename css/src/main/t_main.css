@@ -31,8 +31,8 @@
     .title{
       height:3vw;
       font-weight: bold;
-      font-size:1.8rem;
-      line-height: 3vw;
+      font-size:1.5rem;
+      line-height: 3.5vw;
     }
 
     .mob_icon{display:none;}
@@ -44,7 +44,7 @@
       border:2px solid #ccc;
       box-sizing: border-box;
       line-height: 3vw;
-      font-size:1.3rem;
+      font-size:1.2rem;
       animation-duration: 3s;
       animation-name: slidein;
       animation-iteration-count: infinite;
@@ -104,7 +104,6 @@
       float:right;
       width:67%; height:100%;
       box-shadow:0 0.5rem 1rem #ccc; 
-      padding:30px; box-sizing: border-box;
     }
 
       .user_percent{
@@ -140,13 +139,13 @@
           }
 
           .class_p{
-            font-size:1.5rem;
+            font-size:1.2rem;
             line-height:110px;
           }
 
         .class_ex{
           float:left; height:60px;
-          font-size:1.6rem;
+          font-size:1.3rem;
           margin-top: 25px;
         }
 
@@ -159,25 +158,28 @@
           }
 
       .graph{
-        width:40%; margin:20px auto;
+        width:60%; margin:20px auto;
       }
 
         #data{
-          width:100%; height:180px; 
+          width:100%; height:180px;
           margin:auto; font-size:1.4rem;
         }
 
         #data > thead > tr > td, th{
-          font-size:1rem; text-align: center;
+          text-align: center;
           background-color: #aaa;
-          color:#fff;
+          color:#000;
+          border:1px solid #D4D4D4;
+          font-size:1.2rem; height:30px;
+          font-weight: normal;
         }
 
         #data > tbody > tr > td{
-          font-size:1.2rem; text-align: right;
+          font-size:1.1rem; text-align: right; border:1px solid #D4D4D4; height:30px;
         }
         
-        .td_1{background-color: #eee;}
+        .td_1{background-color: #eee; }
 
 /* ================ tab Box 기능 구현 ======================= */
       /* ================ 상단탭 ======================= */
@@ -191,12 +193,12 @@
 
         .board_tab li{
           float:left; width:20%; height:100%;
-          font-size:1.8rem; text-align: center;
+          font-size:1.2rem; text-align: center;
           line-height:60px; /*overflow:hidden;*/
         }
 
         .board_tab li > dl {width:100%; height:auto;}
-        .board_tab ul > li > dl > dt {line-height: 60px; font-weight: 400;  color:#333;}
+        .board_tab ul > li > dl > dt {line-height: 60px; font-weight: 400; color:#333;}
         .board_tab li.current dt{color:#366f9c; font-weight: 500;}
 
         .board_tab > ul > li > dl > dd{
@@ -204,7 +206,7 @@
           position: relative; z-index: 1000;
           width:100px; height:30px;
           margin:auto;
-          font-size: 1.2rem; line-height: 30px;
+          font-size: 1rem; line-height: 30px;
           background-color: #fff;
           border:1px solid #ccc;
         }
@@ -217,15 +219,13 @@
 
         .tab-content{
           display:none;
+          padding:20px; box-sizing: border-box;
+          padding-top: 0;
         }
 
         .tab-content.current{
           display:inherit;
         }
-
-      #tab_1{
-         width:100%; height:auto;
-      }
 
 /* ================ //tab Box 기능 구현 ===================== */
     
@@ -243,7 +243,8 @@
     .period_content{
       float:right;
       width:300px; height:50px;
-      margin-bottom: 10px;
+      margin-top: 25px;
+      margin-bottom: 25px;
     }
 
       .period_content > ul{width:100%; height:100%;}
@@ -255,28 +256,27 @@
 
   /* ======= 거래내역 표 ======= */
     #periodBox{
-      width:100%; height:200px; margin:auto;
+      width:100%; height:340px; margin:auto;
     }
 
-      #periodBox {border:2px solid #ccc;}
-      #periodBox > thead > tr > th{font-size:1rem; font-weight: normal;}
+      #periodBox > thead > tr > th{font-size:1.1rem; font-weight: normal; height:30px;}
         .p_th_title{width:10%;}
         .p_th_title_1{width:10%;}
         .p_th_title_2{width:10%;}
         .p_th_title_3{width:25%;}
         .p_th_title_4{width:15%;}
 
-      #periodBox > tbody > tr > th{font-size:1rem; font-weight: normal;}
-      #periodBox > tbody > tr > td{font-size:1rem; font-weight: normal; text-align: center;}
-      #periodBox > tbody > tr > td:nth-child(4){text-align: right;}
+      #periodBox > tbody > tr > th{font-size:1.1rem; font-weight: normal;}
+      #periodBox > tbody > tr > td{font-size:1rem; font-weight: normal; text-align: center; border:1px solid #D4D4D4;}
+      #periodBox > tbody > tr > td:nth-child(4){text-align: right; padding-right:10px; box-sizing: border-box;}
 
     .p_indicator{
-      width:180px; height:30px;
+      width:180px; height:60px;
       margin:auto; 
     }
 
     .p_indicator ul{width:100%; height:100%}
-    .p_indicator li{width:20px; font-size:1rem; line-height: 30px;}
+    .p_indicator li{width:20px; font-size:1rem; line-height: 60px;}
 
     /* 어디서 오류난지 모르겠음 */
     .p_indicator li:nth-child(6){padding:0;}
@@ -285,10 +285,6 @@
     .p_indicator a{color:#333;}
 
   /* ============ .board_3 : 거래순위 ============ */
-
-  #tab-3{
-    padding:50px 0; box-sizing: border-box;
-  }
 
   .side_tab_content_lank{
     display:none;
@@ -299,15 +295,15 @@
   }
 
     .lankBox{
-      width:90%; height:100%;
-      margin-top: 100px;
-      margin:auto; 
+      width:100%; height:auto;
+      margin:auto; margin-top: 25px;
     }
 
-      .lankBox > thead > tr > th{font-weight: normal;}
-      .lankBox > tbody > tr > td{text-align: center; font-size:1.2rem;}
+      .lankBox > thead > tr > th{font-weight: normal; height:30px; font-size:1.1rem;}
+      .lankBox > tbody > tr > td{text-align: center; font-size:1rem; border:1px solid #d4d4d4; height:30px;}
       .lankBox > tbody > tr:first-child{background-color: #ddd;}
-      .lankBox > tbody > tr:nth-child(3), tr:nth-child(5){background-color: #f5f6f7;}
+      .lankBox > tbody > tr:nth-child(2){background-color: #eee;}
+      .lankBox > tbody > tr:nth-child(3){background-color: #f5f6f7;}
 
     .lank_indicator{
       width:180px; height:30px;
@@ -326,12 +322,12 @@
       .lank_indicator a{color:#333;}
 
     .mylankBox{
-      width:90%; height:60px;
-      margin:auto;
+      width:100%; height:60px;
+      margin:auto; margin-top:50px;
     }
 
-      .mylankBox > thead > tr > th{font-weight: normal; height:30px;}
-      .mylankBox > tbody > tr > td{font-weight: normal; height:30px; font-size:1rem; text-align: center;}
+      .mylankBox > thead > tr > th{font-weight: normal; height:30px; font-size:1.1rem;}
+      .mylankBox > tbody > tr > td{font-weight: normal; height:30px; font-size:1rem; border:1px solid #d4d4d4; font-size:1rem; text-align: center;}
 
 
   /* ============ .board_4 : 상점 ============ */
@@ -345,9 +341,9 @@
   }
 
     .all_store{
-      width:800px; height:100%;
-      margin: auto; padding-top:40px;
-      box-sizing: border-box;
+      width:100%; height:auto;
+      margin: auto; margin-top:70px;
+      padding:0 40px; 
     }
 
       .all_store ul{
@@ -355,22 +351,22 @@
       }
 
       .all_store li{
-        float:left; width:180px; height:180px;
-        margin-right: 20px; margin-bottom: 20px;
-        padding-top:45px;
+        float:left; width:160px; height:160px;
+        margin-right: 12px; margin-bottom: 12px;
+        padding-top:36px;
         border:3px solid #ccc; line-height: 20px;
       }
 
-      .all_store li:nth-child(5), li:nth-child(6), li:nth-child(7){padding-top: 60px;}
-      .all_store li:nth-child(8){padding-top: 75px;}
+      .all_store li:nth-child(5), li:nth-child(6), li:nth-child(7){padding-top: 50px;}
+      .all_store li:nth-child(8){padding-top: 65px;}
 
-      .conven_store li{padding-top:60px;}
-      .conven_store li:last-child{padding-top:75px;}
+      .conven_store li{padding-top:50px;}
+      .conven_store li:last-child{padding-top:65px;}
 
     .store_modal{
       position: relative;
       margin:auto; z-index:1000;
-      width:90%; height:20vw; background:rgba(66, 80, 103, 0.9);
+      width:100%; height:100%; background:rgba(66, 80, 103, 0.9);
       padding:2vw; box-sizing: border-box;
       display:none;
     }
@@ -403,32 +399,36 @@
     display:inherit;
   }
 
-  .side_tab_content_myinfo{width:100%; height:100%; padding-top: 100px; box-sizing: border-box;}
+  .side_tab_content_myinfo{
+    width:100%; height:100%; padding-top: 80px; box-sizing: border-box;}
 
     .profile{
-      width:70%; height:auto;
+      width:100%; height:auto;
       margin:auto; 
     }
 
-      .profile > tbody > tr {height:30px;}
-      .profile > tbody > tr > th{width:30%; font-weight: normal;}
-      .profile > tbody > tr > td{width:70%; font-size:1rem; padding-left:10px}
+      .profile > tbody > tr {height:40px;}
+      .profile > tbody > tr > th{width:30%; font-weight: normal; background-color: #eee; font-size:1.1rem;}
+      .profile > tbody > tr > td{width:70%; font-size:1rem; padding-left:10px; border:1px solid #D4D4D4;}
 
+      .profile_btn{width:164px; height:40px; float:right; margin-top: 20px;}
+
+      .profile_btn > button{
+        width:80px; height:32px;
+        border-radius: 5px; color:#fff; font-size:1rem;
+      }
+
+      .profile_cert{float:left; height:100%; background-color: #4A96D2;}
+      .profile_modify{float:right; height:100%; background-color: #ae0000;}
     
     .exBox{
-      width:80%; height:100px; margin:auto;
-      
-      padding:10px 25px; box-sizing: border-box;
       position: relative;
+      padding-top: 40px; box-sizing: border-box;
+      width:100%; height:100px; margin:auto;
     }
 
-      .ex_id{
-        float:left; width:20%; height:80px;
-        line-height: 80px; font-size:1.3rem;
-        text-align: center; border-bottom:2px solid #f5f6f7;}
-
       .ex_date{
-        width:100%; height:80px;
+        width:500px; height:80px;
         line-height: 80px; font-size:1.3rem;
         margin:auto;
       }
