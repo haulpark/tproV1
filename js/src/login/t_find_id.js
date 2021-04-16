@@ -45,12 +45,12 @@ $(function(){
     $('#sendCertPhoneBtn, #reSendCertPhoneBtn').on("click", function () {
 
         if (!$('#memberName').val()) {
-            showInValidMsg('searchValidMemberName', '이름을 입력해 주세요');
+            showInValidMsg('searchValidMemberName', '이름을 입력해주세요');
             return false;
         }
 
         if (!$('#phoneNumber').val()) {
-            showInValidMsg('searchValidPhone', '휴대전화 번호를 확인해 주세요');
+            showInValidMsg('searchValidPhone', '휴대전화번호를 입력해주세요');
             return false;
         }
 
@@ -60,7 +60,7 @@ $(function(){
         }
 
         
-
+        /*
         setTimeout(function(){
             mss.my.ajax.call(
                 {
@@ -87,7 +87,7 @@ $(function(){
                 }
                 , true
             );
-        }, 300);
+        }, 300);*/
     });
 
     $('#authSmsBtn').on("click", function () {
@@ -102,6 +102,7 @@ $(function(){
             return false;
         }
 
+        /*
         setTimeout(function () {
             mss.my.ajax.call(
                 {
@@ -130,18 +131,8 @@ $(function(){
                     }
                 }, true
             )
-        }, 300);
-    });
-
-    $('#searchIdBtn').click(function() {
-        var referer = $("#referer").val();
-
-        if ($('#phoneRadioBtn').prop('checked')) {
-            $("#requestMemberName").val($("#memberName").val());
-            $("#requestPhoneNumber").val($("#phoneNumber").val());
-            moveSearchResult('phone');
-        }
-    });
+        }, 300);*/
+    }); 
 });
 
 function init() {
@@ -177,8 +168,7 @@ function getTokenMemberIds() {
             url: "/api/member/v3/search/id/result/token",
             data : {
                 "memberName" : $("#memberName").val(),
-                "phoneNumber" : $("#phoneNumber").val(),
-                "isSendEmail": $("#requestIsSendEmail").val(),
+                "phoneNumber" : $("#phoneNumber").val()
             },
             success: function(response) {
                 token = response.data;
@@ -192,8 +182,6 @@ function getTokenMemberIds() {
 var changeFndTarget = function(t){
     switch(t){
         case 'phone':
-            $('#email').val('');
-            $("#email").hide();
             $("#selfCertMessage").hide();
             $(".tel-area").show();
             $("#searchIdBtn").prop("disabled", true);
@@ -214,62 +202,22 @@ var changeFndTarget = function(t){
     $(".n-validation").text('');
 }
 
-function phoneValidation() {
-    var phoneNumber = $('#phoneNumber').val();
-    if (!(phoneNumber.length >= 10 && phoneNumber.length <= 11)) {
-        return false;
-    }
-    var regNumber = /^(01[016789])(\d{3,4})(\d{4})/;
-    if(!regNumber.test(phoneNumber)){
-        $("#phoneNumber").val(phoneNumber.replace(/[^0-9]/g,""));
-        $("#phoneNumber").focus();
-        return false;
-    }
-    return true;
-}
 
-        var timer = null;
-        var isRunning = false;
-        $(function(){
 
-                $("#sendCertPhoneBtn").click(function(e){
-                var display = $('.time');
-                var leftSec = 59;
-                // 남은 시간
-                // 이미 타이머가 작동중이면 중지
-                if (isRunning){
-                    clearInterval(timer);
-                    display.html("");
-                    startTimer(leftSec, display);
-                }else{
-                startTimer(leftSec, display);
-                    
-                }
-            });
-        })
-
-            
-        function startTimer(count, display) {
-                    
-                    var minutes, seconds;
-                    timer = setInterval(function () {
-                    minutes = parseInt(count / 60, 10);
-                    seconds = parseInt(count % 60, 10);
-            
-                    minutes = minutes < 10 ? "0" + minutes : minutes;
-                    seconds = seconds < 10 ? "0" + seconds : seconds;
-            
-                    display.html(minutes + ":" + seconds);
-            
-                    // 타이머 끝
-                    if (--count < 0) {
-                    display.html("시간초과");
-                    $("#searchVailidCertNumber").show();
-                    isRunning = false;
-                    }
-                }, 1000);
-                    isRunning = true;
+    function phoneValidation() {
+        var phoneNumber = $('#phoneNumber').val();
+        if (!(phoneNumber.length >= 10 && phoneNumber.length <= 11)) {
+            return false;
         }
+        var regNumber = /^(01[016789])(\d{3,4})(\d{4})/;
+        if(!regNumber.test(phoneNumber)){
+            $("#phoneNumber").val(phoneNumber.replace(/[^0-9]/g,""));
+            $("#phoneNumber").focus();
+            return false;
+        }
+        return true;
+    };
+
 
 
 });

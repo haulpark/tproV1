@@ -22,7 +22,6 @@
 <!-- layout -->
 <div id="wrap">
   <h1>ID/PW 찾기</h1>
-
   <div id="tabBox">
     <ul class="tab">
       <li class="current" data-tab="tab1"><a href="./t_find_id.html">아이디 찾기</a></li>
@@ -35,34 +34,36 @@
         <p>휴대전화 인증</p>
       </div>
 
-      
+      <form>
       <!-- 아이디 찾기(휴대전화 인증으로 찾기) -->
-      <div class="n-form-item">
-        <label for="idname">이름</label>
-        <input type="text" class="n-input tel-area" id="memberName" name="memberName" placeholder="이름을 입력해주세요." style="padding-right: 0px;">
-        <p class="n-validation" id="searchValidMemberName" style="display: none">이름을 입력해 주세요</p>
-      </div>
+        <div class="n-form-item">
+          <label for="idname">이름</label>
+          <input type="text" class="n-input tel-area" id="memberName" name="memberName" placeholder="이름을 입력해주세요." style="padding-right: 0px;">
+          <p class="n-validation" id="searchValidMemberName" style="display: none">이름을 입력해 주세요</p>
+        </div>
 
-      <div class="n-form-item tel-area" id="input-div">
-        <label for="idphone">휴대전화번호</label>
-        <input type="tel" class="n-input" id="phoneNumber" name="phoneNumber" placeholder="휴대전화번호를 입력해주세요.(-없이)" minlength="10" maxlength="11">
-        <button type="button" class="btn" id="sendCertPhoneBtn">인증요청</button>
-        <button type="button" class="btn" id="reSendCertPhoneBtn" style="display: none">다시받기</button>
-        
-      </div>
+        <div class="n-form-item tel-area" id="input-div">
+          <label for="idphone">휴대전화번호</label>
+          <input type="tel" class="n-input" id="phoneNumber" name="phoneNumber" placeholder="휴대전화번호를 입력해주세요.(-없이)" minlength="10" maxlength="11">
+          <button type="button" class="btn" id="sendCertPhoneBtn">인증요청</button>
+          <button type="button" class="btn" id="reSendCertPhoneBtn" style="display: none">다시받기</button>
+          <p class="n-validation" id="searchValidPhone" style="display: none"></p>
+        </div>
+      
 
-      <div class="n-form-item tel-cert-area" id="phoneCertification">
-        <label for="idnumber" class="cert_title">인증번호</label>
-        <input type="text" class="n-input" placeholder="인증번호를 입력해주세요." id="certNumber" minlength="5" maxlength="5">
-        <button type="button" class="btn" id="authSmsBtn">확인</button>
-        
-      </div>
+        <div class="n-form-item tel-cert-area" id="phoneCertification">
+          <label for="idnumber" class="cert_title">인증번호</label>
+          <input type="text" class="n-input" placeholder="인증번호를 입력해주세요." id="certNumber" minlength="6" maxlength="6">
+          <p class="n-validation" id="searchCert" style="display: none">인증번호가 잘못되었습니다.</p>
+        </div>
 
-      <div class="member-btn">
-        <button type="submit" class="n-btn btn-primary" id="searchIdBtn" disabled>아이디 찾기</button>
-      </div>
+        <div class="member-btn">
+          <button type="submit" class="n-btn btn-primary" id="searchIdBtn" value='아이디 찾기' disabled><a href="./t_find_id_result.html">아이디 찾기</a></button>
+        </div>
+      </form>
       
     </div>
+  
 </div>
 
 <!--script -->
