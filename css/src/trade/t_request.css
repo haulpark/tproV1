@@ -2,44 +2,61 @@
 
   #wrap{
     width:100%; height:100%;
+    padding:70px 0; box-sizing: border-box;
   }
 
-    .rq_box{
-      margin:auto; margin-top: 30px;
-      width:90%; height:100px;
-    }
-
-      .rq_box ul{width:100%; height:100%;}
-      .rq_box li{float:left; width:33%; height:50px;}
-      .rq_box dl{width:100%; height:100%; text-align: center; line-height:50px; border-bottom:1px solid #ccc; box-sizing: border-box;}
-      .rq_box li:nth-child(4) dl, li:nth-child(5) dl, li:nth-child(6) dl{border-bottom: 0;}
-      .rq_box dt{float:left; width:50%; height:100%; border-right:1px solid #ccc; box-sizing: border-box;}
-      .rq_box li:nth-child(2n){background-color: #f5f6f7;}
-      .rq_box dd{float:right; width:50%; height:100%; border-right:1px solid #ccc; box-sizing: border-box;}
-      .rq_box li:nth-child(3n) dd{border-right: 0;}
-
     .rq_title{
-      position: absolute;
       width:100%; text-align: center;
-      top:40%; font-size:2rem;
+      font-size:1.5rem;
+      font-weight: 500;
+      margin-bottom: 80px;
     }
 
+    /* ---------- user_list ------------ */
+    .user_list{
+      width:100%; height:150px;
+      padding:10px 20px; box-sizing: border-box;
+    }
+
+    .user_list > ul {width:100%; height:100%;}
+    .user_list > ul > li {width:100%; height:40px;}
+
+    .user_list > ul > li > dl {width:100%; height:100%; line-height: 40px;}
+    .user_list > ul > li > dl > dt {float:left; width:40%; height:100%; padding-left: 20px; box-sizing: border-box; color:#333;}
+    .user_list > ul > li > dl > dd {float:right; width:60%; height:100%; text-align:right; padding-right: 20px; box-sizing: border-box;}
+    
+    .line{width:80%; height:1px; margin:auto; background-color: #ACACAC;}
+  /* ---------- info_list ------------ */
+    .info_list{
+      width:100%; height:150px;
+      padding:20px; box-sizing: border-box;
+    }
+
+    .info_list > ul {width:100%; height:100%;}
+    .info_list > ul > li {width:100%; height:40px;}
+
+    .info_list > ul > li > dl {width:100%; height:100%; line-height: 40px;}
+    .info_list > ul > li > dl > dt {float:left; width:40%; height:100%; padding-left: 20px; box-sizing: border-box; color:#333;}
+    .info_list > ul > li > dl > dd {float:right; width:60%; height:100%; text-align:right; padding-right: 20px; box-sizing: border-box;}
+
+    .accentDd{color:#4694D1;}
+
+  /* ---------- rq_btn ------------ */
     .rq_btn{
-      position: absolute;
       width:260px; height:50px;
-      bottom:20%; left:0; right:0; margin:auto;
+      margin:auto; margin-top: 80px;
     }
 
       .rq_btn > button{
         width:120px; height:40px;
-        border-radius: 15px;
+        border-radius: 5px;
         font-size:1rem; color:#fff;
         transition:transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
       }
 
       .no{
-        float:left; background-color: #EC2F4B;
-        box-shadow:0 4px 6px #bf263d;
+        float:left; background-color: #9F9F9F;
+        box-shadow:0 4px 6px #888888;
       }
       .yes{
         float:right; background-color: #4998D3;
@@ -49,17 +66,3 @@
       .rq_btn > button > a{
         line-height: 40px; text-align: center;
       }
-
-
-
-@media screen and (max-width: 639px) {
-  .rq_box{font-size:0.7rem;}
-}
-
-@media screen and (min-width: 640px) and (max-width:1080px) {
-  .rq_box{font-size:1rem;}
-}
-
-@media screen and (min-width: 1081px){
-  .rq_box{font-size:1.3rem;}
-}

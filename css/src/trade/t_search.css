@@ -7,7 +7,7 @@
     .loading{
       position: absolute;
       width:200px; height:100px;
-      top:20%; left:0; right:0; margin:auto;
+      top:15%; left:0; right:0; margin:auto;
     }
 
       /* 로딩 구현 */
@@ -253,34 +253,18 @@
         box-sizing: border-box;
       }
 
-    .ex{
-      position: absolute;
-      top: 40%; left:0; right:0; margin:auto;
-      width:100%; height:auto; text-align: center;
-    }
-
-      .ex > .title{
-        font-size:3rem;
-        padding-bottom: 5px;
+      .ex{
+        position: absolute;
+        top: 50%; left:0; right:0; margin:auto;
+        width:100%; height:auto; text-align: center;
       }
-
-      .ex > .add{
-        font-size:1.8rem;
-      }
-
-
-@media screen and (max-width: 639px) {
-  .loading{top:10%;}
-
-  .ex > .title{font-size:2.2rem;}
-
-  .ex > .add{font-size:1.5rem;}
-}
-
-@media screen and (min-width: 640px) and (max-width:1080px) {
-  .loading{top:10%;}
-
-  .ex > .title{font-size:2.5rem;}
-
-  .ex > .add{font-size:1.6rem;}
-}
+  
+        .ex > .title{
+          font-size:1.8rem;
+          font-weight: 500;
+          padding-bottom: 20px;
+        }
+  
+        .ex > .add{
+          font-size:1.2rem;
+        }

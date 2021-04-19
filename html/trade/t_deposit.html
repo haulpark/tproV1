@@ -22,7 +22,12 @@
 <!-- layout -->
 <div id="wrap">
 
-  <div class="dp_box">
+  <div class="rq_title">
+    <p>거래요청이 도착했습니다.</p>
+    <p>구매자의 입금을 기다려주세요.</p>
+  </div>
+
+  <div class="user_list">
     <ul>
       <li>
         <dl>
@@ -39,19 +44,26 @@
       <li>
         <dl>
           <dt>수량</dt>
-          <dd>500</dd>
+          <dd class="accentDd">500</dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="info_list">
+    <ul>
+      <li>
+        <dl>
+          <dt>입금자명</dt>
+          <dd>김이글</dd>
         </dl>
       </li>
       <li>
         <dl>
           <dt>거래금액</dt>
-          <dd>500,000원</dd>
-        </dl>
-      </li>
-      <li>
-        <dl>
-          <dt>입금자명</dt>
-          <dd>김이글</dd>
+          <dd class="accentDd">500,000원</dd>
         </dl>
       </li>
       <li>
@@ -63,13 +75,8 @@
     </ul>
   </div>
 
-  <div class="dp_title">
-    <p>거래를 승인하셨습니다.</p>
-    <p>구매자의 입금을 기다려주세요.</p>
-  </div>
-
   <div class="dp_wait">
-    <p>남은 거래시간 <span id="timer"> 04:30 </span></p>
+    <p>남은 거래시간  <span id="timer"> 04:30 </span></p>
   </div>
 </div>
 

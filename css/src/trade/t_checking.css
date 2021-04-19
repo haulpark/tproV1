@@ -4,34 +4,10 @@
   width:100%; height:100%;
 }
 
-  .check_box{
-    margin:auto; margin-top: 30px;
-    width:90%; height:120px;
-  }
-
-    .check_box ul{width:100%; height:100%;}
-    .check_box li{float:left; width:33%; height:40px;}
-    .check_box dl{width:100%; height:100%; text-align: center; line-height:40px; border-bottom:1px solid #ccc; box-sizing: border-box;}
-    .check_box li:nth-child(7) dl, li:nth-child(8) dl, li:nth-child(9) dl{border-bottom: 0; font-weight: bold;}
-    .check_box dt{float:left; width:50%; height:100%; border-right:1px solid #ccc; box-sizing: border-box;}
-    .check_box li:nth-child(2n){background-color: #f5f6f7;}
-    .check_box dd{float:right; width:50%; height:100%; border-right:1px solid #ccc; box-sizing: border-box;}
-    .check_box li:nth-child(3n) dd{border-right: 0;}
-
-    .check_box li:nth-child(7) dt{display:none;}
-    .check_box li:nth-child(7) dd{width:100%;}
-
-    .check_box li:nth-child(8) dt{width:100%;}
-    .check_box li:nth-child(8) dd{display:none;}
-
-    .check_box li:nth-child(9) dt{display:none;}
-    .check_box li:nth-child(9) dd{width:100%; text-align:center; line-height: 40px; font-weight: bold;}
-
-
     .loading{
       position: absolute;
       width:200px; height:100px;
-      top:30%; left:0; right:0; margin:auto;
+      top:15%; left:0; right:0; margin:auto;
     }
 
       /* 로딩 구현 */
@@ -280,25 +256,6 @@
   .check_title{
     position: absolute;
     width:100%; text-align: center;
-    top:60%; font-size:1.7rem;
+    top:50%; font-size:1.5rem;
+    font-weight: 500;
   }
-
-@media screen and (max-width: 639px) {
-  .loading{top:30%;}
-
-  .check_box{font-size:0.7rem;}
-
-  .check_title{top:60%; font-size:1.3rem;}
-}
-
-@media screen and (min-width: 640px) and (max-width:1080px) {
-
-  .loading{top:30%;}
-
-  .check_box{font-size:1rem;}
-
-}
-
-@media screen and (min-width: 1081px){
-  .check_box{font-size:1.3rem;}
-}
