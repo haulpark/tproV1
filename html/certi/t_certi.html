@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximun-scale=3.0, minimum-scale=0.5">
+
+<link rel="stylesheet" href="../../css/base/reset.css">
+<link rel="stylesheet" href="../../css/base/common.css">
+
+<link rel="stylesheet" href="../../fonts/fontawesome5/css/all.min.css">
+
+<link rel="stylesheet" href="../../css/src/certi/t_certi.css">
+
+
+
+<!--[if IE]>
+<script src="./ie/html5shive/dist/html5shive.min.js"></script>
+<script src="./ie/pie/PIE.js"></script>
+<script src="./ie/respond/dist/respond.min.js"></script>
+<![endif]-->
+
+<title> Trading ProV1 </title>
+</head>
+<body>
+<!-- layout -->
+<div id="wrap">
+  <header id="headBox">
+    <h1>이메일 인증</h1>
+  </header>
+
+  <section id="viewBox">
+    <div class="indicator"></div>
+
+    <form action="#">
+      <fieldset>
+        <legend class="hidden">이메일 인증</legend>
+        <p> 이메일 </p>
+        <input type="email" name="email" class="email_input" placeholder="이메일을 입력해주세요."/>
+        <div class="br"></div>
+        <p> 인증코드</p>
+        <input type="text" name="certi" class="certi_input" placeholder="인증코드를 입력해주세요."/>
+        <button type="button" class="certi_btn">인증요청</button>
+      </fieldset>
+    </form>
+
+    <div class="next_certi">
+      <button type="button"><a href="./t_email_certi_complete.html">인증완료</a></button>
+    </div>
+
+  </section>
+ 
+
+</div>
+
+
+<!--script -->
+  <script src="../../js/base/jquery-3.5.1.min.js"></script>
+  <script src="../../js/base/jquery-ui.min.js"></script>
+
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="../../js/src/certi/t_certi.js"></script>
+</body>
+</html>
