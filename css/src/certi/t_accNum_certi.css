@@ -1,0 +1,226 @@
+/* t_email_certi_complete.css */
+
+#wrap{
+  position: relative; z-index: 100;
+  width:100%; height:100%;
+  } 
+
+/* ========== #bankBox ============= */
+  #bankBox{
+    display: none;
+    position: absolute; z-index: 1000;
+    width:100%; height:100%;
+    background: rgba(0, 0, 0, 0.4);
+    padding:5%; box-sizing: border-box;
+  }
+  
+    .bank{
+      width:100%; height:100%; 
+      top:0; right:0; left:0; bottom:0; margin:auto;
+      background-color: #fff;
+      padding:50px 20px; box-sizing: border-box;
+    }
+  
+    .close{
+      position: absolute; z-index: 1001;
+      top:5%; right:10%; 
+      width:24px; height:24px;
+      background-color: transparent;
+      background-image: url(../../../img/bank_img/close.png);
+      background-size: contain;}
+  
+    .tab{
+      width:280px; height:36px;
+      margin:auto; 
+    }
+  
+    .tab li {
+      float:left; 
+      width:140px; height:36px; text-align: center;
+      background-color: #E6E6E6; line-height: 36px;
+      font-size:0.9rem;
+    }
+  
+    .tab li.current {background-color: #4694D1; color:#fff;}
+  
+    .tab_content{
+      display:none;
+      width:100%; height:auto;
+      margin-top: 20px;
+    }
+  
+    .tab_content.current{
+      display:block;
+    }
+
+    .tab_content ul{width:280px; height:100%;}
+    .tab_content ul li {float:left; width:140px; height:30px;}
+    .tab_content ul li dl {width:100%; height:100%;}
+    .tab_content ul li dl dt{float:left; margin-left: 10%; width:20%;}
+    .tab_content ul li dl dt .bank_img{
+      margin-top: 1px;
+      width:18px; height:18px; 
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: contain;
+    }
+    .tab_content ul li dl dd{float:left; width:70%; font-size:0.9rem;}
+
+  /* =================================== tab 1 (은행) 이미지 =================================== */
+    #tab1 ul li:nth-child(1) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_1.png);}
+    #tab1 ul li:nth-child(2) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_1.png);}
+    #tab1 ul li:nth-child(3) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_2.png);}
+    #tab1 ul li:nth-child(4) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_14.png);}
+    #tab1 ul li:nth-child(5) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_21.png);}
+    #tab1 ul li:nth-child(6) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_28.png);}
+    #tab1 ul li:nth-child(7) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_27.png);}
+    #tab1 ul li:nth-child(8) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_16.png);}
+    #tab1 ul li:nth-child(9) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_3.png);}
+    #tab1 ul li:nth-child(10) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_29.png);}
+
+    #tab1 ul li:nth-child(11) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_4.png);}
+    #tab1 ul li:nth-child(12) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_17.png);}
+    #tab1 ul li:nth-child(13) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_5.png);}
+    #tab1 ul li:nth-child(14) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_7.png);}
+    #tab1 ul li:nth-child(15) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_19.png);}
+    #tab1 ul li:nth-child(16) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_18.png);}
+    #tab1 ul li:nth-child(17) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_7.png);}
+    #tab1 ul li:nth-child(18) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_19.png);}
+    #tab1 ul li:nth-child(19) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_30.png);}
+    #tab1 ul li:nth-child(20) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_20.png);}
+
+    #tab1 ul li:nth-child(21) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_8.png);}
+    #tab1 ul li:nth-child(22) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_21.png);}
+    #tab1 ul li:nth-child(23) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_9.png);}
+    #tab1 ul li:nth-child(24) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_22.png);}
+    #tab1 ul li:nth-child(25) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_10.png);}
+    #tab1 ul li:nth-child(26) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_23.png);}
+    #tab1 ul li:nth-child(27) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_15.png);}
+    #tab1 ul li:nth-child(28) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_24.png);}
+    #tab1 ul li:nth-child(29) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_11.png);}
+    #tab1 ul li:nth-child(30) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_25.png);}
+    #tab1 ul li:nth-child(31) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_12.png);}
+    #tab1 ul li:nth-child(32) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_26.png);}
+    #tab1 ul li:nth-child(33) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_13.png);}
+    #tab1 ul li:nth-child(34) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_13.png);}
+
+
+  /* =================================== tab 2 (증권) 이미지 =================================== */
+    #tab2 ul li:nth-child(1) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(2) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(3) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(4) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(5) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(6) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(7) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(8) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(9) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(10) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+
+    #tab2 ul li:nth-child(11) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(12) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(13) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(14) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(15) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(16) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(17) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(18) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(19) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(20) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+
+    #tab2 ul li:nth-child(21) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(22) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(23) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(24) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(25) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(26) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(27) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(28) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    
+  
+  
+
+
+/* ========== #headBox ============= */
+#headBox{
+  width:100%; height:50px; 
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+
+  /*
+  .back{
+    position: absolute;
+    top:7px; left:7px;
+    background-color: #333;
+    width:36px; height:36px;
+  }
+  */
+
+  h1{text-align: center; font-size:1.3rem; line-height: 50px;}
+  
+
+/* ========== #viewBox ============= */
+
+#viewBox{
+  width:100%; height:auto; 
+  padding:20px; box-sizing: border-box;
+}
+
+  .indicator{
+    width:140px; height:40px;
+    margin:auto; 
+    background-image: url(../../../img/icons/123_3.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #viewBox > form{
+    width:100%; height:auto;
+    margin-top: 120px;
+  }
+
+  fieldset > p {
+    font-size:1rem; margin-bottom: 5px;
+  }
+
+  .accNumBtn{
+    float:left;
+    width:25%; height:40px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff;
+    color:#777;
+  }
+
+  .accNum_input{
+    float:right;
+    width:74%; height:40px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .check_title {
+    text-align: center;
+    margin-top: 10px;
+    font-size:1.3rem;
+    font-weight: 500;
+  }
+/* ========== #bankBox(aside) ============= */
+
+  .next_certi{
+    width:200px; height:40px;
+    margin:auto; 
+    margin-top: 205px;
+  }
+
+  .next_certi > button{
+    width:200px; height:40px;
+    border-radius: 5px;
+    background-color: #4694D1; color:#fff; 
+  }
+
+  .next_certi > button > a {line-height: 40px;}
+
+

@@ -1,0 +1,140 @@
+{
+  "bank": [
+    {
+      "url":"image/bank_1.png",
+      "bankName": "신한"
+    },
+    {
+      "img": "Someone",
+      "bankName": "제주"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "국민"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "기업"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "농협"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "산업"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "수협"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "신협"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "우리"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "하나"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "한국씨티"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "카카오뱅크"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "케이뱅크"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "경남"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "광주"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "대구"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "부산"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "전북"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "새마을"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "우체국"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "저축은행"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "지역농/축협"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "도이치"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "중국"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "중국건설"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "중국공상"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "BNP파리바"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "BOA"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "HSBC"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "JP모간"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "SC"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "산림조합"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "국세"
+    },
+    {
+      "img": "Someone else",
+      "bankName": "지방세"
+    }
+  ]
+}
