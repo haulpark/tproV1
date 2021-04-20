@@ -2,238 +2,412 @@
 @media screen and (max-width: 1023px) {
 
   #wrap{
-    width:100%; height:auto;
-    padding:20px 0 0 0; box-sizing:border-box;
+    width:100%; height:1640px;
+    padding:20px 0; box-sizing:border-box;
   }
 
   .slideBar{display: none;}
   .unb{display:none;}
   /* =================== #headBox ===================*/
-  #headBox{width:320px; height:80px; padding:10px; box-sizing:border-box; background-color:#fff;}
+  #headBox{
+    position: relative;
+    width:320px; height:60px;
+    padding:5px 10px; box-sizing: border-box;
+  }
 
-  .logo{width:60px; height:60px;}
-  .title{float:left; width:200px; font-size:16pt; line-height:60px;}
+  .logo{width:50px; height:50px;}
+  .title{float:left; width:200px; font-size:14pt; font-weight:600; line-height:50px;}
     
     .mob_icon{
       float:right;
       display:block;
-      margin-top: 15px; margin-right:5px; 
-      width:30px; height:30px;
-      background-image: url(../../../img/icons/user.png);
+      margin-top: 16px; margin-right:5px; 
+      width:24px; height:24px;
+      background-image: url(../../../img/icons/mob_user.png);
       background-position: 50% 50%;
       background-size: contain;
       background-repeat: no-repeat;
     }
 
     .mob_menu{
-      position: absolute; z-index:10000;
-      top:8%; right:4%;
-      width:240px; height:180px;
-      background-color: #031230;
-      color:#fff;
+      position: absolute; z-index:1000;
+      top:80%; left:15%; 
+      width:250px; height:144px;
+      background-color: #fff;
+      box-shadow:0 0.5rem 1rem #ccc;
+      color:#333;
+      font-size:0.9rem;
+      padding:20px 10px; box-sizing: border-box;
+    }
+  /* =================== #slideBox (mob) ===================*/
+    #slideBox{
+      display:block;
+      width:320px; height:40px;
+      background-color:#fff;
+      border:1px solid #ccc;
+      margin:16px auto;
+      animation-duration: 3s;
+      animation-name: slidein;
+      animation-iteration-count: infinite;
     }
 
-    .slideBar{
-      float:left;
-      margin-top: 5px; 
-      margin-left:20px;
-      width:50vw;
-      font-size:0.8rem;
-    }
+    #slideBox > a{color:#333; font-size:1rem; text-align: center; background-color: #fff;}
+      
+      @keyframes slidein {
+        from {
+          opacity:0;
+        }
+      
+        to {
+         opacity: 1;
+       }
+      }
 
   /* =================== #viewBox .deal(left) ===================*/
 
   #viewBox{
-    width:320px; height:800px; background-color:#fff;
+    width:320px; height:auto; margin-top: 0px;
   }
 
   .deal{
     float:none; margin:auto;
-    width:100%; height:500px; margin-bottom: 25px;}
+    width:100%; height:540px; margin-bottom: 20px;}
 
   /* =================== #viewBox .board(right) ===================*/
-  .board{width:100%; height:100vw; margin-bottom: 25px;}
+  .board{width:320px; height:900px;}
 
-  .class{
-    float:left;
-    width:160px; height:80px;}
-  
-    .class p{
-      margin:0; padding:0;
-      margin-left: 20px;
-    }
-
-    .class_t{
-      float:left;
-      font-size:4rem;
-      
-    }
-
-    .class_p{
-      font-size:1.5rem;
-      line-height:110px;
-    }
-
-  .class_ex{
-    float:left; height:80px;
-    font-size:1.1rem;
-    margin-top: 20px;
+  .user_percent{
+    width:100%; height:10px;
   }
 
-    .class_ex p{
-      line-height: 20px;
+  .board_head{
+    width:100%; height:160px;
+    background: rgba(70, 148, 209, 0.1);
+  }
+
+    .class{
+      float:left;
+      width:100%; height:40px;
+      padding:5px 20px; box-sizing: border-box;
+    }
+  
+      .class p{
+        margin:0; padding:0;
+      }
+
+      .class_t{
+        float:left;
+        font-size:3rem;
+        font-weight: bold;
+      }
+
+      .class_p{
+        font-size:1.2rem;
+        line-height:80px;
+      }
+
+    .class_ex{
+      float:left; width:100%; height:60px;
+      margin-left: 20px;
+      font-size:1.1rem;
+      margin-top: 40px;
+      word-break: keep-all;
     }
 
-    .class_ex p span{
-      font-weight: bold;
+      .class_ex p{
+        line-height:18px;
+      }
+
+      .graph{
+        width:100%; margin:20px auto;
+      }
+
+        #data{
+          width:100%; height:180px;
+          margin:auto; font-size:1rem;
+        }
+
+        #data > thead > tr > td, th{
+          text-align: center;
+          background-color: #aaa;
+          color:#000;
+          border:1px solid #D4D4D4;
+          font-size:1rem; height:30px;
+          font-weight: normal;
+        }
+
+        #data > tbody > tr > td{
+          font-size:0.8rem; text-align: right; border:1px solid #D4D4D4; height:30px;
+        }
+        
+        .td_1{background-color: #eee; }
+
+/* ================ tab Box 기능 구현 ======================= */
+      /* ================ 상단탭 ======================= */
+      .board_tab{
+        width:100%; height:40px;
+      }
+
+        .board_tab ul{
+          width:100%; height:100%;
+        }
+
+        .board_tab li{
+          float:left; width:20%; height:100%;
+          font-size:0.9rem; text-align: center;
+          line-height:40px; /*overflow:hidden;*/
+        }
+
+        .board_tab li > dl {width:100%; height:auto;}
+        .board_tab ul > li > dl > dt {line-height: 40px; font-weight: 400; color:#333;}
+        .board_tab li.current dt{color:#366f9c; font-weight: 500;}
+
+        .board_tab > ul > li > dl > dd{
+          display:none;
+          position: relative; z-index: 1000;
+          width:65px; height:30px;
+          margin:auto;
+          font-size: 0.9rem; line-height: 30px;
+          background-color: #fff;
+          border:1px solid #ccc;
+        }
+
+        .board_tab > ul > li:last-child > dl > dd{width:65px; font-size:0.8rem;}
+
+        .board_tab > ul > li > dl > dd.current{
+          background-color:#4A96D2; color:#fff; 
+        }
+
+        .tab-content{
+          display:none;
+          padding:20px; box-sizing: border-box;
+          padding-top: 0;
+        }
+
+        .tab-content.current{
+          display:inherit;
+        }
+
+/* ================ //tab Box 기능 구현 ===================== */
+    
+  /* ============ .board_2 : 거래내역 ============ */
+  /* ======= 거래 수/ 거래금액 / 수수료 표 ======= */
+    .period_content{
+      float:none;
+      width:270px; height:40px;
+      margin:auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
     }
 
-  .tab-content{
+      .period_content > ul > li{width:90px; height:100%;}
+      .period_content > ul > li > dl > dt{height:20px; font-size:0.9rem; font-weight:bold; line-height: 15px;}
+      .period_content > ul > li > dl > dd{height:20px; font-size:0.8rem;}
+
+  /* ======= 거래내역 표 ======= */
+    #periodBox{
+      width:100%; height:340px; margin:auto;
+    }
+
+      #periodBox > thead > tr > th{font-size:0.8rem; font-weight: normal; height:30px;}
+
+      #periodBox > tbody > tr > th{font-size:0.8rem; font-weight: normal;}
+      #periodBox > tbody > tr > td{font-size:0.7rem; font-weight: normal; text-align: center; border:1px solid #D4D4D4;}
+      #periodBox > tbody > tr > td:nth-child(4){text-align: right; padding-right:5px; box-sizing: border-box;}
+
+    .p_indicator{
+      width:180px; height:60px;
+      margin:auto; 
+    }
+
+    .p_indicator ul{width:100%; height:100%}
+    .p_indicator li{width:20px; font-size:0.9rem; line-height: 60px;}
+
+    /* 어디서 오류난지 모르겠음 */
+    .p_indicator li:nth-child(6){padding:0;}
+    .p_indicator li:nth-child(7){padding:0;}
+
+    .p_indicator a{color:#333;}
+
+  /* ============ .board_3 : 거래순위 ============ */
+
+    .lankBox{
+      width:100%; height:auto;
+      margin:auto; margin-top: 15px;
+    }
+
+      .lankBox > thead > tr > th{font-weight: normal; height:30px; font-size:0.9rem;}
+      .lankBox > tbody > tr > td{text-align: center; font-size:0.8rem; border:1px solid #d4d4d4; height:30px;}
+      .lankBox > tbody > tr:first-child{background-color: #ddd;}
+      .lankBox > tbody > tr:nth-child(2){background-color: #eee;}
+      .lankBox > tbody > tr:nth-child(3){background-color: #f5f6f7;}
+
+    .mylankBox{
+      width:100%; height:60px;
+      margin:auto; margin-top:50px;
+    }
+
+      .mylankBox > thead > tr > th{font-weight: normal; height:30px; font-size:0.9rem;}
+      .mylankBox > tbody > tr > td{font-weight: normal; height:30px; font-size:0.8rem; border:1px solid #d4d4d4; text-align: center;}
+
+
+  /* ============ .board_4 : 상점 ============ */
+    /* ============ store-modal 설명 창 ============ */
+    .store_modal{
+      position: absolute; z-index:1000;  
+      top:0; left:0; right:0; bottom:0; margin:auto;
+      width:100%; height:100%; background:rgba(0, 0, 0, 0.7);
+      display:none;
+    }
+
+      .store_modal_content{
+        position: absolute; z-index:1001;
+        width:80%; height:40%; background-color: #fff;
+        left:0; right:0; bottom:0; top:0; margin:auto;
+        padding:50px 20px; box-sizing: border-box;
+      }
+      
+        #store_modal_title{font-size:1rem; text-align: center; font-weight: 500;}
+        #store_modal_ex{font-size:0.9rem; text-align: center;}
+
+      
+      .store_btn{
+        position: absolute; z-index:1001;
+        bottom:10%; left:0; right:0; margin: auto;
+        width:210px; height:30px;
+      }
+
+      .store_btn > button{
+        width:100px; height:30px;
+        border-radius: 5px;
+        color:#fff; font-size:0.9rem;
+      }
+    /* ============ store-modal 결제 창 ============ */
+    .store_modal_credit{
+      display:none;
+      position: absolute; z-index:1001;
+      width:80%; height:40%; background-color: #fff;
+      left:0; right:0; bottom:0; top:0; margin:auto;
+      padding:50px 20px; box-sizing: border-box;
+    }
+
+      #store_modal_credit_title{
+        font-size:1rem; text-align: center; font-weight: 500;
+      }
+
+    /* ============ store 내용 창 (8개) ============ */
+    .all_store{
+      width:100%; height:auto;
+      margin: auto; margin-top:0;
+      padding:0; 
+    }
+
+      .all_store ul{
+        width:100%; height:100%;
+      }
+
+      .all_store li{
+        float:left; width:135px; height:135px;
+        margin-right: 10px; margin-bottom: 10px;
+        padding-top:35px; line-height: 20px;
+        font-size:1rem;
+      }
+
+      .all_store li:nth-child(2n){margin-right: 0;}
+
+      .all_store .store_content_5 { padding-top: 45px;}
+      .all_store .store_content_6 { padding-top: 45px;}
+      .all_store .store_content_7 { padding-top: 45px;}
+      .all_store .store_content_8 { padding-top: 55px;}
+
+  /* ============ .board_5 : 나의 정보 ============ */
+
+  .side_tab_content_myinfo{
     display:none;
   }
 
-  .tab-content.current{
+  .side_tab_content_myinfo.current{
     display:inherit;
   }
 
-  .graph{
-    width:80%; margin:50px auto;
-  }
-  #myChart{
-    width:60vw; height:80vh;
-  }
+  .side_tab_content_myinfo{
+    width:100%; height:100%; box-sizing: border-box;}
 
-  #data{ width:90%; height:15vh; }
-
-      #data > thead > tr > td, th{font-size:0.9rem; }
-      #data > tbody > tr > td{font-size:0.9rem; }
-
-/* ========= #board_tab(상단 탭) ========= */
-
-  .board_tab{
-    width:100%; height:40px;
-  }
-
-    .board_tab ul{
-      width:100%; height:100%;
-    }
-
-    .board_tab li{
-      float:left; width:20%; height:100%;
-      font-size:1.2rem; text-align: center;
-      line-height:40px; 
-    }
-
-    .board_tab li.current span{
-      display: inline-block;
-      line-height: 30px;
-      width:100px; height:40px;
-      border-radius:0; border:0;
-      border-bottom:3px solid #425067;
-    }
- 
-  /* ============ .board_2 : 거래내역 ============ */
-  .period_content{
-    width:500px; height:40px;
-    margin-top: 10px; margin-left: 20px;
-    margin-bottom: 5px; font-size:0.9rem;
-  }
-      .period_content dt{height:20px; font-size:0.9rem;}
-      .period_content dd{height:20px; font-size:0.8rem;}
-
-
-  #periodBox{
-    width:90%; height:100px;
-    margin:auto;
-    margin-top: 10px;
-  }
-
-    #periodBox > thead > tr > th{font-size:0.8rem;}
-
-    #periodBox > tbody > tr > th{font-size:0.8rem;}
-    #periodBox > tbody > tr > td{font-size:0.7rem;}
-
-  .p_indicator{height:5px;}
-
-    .p_indicator >.pagination li{font-size:0.8rem;}
-
-/* ============ .board_3 : 거래순위 ============ */
-
-  .lankBox{
-    width:90%; height:100px;
-    margin-top: 20px; margin-bottom: 10px;
-  }
-
-    .lankBox > tbody > tr > td{text-align: center; font-size:1rem;}
-    .lankBox > tbody > tr:first-child{background-color: #ddd;}
-    .lankBox > tbody > tr:nth-child(3), tr:nth-child(5){background-color: #f5f6f7;}
-
-  .lank_indicator{
-    width:180px; height:10px; 
-    margin:auto; margin-bottom: 20px;
-  }
-
-    .lank_indicator ul{width:100%; height:100%;}
-    .lank_indicator li{width:20px; font-size:0.9rem; line-height: 15px;}
-
-/* ============ .board_4 : 상점 ============ */
-
-  .all_store{
-    width:90%; height:100%;
-    margin: auto; margin-top: 20px;
-  }
-
-    .all_store li{
-      float:left; width:100px; height:100px;
-      margin-right: 20px; margin-bottom: 20px;
-      padding-top:25px;
-      border:3px solid #ccc; line-height: 10px;
-    }
-
-    .all_store li:nth-child(5), li:nth-child(6), li:nth-child(7){padding-top: 30px;}
-    .all_store li:nth-child(8){padding-top: 40px;}
-
-    .conven_store li{padding-top:30px;}
-    .conven_store li:last-child{padding-top:40px;}
-
-/* ============ .board_5 : 나의 정보 ============ */
-
+    /* =========== 내 정보 - 기본등록정보 =========== */
     .profile{
-      width:70%; height:90%;
-      margin:auto; margin-top: 30px;
+      width:100%; height:auto;
+      margin:auto; margin-top: 160px;
     }
 
-    .exBox{
-      width:90%; height:100px; margin:auto;
-      margin-top: 50px; 
-      padding:10px 25px; box-sizing: border-box;
-      position: relative;
+      .profile > tbody > tr > th{font-size:0.9rem;}
+      .profile > tbody > tr > td{font-size:0.8rem;}
+
+      .profile_btn{width:210px; height:30px; float:none; margin:auto; margin-top: 20px;}
+
+      .profile_btn > button{
+        width:100px; height:30px;
+        border-radius: 5px; color:#fff; font-size:0.9rem;
+      }
+
+    /* =========== 내 정보 - 기본등록정보 - 수정 =========== */
+    .profile_modify_box{
+      display:none;
+      width:100%; height:100%;
+      margin-top: 100px;
     }
-      .ex_id{
-        float:left; width:20%; height:60px;
-        line-height: 80px; font-size:1rem;
-        text-align: center; border-bottom:2px solid #f5f6f7;
-        }
+
+      .profile_modify_box form{width:100%; height:100%;}
+      .profile_modify_ul{width:100%; height:100%;}
+      .profile_modify_ul > li{width:100%; height:50px;}
+      .profile_modify_ul > li > dl{width:100%; height:100%; font-size:0.9rem;}
+      .profile_modify_ul > li > dl > dt{float:left; width:20%; height:100%; text-align: right;}
+      .profile_modify_ul > li > dl > dd{float:left; width:30%; height:100%;}
+      .profile_modify_ul > li > dl > dd > input{
+        width:180px; height:30px; margin-top: 5px;
+        margin-left: 30px; font-size:0.9rem;
+        border:1px solid #ccc;
+      }
+
+      .profile_modify_ul > li:last-child > dl > dt{width:20%;}
+      .profile_modify_ul > li:last-child > dl > dd{width:80%;}
+      .profile_modify_ul > li:last-child > dl > dd > input{margin-left: 15px;}
+
+      .profile_modify_ul > li:nth-child(2) > dl > dd > input{background-color: #EBEBEB;}
+      .profile_modify_ul > li:nth-child(6) > dl > dd > input{background-color: #EBEBEB;}
+      
+
+      .profile_modify_btn{
+        float:none; margin:auto; margin-top: 380px;
+        width:210px; height:30px; font-size:0.9rem; color:#fff;
+      }
+
+      .profile_modify_btn > button {width:100px; height:30px; border-radius: 5px;}
+
+    /* =========== 내 정보 - 소명자료요청 =========== */
+    .exBox{
+      position: relative;
+      width:100%; height:100px; margin:auto;
+      margin-top: 50px;
+    }
 
       .ex_date{
-        width:100%; height:60px;
+        width:100%; height:80px;
         line-height: 80px; font-size:1rem;
         margin:auto;
       }
 
-        .ex_date > span{float:left; margin-left: 40px;}
+        .ex_date > span{float:left; margin-left: 1px; }
         .ex_input_date{float:right;}
-        .ex_input_date > input{width:130px; font-size:0.9rem; }
+        .ex_input_date > input{width:90px; font-size:0.8rem; }
 
       .ex_btn{
         position: absolute;
         left:0; right:0;
         width:100px; height:35px;
         margin:auto; margin-top: 20px; background-color: #4998D3;
-        color:#fff; font-size:1rem;
+        color:#fff; font-size:0.9rem;
         transition:transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
         box-shadow:0 4px 6px #36709c;
-        border-radius: 15px;
-      }    
-}
-  
+        border-radius: 5px;
+      }
+
