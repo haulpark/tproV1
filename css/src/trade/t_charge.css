@@ -9,7 +9,7 @@
     width:100%; text-align: center;
     font-size:1.3rem;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .br{height:10px;}
@@ -70,3 +70,27 @@
     .ch_btn > button > a{
       line-height: 40px; text-align: center;
     }
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 반응형 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+@media screen and (max-width: 320px) {
+  #wrap{padding:30px 0; box-sizing: border-box;}
+
+    .rq_title{margin-bottom: 10px;}
+    .br{height:5px;}
+
+    .user_list{margin-top: 10px;}
+
+    .ch_btn{
+      width:210px; height:35px;
+      margin:auto; margin-top: 20px;
+    }
+
+    .ch_btn > button{
+      width:100px; height:35px; font-size:0.9rem;
+    }
+
+    .ch_btn > button > a{
+      line-height: 35px; text-align: center;
+    }
+    
+}

@@ -66,3 +66,33 @@
       .rq_btn > button > a{
         line-height: 40px; text-align: center;
       }
+
+
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 반응형 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+@media screen and (max-width: 320px) {
+  #wrap{
+    padding:40px 0; box-sizing: border-box;
+  }
+
+    .rq_title{
+      margin-bottom: 40px;
+    }
+
+    .rq_btn{
+      width:210px; height:35px;
+      margin:auto; margin-top: 40px;
+    }
+
+    .rq_btn > button{
+      width:100px; height:35px;
+      border-radius: 5px;
+      font-size:0.9rem; color:#fff;
+      transition:transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    }
+
+    .rq_btn > button > a{
+      line-height: 35px; text-align: center;
+    }
+}

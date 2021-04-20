@@ -3,7 +3,7 @@
 (function($){
 
   // 타이머 
-  var time = 1; // -1초 (html에 01:00 띄웠음)
+  var time = 59; // -1초 (html에 01:00 띄웠음)
   var min = " ";
   var sec = " ";
 
@@ -20,7 +20,7 @@
     
 
     if(time < 0 ){
-      location.href="#";
+      location.href="./t_checking.html";
     } // 5분 초과 시 이동
     },1000);
 
