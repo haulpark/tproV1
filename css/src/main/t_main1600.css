@@ -1,149 +1,151 @@
-/* width: 1281 ~ 1600px (노트북 환경 기준) */
+/* width: 1281 ~ 1600px (노트북 L 기준) */
 @media screen and (min-width: 1281px) and (max-width: 1600px) {
+
+  #wrap{
+    width:100%; height:100%;
+    padding:90px 30px; box-sizing: border-box;
+  }
 
   /* =================== #headBox ===================*/
 
-  #headBox{height:8vw;}
-  .title{font-size:1.4rem;}
+  #headBox{ width:90%; height:8vw;}
+  .title{font-size:1.2rem;}
   .unb{font-size:1rem;}
   .slideBar{font-size:1.1rem;}
 
   /* =================== #viewBox ===================*/
-  /* ============= deal(좌) 화면 ============== */
-  #viewBox{height:40vw;}
-  
-  /* ========= #board_홈 화면 ========= */
-   #tab-1{
-     width:100%; height:570px;
-  }
+  #viewBox{width:90%; height:50vw;}
 
-  .graph{
-    width:50%; margin:10px auto;
-  }
-
-    #data{
-      width:70%; height:10vw; 
-      margin:auto;
-    }
-
-    #data > thead > tr > td, th{
-      font-size:1rem; text-align: center;
-      background-color: #366f9c;
-      color:#fff;
-    }
-
-    #data > tbody > tr > td{
-      font-size:0.9rem; text-align: right;
-    }
-       
-    .td_1{background-color: #f5f6f7;}
-
+  /* ========= #board_홈 화면(최상단) ========= */
     .class{width:120px;}
     .class p{margin-top: 20px;}
     .class_t{font-size:3rem;}
-    .class_p{font-size:1.2rem; line-height: 80px;}
+    .class_p{font-size:1.1rem; line-height: 80px;}
 
-    .class_ex{font-size:1.2rem;}
+    .class_ex{font-size:1.1rem;}
 
-
-  /* ========= #board_tab(상단 탭) ========= */
-
+  /* ================ 상단탭 ======================= */
   .board_tab{
-    width:100%; height:40px;
+    width:100%; height:30px;
   }
 
-    .board_tab > ul{
-      width:100%; height:100%;
+    .board_tab li{
+      line-height:60px;  font-size:1.1rem;
     }
 
-    .board_tab > ul > li{
-      float:left; width:20%; height:100%;
-      font-size:1.2rem; text-align: center;
-      line-height:40px;
+    .board_tab ul > li > dl > dt {line-height: 60px;}
+
+  /* ============ .board_1 : 홈 ============ */
+
+    .graph{
+      width:70%; margin:10px auto;
     }
 
-    .board_tab > ul > li.current span{
-      display: inline-block;
-      line-height: 30px;
-      width:100px; height:40px;
+    #data{
+      width:100%; height:180px;
+      margin:auto; 
+    }
+
+    #data > thead > tr > td, th{
+      font-size:1.1rem; height:30px;
+    }
+
+    #data > tbody > tr > td{
+      font-size:1rem; height:25px;
     }
 
   /* ============ .board_2 : 거래내역 ============ */
-  .period_content{
-    float:right;
-    width:240px; height:40px;
-  }
+  /* ============ 거래내역 - 상단 표 ============ */
+    .period_content{
+      float:right;
+      width:300px; height:40px;
+      margin-top: 3vw;
+      margin-bottom: 3vw;
+    }
 
-      .period_content li{width:80px;}
-      .period_content dt{height:20px; font-size:0.9rem;}
-      .period_content dd{height:20px; font-size:0.8rem;}
+      .period_content > ul > li > dl > dt{height:20px; line-height: 15px; font-size:1rem;}
+      .period_content > ul > li > dl > dd{height:20px; font-size:0.9rem;}
 
+  /* ============ 거래내역 - 하단 표 ============ */
+    #periodBox{
+      width:100%; height:auto; margin:auto; 
+    }
 
-  #periodBox{
-    width:100%; height:auto;
-    margin:auto;
-    margin-top: 10px;
-  }
+      #periodBox > thead > tr > th{font-size:1rem; font-weight: normal; height:25px;}
 
-    #periodBox > thead > tr > th{font-size:0.8rem;}
+      #periodBox > tbody > tr > th{font-size:1rem; height:25px;}
+      #periodBox > tbody > tr > td{font-size:0.9rem; height:25px;}
 
-    #periodBox > tbody > tr > th{font-size:0.8rem;}
-    #periodBox > tbody > tr > td{font-size:0.7rem;}
+    .p_indicator{
+      width:180px; height:70px;
+      margin:auto; 
+    }
 
-    .p_indicator{height:10px;}
-
-    .p_indicator li{font-size:0.9rem;}
+    .p_indicator li{font-size:0.9rem; line-height: 70px;}
 
 /* ============ .board_3 : 거래순위 ============ */
 
-  .lankBox{
-    width:90%; height:100px;
-    margin-top: 20px; margin-bottom: 10px;
-  }
+.lankBox{
+  width:100%; height:auto;
+  margin:auto; margin-top: 5vw;
+}
 
-    .lankBox > tbody > tr > td{text-align: center; font-size:1rem;}
-    .lankBox > tbody > tr:first-child{background-color: #ddd;}
-    .lankBox > tbody > tr:nth-child(3), tr:nth-child(5){background-color: #f5f6f7;}
+  .lankBox > thead > tr > th{font-weight: normal; height:20px; font-size:1rem;}
+  .lankBox > tbody > tr > td{text-align: center; font-size:0.9rem; border:1px solid #d4d4d4; height:25px;}
 
-  .lank_indicator{
-    width:180px; height:10px;
-    margin:auto; margin-bottom: 20px;
-  }
+.mylankBox{
+  width:100%; height:50px;
+  margin:auto; margin-top:25px;
+}
 
-    .lank_indicator ul{width:100%; height:100%;}
-    .lank_indicator li{width:20px; font-size:1rem; line-height: 30px;}
+  .mylankBox > thead > tr > th{font-weight: normal; height:25px; font-size:1rem;}
+  .mylankBox > tbody > tr > td{font-weight: normal; height:25px; font-size:0.9rem; border:1px solid #d4d4d4; text-align: center;}
+
 
 /* ============ .board_4 : 상점 ============ */
 
   .all_store{
-    width:90%; height:100%;
-    margin: auto; margin-top: 20px;
+    width:100%; height:auto;
+    margin: auto; margin-top:100px;
+    padding:0 20px; 
   }
 
     .all_store li{
-      float:left; width:120px; height:120px;
-      margin-right: 20px; margin-bottom: 20px;
-      padding-top:35px;
-      border:3px solid #ccc; line-height: 10px;
+      float:left; width:9vw; height:9vw;
+      margin-right: 1vw; margin-bottom: 1vw;
+      padding-top:2.2vw; line-height: 20px;
     }
-
-    .all_store li:nth-child(5), li:nth-child(6), li:nth-child(7){padding-top: 40px;}
-    .all_store li:nth-child(8){padding-top: 50px;}
-
-    .conven_store li{padding-top:45px;}
-    .conven_store li:last-child{padding-top:50px;}
 
 /* ============ .board_5 : 나의 정보 ============ */
 
-  .profile{
-    width:70%; height:90%;
-    margin:auto; margin-top: 30px;
+.profile{ margin-top: 100px;}
+
+  .profile > tbody > tr > th{width:30%; font-size:1rem;}
+  .profile > tbody > tr > td{width:70%; font-size:1rem;}
+
+/* =========== 내 정보 - 기본등록정보 - 수정 =========== */
+.profile_modify_box{
+  display:none;
+  width:100%; height:100%;
+  margin-top: 80px;
+}
+
+  .profile_modify_ul > li{width:100%; height:40px;}
+  .profile_modify_ul > li > dl > dt{float:left; width:15%; height:100%; text-align: right;}
+  .profile_modify_ul > li > dl > dd{float:left; width:30%; height:100%;}
+  .profile_modify_ul > li > dl > dd > input{width:220px; height:30px;}
+  .profile_modify_ul > li:nth-child(6) > dl > dd > input{width:220px;}
+
+  .profile_modify_btn{
+    float:right; margin-top: 50px; margin-right: 30px;
+    width:250px; height:40px; font-size:1rem; color:#fff;
   }
 
+/* =========== 내 정보 - 소명자료요청 =========== */
   .exBox{
-    width:90%; height:100px; margin:auto;
-    margin-top: 50px; 
-    padding:10px 25px; box-sizing: border-box;
     position: relative;
+    padding-top: 80px; box-sizing: border-box;
+    width:100%; height:100px; margin:auto;
+    margin-top: 80px;
   }
 }

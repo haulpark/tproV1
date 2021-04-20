@@ -7,7 +7,6 @@
 }
 
 .mob_menu{display:none;}
-
 .visualize-key{display:none;}
 
 /* =================================== #headBox =================================== */
@@ -16,6 +15,7 @@
     margin:auto;
     box-shadow:0 0.5rem 1rem #ccc;
     padding:5px 30px; box-sizing: border-box;
+    background-color:#fff;
   }
 
     .logo{
@@ -90,13 +90,15 @@
       float:left;
       width:30%; height:100%;
       box-shadow:0 0.5rem 1rem #ccc;
-      
+      background-color:#fff;
     }
     /* ============ .board ============ */
     .board{
+      position: relative;
       float:right;
       width:67%; height:100%;
       box-shadow:0 0.5rem 1rem #ccc; 
+      background-color:#fff;
     }
 
       .user_percent{
@@ -298,22 +300,6 @@
       .lankBox > tbody > tr:nth-child(2){background-color: #eee;}
       .lankBox > tbody > tr:nth-child(3){background-color: #f5f6f7;}
 
-    .lank_indicator{
-      width:180px; height:30px;
-      margin:auto; margin-bottom: 20px;
-    }
-
-      .lank_indicator ul{width:100%; height:100%;}
-      .lank_indicator li{
-        width:20px; font-size:1rem; line-height: 30px;
-      }
-
-      /* 어디서 오류난지 모르겠음 */
-      .lank_indicator li:nth-child(6){padding:0;}
-      .lank_indicator li:nth-child(7){padding:0;}
-
-      .lank_indicator a{color:#333;}
-
     .mylankBox{
       width:100%; height:60px;
       margin:auto; margin-top:50px;
@@ -333,10 +319,60 @@
     display:inherit;
   }
 
+    /* ============ store-modal 설명 창 ============ */
+    .store_modal{
+      position: absolute; z-index:1000;  
+      top:0; left:0; right:0; bottom:0; margin:auto;
+      width:100%; height:100%; background:rgba(0, 0, 0, 0.5);
+      display:none;
+    }
+
+      .store_modal_content{
+        position: absolute; z-index:1001;
+        width:80%; height:70%; background-color: #fff;
+        left:0; right:0; bottom:0; top:0; margin:auto;
+        padding:70px; box-sizing: border-box;
+      }
+      
+        #store_modal_title{font-size:1.3rem; text-align: center; font-weight: 500;}
+        #store_modal_ex{font-size:1rem; text-align: center;}
+
+      
+      .store_btn{
+        position: absolute; z-index:1001;
+        bottom:15%; left:0; right:0; margin: auto;
+        width:250px; height:40px;
+      }
+
+      .store_btn > button{
+        width:120px; height:40px;
+        border-radius: 5px;
+        color:#fff; font-size:1rem;
+      }
+
+      .store_exit {float:left; background-color: #9F9F9F; }
+
+      .store_credit{float:right; background-color: #4694D1;}
+      .store_credit > a{color:#fff; line-height:40px;}
+
+    /* ============ store-modal 결제 창 ============ */
+    .store_modal_credit{
+      display:none;
+      position: absolute; z-index:1001;
+      width:80%; height:70%; background-color: #fff;
+      left:0; right:0; bottom:0; top:0; margin:auto;
+      padding:100px; box-sizing: border-box;
+    }
+
+      #store_modal_credit_title{
+        font-size:1.3rem; text-align: center; font-weight: 500;
+      }
+
+    /* ============ store 내용 창 (8개) ============ */
     .all_store{
       width:100%; height:auto;
       margin: auto; margin-top:70px;
-      padding:0 40px; 
+      padding:0 20px; 
     }
 
       .all_store ul{
@@ -344,43 +380,23 @@
       }
 
       .all_store li{
-        float:left; width:160px; height:160px;
-        margin-right: 12px; margin-bottom: 12px;
-        padding-top:36px;
-        border:3px solid #ccc; line-height: 20px;
+        float:left; width:9vw; height:9vw;
+        margin-right: 1vw; margin-bottom: 1vw;
+        padding-top:2.8vw; line-height: 20px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        color:#fff; font-weight: 500;
       }
 
-      .all_store li:nth-child(5), li:nth-child(6), li:nth-child(7){padding-top: 50px;}
-      .all_store li:nth-child(8){padding-top: 65px;}
-
-      .conven_store li{padding-top:50px;}
-      .conven_store li:last-child{padding-top:65px;}
-
-    .store_modal{
-      position: relative;
-      margin:auto; z-index:1000;
-      width:100%; height:100%; background:rgba(66, 80, 103, 0.9);
-      padding:2vw; box-sizing: border-box;
-      display:none;
-    }
-
-      .store_modal_content{
-        position: absolute;
-        width:90%; height:auto;
-        color:#fff;}
-      
-        .store_modal_title{font-size:2rem;}
-        .store_modal_ex{font-size:1rem;}
-
-      .store_modal > button{
-        position: absolute; z-index:1001;
-        top:5%; right:3%;
-        background-color: transparent;
-        color:#fff; font-size:2rem;
-      }
-
-    
-
+      .all_store .store_content_1 {background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../../../img/image/storeImg01.png);}
+      .all_store .store_content_2 {background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../../../img/image/storeImg02.png);}
+      .all_store .store_content_3 {background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../../../img/image/storeImg03.png);}
+      .all_store .store_content_4 {background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../../../img/image/storeImg04.png);}
+      .all_store .store_content_5 {background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../../../img/image/storeImg05.png); padding-top: 3.2vw;}
+      .all_store .store_content_6 {background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../../../img/image/storeImg06.png); padding-top: 3.2vw;}
+      .all_store .store_content_7 {background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../../../img/image/storeImg07.png); padding-top: 3.2vw;}
+      .all_store .store_content_8 {background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../../../img/image/storeImg08.png); padding-top: 3.8vw;}
 
   /* ============ .board_5 : 나의 정보 ============ */
 
@@ -393,31 +409,73 @@
   }
 
   .side_tab_content_myinfo{
-    width:100%; height:100%; padding-top: 80px; box-sizing: border-box;}
+    width:100%; height:100%; box-sizing: border-box;}
+
+    /* =========== 내 정보 - 기본등록정보 =========== */
 
     .profile{
       width:100%; height:auto;
-      margin:auto; 
+      margin:auto; margin-top: 80px;
     }
 
       .profile > tbody > tr {height:40px;}
       .profile > tbody > tr > th{width:30%; font-weight: normal; background-color: #eee; font-size:1.1rem;}
       .profile > tbody > tr > td{width:70%; font-size:1rem; padding-left:10px; border:1px solid #D4D4D4;}
 
-      .profile_btn{width:164px; height:40px; float:right; margin-top: 20px;}
+      .profile_btn{width:250px; height:40px; float:right; margin-top: 20px;}
 
       .profile_btn > button{
-        width:80px; height:32px;
+        width:120px; height:40px;
         border-radius: 5px; color:#fff; font-size:1rem;
       }
 
       .profile_cert{float:left; height:100%; background-color: #4A96D2;}
       .profile_modify{float:right; height:100%; background-color: #ae0000;}
+
+    /* =========== 내 정보 - 기본등록정보 - 수정 =========== */
+    .profile_modify_box{
+      display:none;
+      width:100%; height:100%;
+      margin-top: 50px;
+    }
+
+      .profile_modify_box form{width:100%; height:100%;}
+      .profile_modify_ul{width:100%; height:100%;}
+      .profile_modify_ul > li{width:100%; height:50px;}
+      .profile_modify_ul > li > dl{width:100%; height:100%; font-size:1rem;}
+      .profile_modify_ul > li > dl > dt{float:left; width:15%; height:100%; text-align: right;}
+      .profile_modify_ul > li > dl > dd{float:left; width:30%; height:100%;}
+      .profile_modify_ul > li > dl > dd > input{
+        width:280px; height:36px; margin-top: 14px;
+        margin-left: 30px;
+        border:1px solid #ccc;
+      }
+
+      .profile_modify_ul > li:nth-child(2) > dl > dd > input{background-color: #EBEBEB;}
+      .profile_modify_ul > li:nth-child(6) > dl > dd > input{background-color: #EBEBEB;}
+      
+
+      .profile_modify_btn{
+        float:right; margin-top: 30px; margin-right: 40px;
+        width:250px; height:40px; font-size:1rem; color:#fff;
+      }
+
+      .profile_modify_btn > button {width:120px; height:40px; border-radius: 5px;}
+      .profile_modify_no{float:left; background-color: #9f9f9f;}
+      .profile_modify_yes{float:right; background-color: #4694D1;}
+      
+
     
+    
+
+
+
+    /* =========== 내 정보 - 소명자료요청 =========== */
     .exBox{
       position: relative;
       padding-top: 40px; box-sizing: border-box;
       width:100%; height:100px; margin:auto;
+      margin-top: 80px;
     }
 
       .ex_date{

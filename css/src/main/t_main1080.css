@@ -1,25 +1,24 @@
-/* width: 640 ~ 1080px(Mob L 기준) */
-@media screen and (min-width: 640px) and (max-width: 1080px) {
+/* width: ~ 1023px(Mob 기준) */
+@media screen and (max-width: 1023px) {
 
+  #wrap{
+    width:100%; height:auto;
+    padding:20px 0 0 0; box-sizing:border-box;
+  }
+
+  .slideBar{display: none;}
+  .unb{display:none;}
   /* =================== #headBox ===================*/
-
-  #headBox{height:100px; padding:20px;}
+  #headBox{width:320px; height:80px; padding:10px; box-sizing:border-box; background-color:#fff;}
 
   .logo{width:60px; height:60px;}
-
-  .title{float:left; width:450px; margin-left: 10px; font-size:1.2rem;}
-
-  .slideBar{height: 30px; font-size:0.9rem;}
-
-  .unb{
-    display:none;
-  }
+  .title{float:left; width:200px; font-size:16pt; line-height:60px;}
     
     .mob_icon{
       float:right;
       display:block;
-      margin-top: 5px;
-      width:50px; height:50px;
+      margin-top: 15px; margin-right:5px; 
+      width:30px; height:30px;
       background-image: url(../../../img/icons/user.png);
       background-position: 50% 50%;
       background-size: contain;
@@ -34,18 +33,6 @@
       color:#fff;
     }
 
-      .mob_menu ul{width:100%; height:100%;}
-      .mob_menu li{
-        width:100%; height:60px; 
-        border-bottom:2px solid #bbb; box-sizing: border-box;
-        text-align: center; line-height:60px;
-        font-size:1.1rem;
-      }
-      .mob_menu dl{width:100%; height:100%;}
-      .mob_menu dt{float:left; width:50%; height:100%; line-height:60px; font-size:1rem; border-right:2px solid #bbb; box-sizing: border-box;}
-      .mob_menu dd{float:right; width:50%; height:100%; line-height:60px; font-size:1rem;}
-
-
     .slideBar{
       float:left;
       margin-top: 5px; 
@@ -57,12 +44,12 @@
   /* =================== #viewBox .deal(left) ===================*/
 
   #viewBox{
-    height:auto;
+    width:320px; height:800px; background-color:#fff;
   }
 
   .deal{
     float:none; margin:auto;
-    width:100%; height:70vw; margin-bottom: 25px;}
+    width:100%; height:500px; margin-bottom: 25px;}
 
   /* =================== #viewBox .board(right) ===================*/
   .board{width:100%; height:100vw; margin-bottom: 25px;}

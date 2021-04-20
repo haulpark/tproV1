@@ -101,6 +101,9 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 
 		$('.side_tab_link_myinfo').hide();
+		$('.profile_modify_box').hide();
+		$('.profile').show();
+		$('.profile_btn').show();
 	});
 
 });
