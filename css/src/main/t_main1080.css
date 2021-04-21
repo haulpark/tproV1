@@ -205,8 +205,10 @@
       .period_content > ul > li > dl > dd{height:20px; font-size:0.8rem;}
 
   /* ======= 거래내역 표 ======= */
+
+    .overflow{width:100%; height:auto; overflow-x: scroll;}
     #periodBox{
-      width:100%; height:340px; margin:auto;
+      width:400px; height:340px; margin:auto;
     }
 
       #periodBox > thead > tr > th{font-size:0.8rem; font-weight: normal; height:30px;}
