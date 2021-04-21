@@ -106,36 +106,36 @@
 
 
   /* =================================== tab 2 (증권) 이미지 =================================== */
-    #tab2 ul li:nth-child(1) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(2) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(3) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(4) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(5) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(6) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(7) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(8) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(9) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(10) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(1) dl dt .bank_img{background-image: url(../../../img/stock_img/sh.png);}
+    #tab2 ul li:nth-child(2) dl dt .bank_img{background-image: url(../../../img/stock_img/kb-1.png);}
+    #tab2 ul li:nth-child(3) dl dt .bank_img{background-image: url(../../../img/stock_img/mras.png);}
+    #tab2 ul li:nth-child(4) dl dt .bank_img{background-image: url(../../../img/stock_img/mrtz.png);}
+    #tab2 ul li:nth-child(5) dl dt .bank_img{background-image: url(../../../img/stock_img/ds.png);}
+    #tab2 ul li:nth-child(6) dl dt .bank_img{background-image: url(../../../img/stock_img/bk.png);}
+    #tab2 ul li:nth-child(7) dl dt .bank_img{background-image: url(../../../img/stock_img/ss.png);}
+    #tab2 ul li:nth-child(8) dl dt .bank_img{background-image: url(../../../img/stock_img/sy.png);}
+    #tab2 ul li:nth-child(9) dl dt .bank_img{background-image: url(../../../img/stock_img/sk.png);}
+    #tab2 ul li:nth-child(10) dl dt .bank_img{background-image: url(../../../img/stock_img/yat.png);}
 
-    #tab2 ul li:nth-child(11) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(12) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(13) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(14) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(15) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(16) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(17) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(18) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(19) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(20) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(11) dl dt .bank_img{background-image: url(../../../img/stock_img/yj.png);}
+    #tab2 ul li:nth-child(12) dl dt .bank_img{background-image: url(../../../img/stock_img/ebest.png);}
+    #tab2 ul li:nth-child(13) dl dt .bank_img{background-image: url(../../../img/stock_img/kp.png);}
+    #tab2 ul li:nth-child(14) dl dt .bank_img{background-image: url(../../../img/stock_img/cape.png);}
+    #tab2 ul li:nth-child(15) dl dt .bank_img{background-image: url(../../../img/stock_img/ku.png);}
+    #tab2 ul li:nth-child(16) dl dt .bank_img{background-image: url(../../../img/stock_img/toss.png);}
+    #tab2 ul li:nth-child(17) dl dt .bank_img{background-image: url(../../../img/stock_img/fs.png);}
+    #tab2 ul li:nth-child(18) dl dt .bank_img{background-image: url(../../../img/stock_img/hana.png);}
+    #tab2 ul li:nth-child(19) dl dt .bank_img{background-image: url(../../../img/stock_img/hi.png);}
+    #tab2 ul li:nth-child(20) dl dt .bank_img{background-image: url(../../../img/stock_img/hk.png);}
 
-    #tab2 ul li:nth-child(21) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(22) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(23) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(24) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(25) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(26) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(27) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
-    #tab2 ul li:nth-child(28) dl dt .bank_img{background-image: url(../../../img/bank_img/);}
+    #tab2 ul li:nth-child(21) dl dt .bank_img{background-image: url(../../../img/stock_img/hh.png);}
+    #tab2 ul li:nth-child(22) dl dt .bank_img{background-image: url(../../../img/stock_img/hd.png);}
+    #tab2 ul li:nth-child(23) dl dt .bank_img{background-image: url(../../../img/stock_img/bnk.png);}
+    #tab2 ul li:nth-child(24) dl dt .bank_img{background-image: url(../../../img/stock_img/db.png);}
+    #tab2 ul li:nth-child(25) dl dt .bank_img{background-image: url(../../../img/stock_img/ibk.png);}
+    #tab2 ul li:nth-child(26) dl dt .bank_img{background-image: url(../../../img/stock_img/kb.png);}
+    #tab2 ul li:nth-child(27) dl dt .bank_img{background-image: url(../../../img/stock_img/ktb.png);}
+    #tab2 ul li:nth-child(28) dl dt .bank_img{background-image: url(../../../img/stock_img/nh.png);}
     
   
   
