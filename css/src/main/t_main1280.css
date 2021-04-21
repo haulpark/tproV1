@@ -53,8 +53,8 @@
 
   /* ============ .board_1 : 홈 ============ */
 
-    .graph{
-      width:60%; margin:10px auto;
+    #graph{
+      width:100%; height:180px; margin:10px auto;
     }
 
     #data{

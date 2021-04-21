@@ -3,7 +3,7 @@
 
   #wrap{
     width:100%; height:100%;
-    padding:90px 30px; box-sizing: border-box;
+    padding:70px 30px; box-sizing: border-box;
   }
 
   /* =================== #headBox ===================*/
@@ -37,8 +37,8 @@
 
   /* ============ .board_1 : 홈 ============ */
 
-    .graph{
-      width:70%; margin:10px auto;
+    #graph{
+      width:100%; height:400px; margin:10px auto;
     }
 
     #data{

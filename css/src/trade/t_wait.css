@@ -7,10 +7,14 @@
     .loading{
       position: absolute;
       width:200px; height:100px;
-      top:15%; left:0; right:0; margin:auto;
+      top:20%; left:0; right:0; margin:auto;
+      background-image: url(../../../img/image/loading.gif);
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
     }
 
-      /* 로딩 구현 */
+      /* 로딩 구현 
       .infinity_loding{
         width:200px; height:0;
         position: relative;
@@ -252,6 +256,7 @@
       *:before, *:after {
         box-sizing: border-box;
       }
+      */
 
     .ex{
       position: absolute;
