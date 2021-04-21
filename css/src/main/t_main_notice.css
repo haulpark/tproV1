@@ -84,6 +84,8 @@
   margin:auto; margin-top: 30px;
 }
 
+  .mob_notice{display:none;}
+
   .noticeBox{
     width:100%; height:700px;
     box-shadow:0 0.5rem 1rem #ccc;
@@ -184,7 +186,7 @@
 @media screen and (max-width: 1024px) {
 
   #wrap{
-    width:100%; height:1640px;
+    width:100%; height:730px;
     padding:20px 0; box-sizing:border-box;
   }
 
@@ -248,8 +250,43 @@
   /* =================== #viewBox  ===================*/
 
   #viewBox{
-    width:320px; height:800px; margin-top: 0px;
+    width:320px; height:550px; margin-top: 0px;
   }
+  
+    .noticeBox{
+      width:100%; height:100%;
+      box-shadow:0 0.5rem 1rem #ccc;
+      padding:10px 20px; box-sizing: border-box;
+    }
+  
+      h1{font-size:1.2rem; margin-bottom: 30px; margin-left: 10px;}
+      .noticeTable{display:none;}
+
+      .mob_notice{display:block; width:100%; height:400px;}
+      .mob_notice > ul{width:100%; height:100%;}
+      .mob_notice > ul > li {width:100%; height:80px; padding:10px; box-sizing: border-box;}
+      .mob_notice > ul > li:nth-child(odd) {background-color: #eee;}
+      .mob_notice > ul > li > a {color:#333;}
+      .mob_notice > ul > li > a > dl {width:100%; height:100%;}
+      .mob_notice > ul > li > a > dl > dt{width:100%; height:30px; line-height: 40px; margin-left: 8px; font-weight: 500;}
+      .mob_notice > ul > li > a > dl > dd{width:100%; height:30px;}
+      .mob_notice > ul > li > a > dl > dd > ol{width:100%; height:100%;}
+      .mob_notice > ul > li > a > dl > dd > ol > li {float:left; width:50px; height:18px; margin-top: 6px; text-align:center; font-size:0.9rem; border-right:1px solid #aaa; box-sizing: border-box;}
+      .mob_notice > ul > li > a > dl > dd > ol > li:nth-child(2){width:80px;}
+      .mob_notice > ul > li > a > dl > dd > ol > li:nth-child(3){width:80px; border-right:0;}
+      
+
+
+  
+      .p_indicator{
+        width:225px; height:30px;
+        margin:auto; 
+      }
+  
+        .p_indicator ul{width:100%; height:100%;}
+        .p_indicator li{float:left; width:25px; font-size:0.9rem; line-height: 10px;}
+  
+        .p_indicator a{color:#333;}
 
 
 }
