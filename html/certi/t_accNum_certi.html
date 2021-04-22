@@ -422,6 +422,24 @@
     </div>
   </aside>
 
+  <aside id="accNum_msg">
+    <div class="msg">
+      <button type="button" class="msg_close"> </button>
+
+      <div class="check_img"></div>
+      <div class="check_msg">
+        <p class="check_title">고객님의 계좌로 1원을 보냈습니다.</p>
+        <br />
+        <p class="check_contents">본인의 계좌인지 확인하기 위해</p>
+        <p class="check_contents">입력하신 계좌로 1원을 입금했습니다.</p>
+        <p class="check_contents">계좌의 거래내역에서 입금된 1원의</p>
+        <p class="check_contents">입금자명을 확인해주세요.</p>
+      </div>
+
+    </div>
+
+  </aside>
+
   <header id="headBox">
     <h1>계좌 인증</h1>
   </header>
@@ -434,12 +452,12 @@
         <legend class="hidden">계좌 인증</legend>
         <p> 계좌번호 </p>
         <button type="button" name="accNumBtn" class="accNumBtn"><span>은행 선택</span></button>
-        <input type="email" name="text" class="accNum_input" placeholder="계좌번호를 입력해주세요."/>
+        <input type="email" name="text" class="accNum_input" placeholder="계좌번호를 입력해주세요.(-없이)"/>
       </fieldset>
     </form>
 
     <div class="next_certi">
-      <button type="button"><a href="./t_accNum_certi_complete.html">인증완료</a></button>
+      <button type="button" class="next_certi_btn">인증</button>
     </div>
 
   </section>

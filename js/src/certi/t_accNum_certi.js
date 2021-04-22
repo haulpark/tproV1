@@ -37,5 +37,16 @@ $(function($){
 
   });
 
+  $('.next_certi_btn').click(function(e){
+
+    $('#accNum_msg').show();
+    
+  });
+
+  $('.msg_close').click(function(e){
+
+    location.href = "./t_accNum_certi_input.html";
+  });
+
 
 });
