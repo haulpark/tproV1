@@ -164,8 +164,8 @@
 
         #data > thead > tr > td, th{
           text-align: center;
-          background-color: #aaa;
-          color:#000;
+          background-color: #004880;
+          color:#fff;
           border:1px solid #D4D4D4;
           font-size:1.1rem; height:30px;
           font-weight: normal;
@@ -239,6 +239,24 @@
       display:inherit;
     }
 
+    .period_date{
+      width:600px; height:20px;
+      margin-left: 20px;
+    }
+
+    .period_day{
+      float:left; width:px; height:20px;
+    }
+
+    .period_day > input{width:130px; height:25px; font-size:0.8rem; border-radius: 5px;}
+
+    .period_btn{
+      float:left; width:70px; height:25px; 
+      margin-left: 10px; border-radius: 5px; 
+      background-color: #4A96D2; color:#fff;
+      font-size:0.9rem;
+    }
+
     .period_content{
       width:600px; height:20px;
       margin-top: 20px;
@@ -259,6 +277,7 @@
       .period_content > ul > li:nth-child(2) > dl > dd {width:110px;}
 
   /* ======= 거래내역 표 ======= */
+  /* #48A75E #4694D1*/
     #periodBox{
       width:100%; height:340px; margin:auto;
     }
@@ -277,7 +296,7 @@
     .p_indicator{
       width:180px; height:60px;
       margin:auto; margin-top: 20px;
-    }
+    } 
 
     .p_indicator ul{width:100%; height:100%}
     .p_indicator li{width:20px; font-size:1rem; line-height: 60px;}
@@ -287,6 +306,9 @@
     .p_indicator li:nth-child(7){padding:0;}
 
     .p_indicator a{color:#333;}
+
+    .tdgreen{color:#48A75E;}
+    .tdblue{color:#4694D1;}
 
   /* ============ .board_3 : 거래순위 ============ */
 
@@ -428,7 +450,7 @@
     }
 
       .profile > tbody > tr {height:40px;}
-      .profile > tbody > tr > th{width:30%; font-weight: normal; background-color: #eee; font-size:1.1rem;}
+      .profile > tbody > tr > th{width:30%; font-weight: normal; background-color: #004880; font-size:1.1rem;}
       .profile > tbody > tr > td{width:70%; font-size:1rem; padding-left:10px; border:1px solid #D4D4D4;}
 
       .profile_btn{width:250px; height:40px; float:right; margin-top: 20px;}

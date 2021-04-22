@@ -192,12 +192,30 @@
     
   /* ============ .board_2 : 거래내역 ============ */
   /* ======= 거래 수/ 거래금액 / 수수료 표 ======= */
+    .period_date{
+      width:600px; height:20px;
+      margin-left: 10px;
+    }
+
+    .period_day{
+      float:left; width:auto; height:20px;
+    }
+
+    .period_day > input{width:80px; height:25px; font-size:0.8rem; border-radius: 5px;}
+
+    .period_btn{
+      float:left; width:70px; height:25px; 
+      margin-left: 10px; border-radius: 5px; 
+      background-color: #4A96D2; color:#fff;
+      font-size:0.9rem;
+    }
+
     .period_content{
       float:none;
       width:270px; height:40px;
       margin:auto;
-      margin-top: 15px;
-      margin-bottom: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
       .period_content > ul > li:nth-child(1) {width:90px;}

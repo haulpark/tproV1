@@ -56,10 +56,30 @@
 
   /* ============ .board_2 : 거래내역 ============ */
   /* ============ 거래내역 - 상단 표 ============ */
+
+  .period_date{
+    width:600px; height:20px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .period_day{
+    float:left; width:auto; height:25px;
+  }
+
+  .period_day > input{width:130px; height:25px; font-size:0.8rem; border-radius: 5px;}
+
+  .period_btn{
+    float:left; width:70px; height:25px; 
+    margin-left: 10px; border-radius: 5px; 
+    background-color: #4A96D2; color:#fff;
+    font-size:0.9rem;
+  }
+
   .period_content{
     width:600px; height:20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
     .period_content > ul{width:600px; height:100%;}
@@ -91,7 +111,7 @@
 
 .lankBox{
   width:100%; height:auto;
-  margin:auto; margin-top: 5vw;
+  margin:auto; margin-top: 30px;
 }
 
   .lankBox > thead > tr > th{font-weight: normal; height:20px; font-size:1rem;}
