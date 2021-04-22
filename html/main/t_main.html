@@ -11,12 +11,12 @@
 <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="../../fonts/fontawesome5/css/all.min.css">
 
-<link rel="stylesheet" href="../../Visuallize/css/visualize.css">
-<link rel="stylesheet" href="../../Visuallize/css/visualize-light.css">
-
 <link rel="stylesheet" href="../../css/src/main/main_base.css">
 
-
+<!--
+<link rel="stylesheet" href="../../Visuallize/css/visualize.css">
+<link rel="stylesheet" href="../../Visuallize/css/visualize-light.css">
+-->
 
 <!--[if IE]>
 <script src="./ie/html5shive/dist/html5shive.min.js"></script>
@@ -36,7 +36,7 @@
     <div class="title col-md-11">Trading Pro V1</div>
 
     <div class="slideBar slidein col-md-5">
-      <a href="./t_main_notice.html">
+      <a href="./t_main_notice.html" target='_blank'>
       <i class="fas fa-thumbtack"></i> <span> <span class="slideBar_act">심예지</span> 회원님이 <span class="slideBar_act">T-gold</span> 등급을 달성하셨습니다. </span>
       </a>
     </div>
@@ -56,7 +56,7 @@
   </header>
 
   <aside id="slideBox">
-    <a href="./t_main_notice.html">
+    <a href="./t_main_notice.html" target='_blank'>
         <i class="fas fa-thumbtack"></i> <span> <span class="slideBar_act">심예지</span> 회원님이 <span class="slideBar_act">T-gold</span> 등급을 달성하셨습니다. </span>
     </a>
   </aside>
@@ -835,7 +835,7 @@
                       <li>
                         <dl>
                           <dt>등록센터</dt>
-                          <dd><input type="text" placeholder="서울강남센터"></dd>
+                          <dd><input type="readonly" placeholder="서울강남센터" readonly /></dd>
                         </dl>
                       </li>
                       <li>
@@ -932,8 +932,6 @@
 
   <script src="../../js/src/main/t_main.js"></script>
   <script src="../../js/src/main/t_main_tab.js"></script>
-  <script src="../../js/src/main/t_main_animation.js"></script>
-  <script src="../../js/src/main/t_main_certi.js"></script>
 
   <script src="../../js/src/main/t_main_graph.js"></script>
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>

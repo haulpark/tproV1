@@ -54,7 +54,7 @@
   /* ============ .board_1 : 홈 ============ */
 
     #graph{
-      width:100%; height:180px; margin:10px auto;
+      width:100%; height:0px; margin:10px auto;
     }
 
     #data{
@@ -72,15 +72,24 @@
 
   /* ============ .board_2 : 거래내역 ============ */
   /* ============ 거래내역 - 상단 표 ============ */
-    .period_content{
-      float:right;
-      width:300px; height:40px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
+  .period_content{
+    width:440px; height:20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 
-      .period_content > ul > li > dl > dt{height:20px; line-height: 15px; font-size:0.9rem;}
-      .period_content > ul > li > dl > dd{height:20px; font-size:0.8rem;}
+    .period_content > ul{width:440px; height:100%;}
+    .period_content > ul > li{float:left; width:132px; height:100%; border-right:2px solid #ddd; box-sizing: border-box;}
+    .period_content > ul > li:last-child{border-right: 0;}
+    .period_content > ul > li > dl{width:100%; height:100%;}
+    .period_content > ul > li > dl > dt{float:left; width:60px; height:100%; font-size:0.9rem; font-weight:bold; line-height: 20px; text-align:right;}
+    .period_content > ul > li > dl > dd{float:left; width:70px; height:100%; font-size:0.8rem; line-height: 20px; text-align:center;}
+
+    .period_content > ul > li:nth-child(1) {width:122px;}
+    .period_content > ul > li:nth-child(1) > dl > dd {width:60px;}
+    .period_content > ul > li:nth-child(2) {width:172px;}
+    .period_content > ul > li:nth-child(2) > dl > dt {width:70px;}
+    .period_content > ul > li:nth-child(2) > dl > dd {width:100px;}
 
   /* ============ 거래내역 - 하단 표 ============ */
     #periodBox{

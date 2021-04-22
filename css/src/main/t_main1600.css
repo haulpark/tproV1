@@ -56,15 +56,19 @@
 
   /* ============ .board_2 : 거래내역 ============ */
   /* ============ 거래내역 - 상단 표 ============ */
-    .period_content{
-      float:right;
-      width:300px; height:40px;
-      margin-top: 3vw;
-      margin-bottom: 3vw;
-    }
+  .period_content{
+    width:600px; height:20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 
-      .period_content > ul > li > dl > dt{height:20px; line-height: 15px; font-size:1rem;}
-      .period_content > ul > li > dl > dd{height:20px; font-size:0.9rem;}
+    .period_content > ul{width:600px; height:100%;}
+    .period_content > ul > li{float:left; width:152px; height:100%; border-right:2px solid #ddd; box-sizing: border-box;}
+    .period_content > ul > li:last-child{border-right: 0;}
+    .period_content > ul > li > dl{width:100%; height:100%;}
+    .period_content > ul > li > dl > dt{float:left; width:60px; height:100%; font-size:1rem; font-weight:bold; line-height: 20px; text-align:right;}
+    .period_content > ul > li > dl > dd{float:left; width:90px; height:100%; font-size:0.9rem; line-height: 20px; text-align:center;}
+
 
   /* ============ 거래내역 - 하단 표 ============ */
     #periodBox{
