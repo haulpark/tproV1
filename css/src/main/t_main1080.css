@@ -129,8 +129,8 @@
 
         #data > thead > tr > td, th{
           text-align: center;
-          background-color: #aaa;
-          color:#000;
+          background-color: #004880;
+          color:#fff;
           border:1px solid #D4D4D4;
           font-size:1rem; height:30px;
           font-weight: normal;
@@ -441,4 +441,7 @@
         box-shadow:0 4px 6px #36709c;
         border-radius: 5px;
       }
+
+    #side_tab_myinfo_4{width:280px; overflow-x:scroll;}
+    #store_history{width:500px;}
 
