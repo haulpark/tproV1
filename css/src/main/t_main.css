@@ -307,6 +307,7 @@
 
     .p_indicator a{color:#333;}
 
+    .tdred{color:#ae0000;}
     .tdgreen{color:#48A75E;}
     .tdblue{color:#4694D1;}
 
@@ -497,11 +498,6 @@
       .profile_modify_yes{float:right; background-color: #4694D1;}
       
 
-    
-    
-
-
-
     /* =========== 내 정보 - 소명자료요청 =========== */
     .exBox{
       position: relative;
@@ -531,3 +527,14 @@
         border-radius: 15px;
       }
 
+    /* =========== 내 정보 - 상품구매내역 =========== */
+    #store_history{
+      margin-top: 100px;
+    }
+
+      #store_history > tbody > tr > td{width:auto; padding-left:0px; text-align: center;}
+      #store_history > tbody > tr > td:nth-child(2){padding-left:10px; box-sizing: border-box; text-align: left;}
+      #store_history > tbody > tr > td:nth-child(3){text-align: right; padding-right:10px; box-sizing: border-box;}
+      #store_history > tbody > tr > td:nth-child(5){text-align: right; padding-right:10px; box-sizing: border-box;}
+
+      
