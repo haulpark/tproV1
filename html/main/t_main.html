@@ -308,7 +308,6 @@
 
             <div class="period_date">
               <span>기간설정</span>
-              
               <div class="period_day">
                 <input type="date"> &#126; <input type="date">
               </div>
@@ -880,7 +879,7 @@
                       <li>
                         <dl>
                           <dt>아이디</dt>
-                          <dd><input type="readonly" placeholder="halupark@gmail.com"  readonly /></dd>
+                          <dd><input type="readonly" placeholder="halupark@gmail.com" class="input_readonly"  readonly /></dd>
                         </dl>
                       </li>
                       <li>
@@ -898,15 +897,19 @@
                       <li>
                         <dl>
                           <dt>등록센터</dt>
-                          <dd><input type="readonly" placeholder="서울강남센터" readonly /></dd>
+                          <dd><input type="readonly" placeholder="서울강남센터" class="input_readonly" readonly /></dd>
                         </dl>
                       </li>
                       <li>
                         <dl>
                           <dt>가입일</dt>
-                          <dd><input type="readonly" placeholder="2021.04.16" readonly /></dd>
+                          <dd><input type="readonly" placeholder="2021.04.16" class="input_readonly" readonly /></dd>
+                        </dl>
+                      </li>
+                      <li>
+                        <dl>
                           <dt>추천인</dt>
-                          <dd><input type="readonly" placeholder="김진철(Eagler)" readonly /></dd>
+                          <dd><input type="readonly" placeholder="김진철(Eagler)" class="input_readonly" readonly /></dd>
                         </dl>
                       </li>
                     </ul>
@@ -1019,8 +1022,10 @@
                 <span>기간설정</span>
                 <div class="ex_input_date"><input type="date"> &#126; <input type="date"></div>
               </div>
-
-              <button class="ex_btn" type="button">조회</button>
+              
+              <div class="ex_btn">
+                <button type="button">조회</button>
+              </div>
             </div>
           </div>
         </div>
