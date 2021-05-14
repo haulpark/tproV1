@@ -1,89 +1,158 @@
 /* t_main.css */
 
+html {scroll-behavior: smooth;}
+
 #wrap{
-  width:100%; height:auto;
-  padding:50px; box-sizing: border-box;
-  background-color: #fbfbfb;
+  width:100%; height:100%;
+  background-color: #F8F8F8;
 }
 
+h2{font-family:paybooc-B; font-size:14pt;}
+.title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
+
+.mob_menuBar{display:none;}
 .mob_menu{display:none;}
-#slideBox{display:none;}
+.mob_info{display:none;}
+.mob_infoBox{display:none;}
+
 .visualize-key{display:none;}
 
 /* =================================== #headBox =================================== */
   #headBox{
-    width:80%; height:7vw;
-    margin:auto;
-    box-shadow:0 0.5rem 1rem #ccc;
-    padding:5px 30px; box-sizing: border-box;
+    width:100%; height:100px;
+    padding:20px 0; box-sizing: border-box;
     background-color:#fff;
   }
 
-    .logo{
-      float:left;
+    .div{
+      width:1400px; height:auto;
       margin:auto;
-      height:7vw;
-      background-image: url(../../../img/image/trade_logo.png);
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: 90%;
     }
 
-    .title{
-      height:3vw;
-      font-weight: bold;
-      font-size:1.5rem;
-      line-height: 3.5vw;
+    h1{
+      float:left;
+      width:320px; height:60px;
+      font-family: paybooc-B;
+      margin-top:0;
     }
+
+      .logo{
+        float:left;
+        width:120px; height:60px;
+        background-image: url(../../../img/image/trade_logo.png);
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      h1 > span{
+        float:left; 
+        font-size:20pt; color:#4A96D2; 
+        line-height: 60px; 
+      }
+
+    #gnb{
+      float:right; 
+      width:540px; height:50px; 
+      font-family: payBooc-M;
+    }
+
+      #gnb ul{width:100%; height:100%;}
+
+      #gnb li{
+        float:left; width:90px; height:100%;
+        font-size:12pt; text-align: center;
+        line-height:60px; 
+      }
+
+      #gnb li a {color:#333;}
+
+      #gnb li > dl {width:100%; height:auto;}
+      #gnb ul > li > dl > dt {line-height: 60px; font-weight: 400; color:#333;}
+      #gnb li.current dt{color:#4a96d2; font-family: payBooc-M;}
+
+      #gnb > ul > li > dl > dd{
+        display:none;
+        position: relative; z-index: 1000;
+        width:90px; height:30px;
+        margin:auto;
+        font-size: 1rem; line-height: 30px;
+        background-color: #fff;
+        border:1px solid #ccc;
+      }
+
+      #gnb > ul > li:last-child > dl > dd{width:120px;}
+
+      #gnb > ul > li > dl > dd.current{
+        background-color:#4A96D2; color:#fff; 
+        font-family: payBooc-M;
+      }
+    
+      .tab-content{
+        display:none;
+        padding:20px; box-sizing: border-box;
+        padding-top: 0;
+      }
+
+      .tab-content.current{
+        display:inherit;
+      }
 
     .mob_icon{display:none;}
 
-    .slideBar{
-      float:left;
-      height:3vw;
-      margin-left: 10px;
-      border:2px solid #ccc;
-      box-sizing: border-box;
-      line-height: 3vw;
-      font-size:1.2rem;
-      animation-duration: 3s;
-      animation-name: slidein;
-      animation-iteration-count: infinite;
-    }
+
+
+/* =================================== #noticeBox =================================== */
+#noticeBox{
+  width:1400px; height:80px;
+  margin:auto; margin-top: 20px;
+  background-color: #fff;
+  box-shadow:0 0.5rem 1rem #ccc;
+  padding:10px 20px; box-sizing: border-box;
+}
+
+  .slideBar{
+    float:left;
+    width:600px; height:60px;
+    border:1px solid #D4D4D4;
+    padding-left:20px; box-sizing: border-box;
+    line-height: 60px;
+    font-size:12pt;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }
 
     .slideBar > a {color:#333;}
 
     .slideBar_act{color:#4A96D2; font-weight: bold;}
-    
-    @keyframes slidein {
-      from {
-        opacity:0;
-      }
-    
-      to {
-       opacity: 1;
-     }
+
+  @keyframes slidein {
+    from {
+      opacity:0;
     }
+
+    to {
+    opacity: 1;
+  }
+  }
 
   .mob_slideBar{display:none;}
 
-    .unb{
-      color:#333;
-      font-weight:300;
-      height:3vw;
-      text-align: right;
-      font-size:1.2rem;
-      line-height:1.5vw;
+  .unb{
+    color:#333;
+    height:60px; margin-top: 5px;
+    text-align: right;
+    font-size:11pt;
+    line-height:25px;
+  }
 
-    }
-
-    .unb_bold{font-weight:bold;}
-    .unb_act{font-weight:bold; color:#4A96D2;}
-
+    .unb_bold{font-weight:500;}
+    .unb_act{font-weight:500; color:#4A96D2;}
 /* =================================== #viewBox =================================== */
   #viewBox{
-    width:80%; height:700px;
-    margin:auto; margin-top: 30px;
+    width:1400px; height:720px;
+    margin:auto; margin-top: 20px;
   }
 
   /* ============ .deal ============ */
@@ -97,7 +166,7 @@
     .board{
       position: relative;
       float:right;
-      width:67%; height:100%;
+      width:68%; height:100%;
       box-shadow:0 0.5rem 1rem #ccc; 
       background-color:#fff;
     }
@@ -114,7 +183,7 @@
       }
 
       .board_head{
-        width:100%; height:100px;
+        width:100%; height:80px;
         background: rgba(70, 148, 209, 0.1);
       }
 
@@ -122,44 +191,41 @@
           float:left;
           width:160px; height:80px;}
         
-          .class p{
-            margin:0; padding:0;
-            margin-top: 10px;
-            margin-left: 20px;
-          }
+          .class p{margin-left: 20px;}
 
-          .class_t{
-            float:left;
-            font-size:4rem;
-            font-weight: bold;
-          }
+            .class_t{
+              float:left;
+              font-size:4rem;
+              font-weight: bold;
+            }
 
-          .class_p{
+            .class_p{
+              font-size:1.2rem;
+              line-height:110px;
+            }
+
+          .class_ex{
+            float:left; height:60px;
             font-size:1.2rem;
-            line-height:110px;
+            margin-top: 20px;
           }
 
-        .class_ex{
-          float:left; height:60px;
-          font-size:1.3rem;
-          margin-top: 25px;
-        }
+            .class_ex p{
+              line-height: 20px;
+            }
 
-          .class_ex p{
-            line-height: 20px;
-          }
+            .class_ex p span{
+              font-weight: bold;
+            }
 
-          .class_ex p span{
-            font-weight: bold;
-          }
-
+  /* ============ .board_1 : 메인 ============ */
       #graph{
-        width:60%; height:280px;  margin:20px auto;
+        width:60%; height:280px;  margin:60px auto;
       }
 
         #data{
           width:100%; height:180px;
-          margin:auto; font-size:1.4rem;
+          margin:auto; 
         }
 
         #data > thead > tr > td, th{
@@ -179,54 +245,6 @@
         #data > tbody > tr > td:nth-child(3){padding-right:10px; box-sizing:border-box;}
         
         .td_1{background-color: #eee; }
-
-/* ================ tab Box 기능 구현 ======================= */
-      /* ================ 상단탭 ======================= */
-      .board_tab{
-        width:100%; height:60px;
-      }
-
-        .board_tab ul{
-          width:100%; height:100%;
-        }
-
-        .board_tab li{
-          float:left; width:20%; height:100%;
-          font-size:1.2rem; text-align: center;
-          line-height:60px; /*overflow:hidden;*/
-        }
-
-        .board_tab li > dl {width:100%; height:auto;}
-        .board_tab ul > li > dl > dt {line-height: 60px; font-weight: 400; color:#333;}
-        .board_tab li.current dt{color:#366f9c; font-weight: 500;}
-
-        .board_tab > ul > li > dl > dd{
-          display:none;
-          position: relative; z-index: 1000;
-          width:100px; height:30px;
-          margin:auto;
-          font-size: 1rem; line-height: 30px;
-          background-color: #fff;
-          border:1px solid #ccc;
-        }
-
-        .board_tab > ul > li:last-child > dl > dd{width:120px;}
-
-        .board_tab > ul > li > dl > dd.current{
-          background-color:#4A96D2; color:#fff; 
-        }
-
-        .tab-content{
-          display:none;
-          padding:20px; box-sizing: border-box;
-          padding-top: 0;
-        }
-
-        .tab-content.current{
-          display:inherit;
-        }
-
-/* ================ //tab Box 기능 구현 ===================== */
     
   /* ============ .board_2 : 거래내역 ============ */
   /* ======= 거래 수/ 거래금액 / 수수료 표 ======= */
@@ -240,26 +258,28 @@
     }
 
     .period_date{
-      width:600px; height:20px;
-      margin-left: 20px;
+      width:100%; height:20px;
+      margin-top: 20px;
     }
 
-    .period_day{
-      float:left; width:px; height:20px;
-    }
+      .period_date > span {float:left; margin-right:20px;}
 
-    .period_day > input{width:130px; height:25px; font-size:0.8rem; border-radius: 5px;}
+      .period_day{
+        float:left; height:20px;
+      }
 
-    .period_btn{
-      float:left; width:70px; height:25px; 
-      margin-left: 10px; border-radius: 5px; 
-      background-color: #4A96D2; color:#fff;
-      font-size:0.9rem;
-    }
+      .period_day > input{width:150px; height:25px; font-size:0.875rem;}
+
+      .period_btn{
+        float:left; width:70px; height:25px; 
+        margin-left: 10px;
+        background-color: #4A96D2; color:#fff;
+
+      }
 
     .period_content{
       width:600px; height:20px;
-      margin-top: 20px;
+      margin-top: 40px;
       margin-bottom: 40px;
     }
 
@@ -268,7 +288,7 @@
       .period_content > ul > li:last-child{border-right: 0;}
       .period_content > ul > li > dl{width:100%; height:100%;}
       .period_content > ul > li > dl > dt{float:left; width:60px; height:100%; font-size:1rem; font-weight:bold; line-height: 20px; text-align:right;}
-      .period_content > ul > li > dl > dd{float:left; width:90px; height:100%; font-size:0.9rem; line-height: 20px; text-align:center;}
+      .period_content > ul > li > dl > dd{float:left; width:90px; height:100%; font-size:1rem; line-height: 20px; text-align:center;}
 
       .period_content > ul > li:nth-child(1) {width:142px;}
       .period_content > ul > li:nth-child(1) > dl > dd {width:80px;}
@@ -277,20 +297,19 @@
       .period_content > ul > li:nth-child(2) > dl > dd {width:110px;}
 
   /* ======= 거래내역 표 ======= */
-  /* #48A75E #4694D1*/
     #periodBox{
       width:100%; height:340px; margin:auto;
     }
 
-      #periodBox > thead > tr > th{font-size:1.1rem; font-weight: normal; height:30px;}
+      #periodBox > thead > tr > th{font-size:1rem; font-weight: normal; height:30px;}
         .p_th_title{width:10%;}
         .p_th_title_1{width:10%;}
         .p_th_title_2{width:10%;}
         .p_th_title_3{width:25%;}
         .p_th_title_4{width:15%;}
 
-      #periodBox > tbody > tr > th{font-size:1.1rem; font-weight: normal;}
-      #periodBox > tbody > tr > td{font-size:1rem; font-weight: normal; text-align: center; border:1px solid #D4D4D4;}
+      #periodBox > tbody > tr > th{font-size:1rem; font-weight: normal;}
+      #periodBox > tbody > tr > td{font-size:0.975rem; font-weight: normal; text-align: center; border:1px solid #D4D4D4;}
       #periodBox > tbody > tr > td:nth-child(4){text-align: right; padding-right:10px; box-sizing: border-box;}
 
     .p_indicator{
@@ -299,12 +318,7 @@
     } 
 
     .p_indicator ul{width:100%; height:100%}
-    .p_indicator li{width:20px; font-size:1rem; line-height: 60px;}
-
-    /* 어디서 오류난지 모르겠음 */
-    .p_indicator li:nth-child(6){padding:0;}
-    .p_indicator li:nth-child(7){padding:0;}
-
+    .p_indicator li{float:left; width:20px; font-size:1.1rem; line-height: 60px;}
     .p_indicator a{color:#333;}
 
     .tdred{color:#ae0000;}
@@ -323,14 +337,19 @@
 
     .lankBox{
       width:100%; height:auto;
-      margin:auto; margin-top: 25px;
+      margin:auto; margin-top: 30px;
     }
 
-      .lankBox > thead > tr > th{font-weight: normal; height:30px; font-size:1.1rem;}
-      .lankBox > tbody > tr > td{text-align: center; font-size:1rem; border:1px solid #d4d4d4; height:30px;}
+      .lankBox > thead > tr > th{font-weight: normal; height:30px; font-size:1rem;}
+      .lankBox > tbody > tr > td{text-align: center; font-size:0.975rem; border:1px solid #d4d4d4; height:30px;}
       .lankBox > tbody > tr:first-child{background-color: #ddd;}
       .lankBox > tbody > tr:nth-child(2){background-color: #eee;}
       .lankBox > tbody > tr:nth-child(3){background-color: #f5f6f7;}
+
+      .lankBox > thead > tr > th:nth-child(1){width:20%;}
+      .lankBox > thead > tr > th:nth-child(2){width:20%;}
+      .lankBox > thead > tr > th:nth-child(3){width:40%;}
+      .lankBox > thead > tr > th:nth-child(4){width:20%;}
 
     .mylankBox{
       width:100%; height:60px;
@@ -411,14 +430,16 @@
         width:100%; height:100%;
       }
 
-      .all_store li{
-        float:left; width:9vw; height:9vw;
-        margin-right: 1vw; margin-bottom: 1vw;
-        padding-top:2.8vw; line-height: 20px;
+      .all_store ul li{
+        float:left; width:160px; height:160px;
+        margin-right: 10px; margin-bottom: 10px;
+        line-height: 20px;
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: contain;
-        color:#fff; font-weight: 500;
+        text-align: center;
+        padding-top:50px; box-sizing: border-box;
+        color:#fff; 
       }
 
       .all_store .store_content_1 {background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../../../img/image/storeImg01.png);}
