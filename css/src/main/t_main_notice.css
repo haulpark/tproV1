@@ -2,86 +2,157 @@
 
 #wrap{
   width:100%; height:auto;
-  padding:50px; box-sizing: border-box;
-  background-color: #fbfbfb;
+  background-color: #F8F8F8;
 }
 
+h2{font-family:paybooc-B; font-size:12pt;}
+.title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
+
+.mob_menuBar{display:none;}
 .mob_menu{display:none;}
-#slideBox{display:none;}
+.mob_info{display:none;}
+.mob_infoBox{display:none;}
+
 .visualize-key{display:none;}
 
 /* =================================== #headBox =================================== */
-  #headBox{
-    width:80%; height:7vw;
+#headBox{
+  width:100%; height:100px;
+  padding:20px 0; box-sizing: border-box;
+  background-color:#fff;
+}
+
+  .div{
+    width:1400px; height:auto;
     margin:auto;
-    box-shadow:0 0.5rem 1rem #ccc;
-    padding:5px 30px; box-sizing: border-box;
+  }
+
+  h1{
+    float:left;
+    width:320px; height:60px;
+    font-family: paybooc-B;
+    margin-top:0;
   }
 
     .logo{
       float:left;
-      margin:auto;
-      height:6vw;
+      width:120px; height:60px;
       background-image: url(../../../img/image/trade_logo.png);
       background-position: 50% 50%;
+      background-size: contain;
       background-repeat: no-repeat;
-      background-size: 90%;
     }
 
-    .title{
-      height:3vw;
-      font-weight: bold;
-      font-size:1.5rem;
-      line-height: 3.5vw;
+    h1 > span{
+      float:left; 
+      font-size:20pt; color:#4A96D2; 
+      line-height: 60px; 
     }
 
-    .mob_icon{display:none;}
+  #gnb{
+    float:right; 
+    width:540px; height:50px; 
+    font-family: payBooc-M;
+  }
 
-    .slideBar{
-      float:left;
-      height:3vw;
-      margin-left: 10px;
-      border:2px solid #ccc;
-      box-sizing: border-box;
-      line-height: 3vw;
-      font-size:1.2rem;
-      animation-duration: 3s;
-      animation-name: slidein;
-      animation-iteration-count: infinite;
+    #gnb ul{width:100%; height:100%;}
+
+    #gnb li{
+      float:left; width:90px; height:100%;
+      font-size:12pt; text-align: center;
+      line-height:60px; 
     }
 
-    .slideBar > a {color:#333;}
+    #gnb li a {color:#333;}
 
-    .slideBar_act{color:#4A96D2; font-weight: bold;}
-    
-    @keyframes slidein {
-      from {
-        opacity:0;
-      }
-    
-      to {
-       opacity: 1;
-     }
+    #gnb li > dl {width:100%; height:auto;}
+    #gnb ul > li > dl > dt {line-height: 60px; font-weight: 400; color:#333;}
+    #gnb li.current dt{color:#4a96d2; font-family: payBooc-M;}
+
+    #gnb > ul > li > dl > dd{
+      display:none;
+      position: relative; z-index: 1000;
+      width:90px; height:30px;
+      margin:auto;
+      font-size: 1rem; line-height: 30px;
+      background-color: #fff;
+      border:1px solid #ccc;
     }
 
-  .mob_slideBar{display:none;}
+    #gnb > ul > li:last-child > dl > dd{width:120px;}
 
-    .unb{
-      color:#333;
-      font-weight:300;
-      height:3vw;
-      text-align: right;
-      font-size:1.2rem;
-      line-height:1.5vw;
+    #gnb > ul > li > dl > dd.current{
+      background-color:#4A96D2; color:#fff; 
+      font-family: payBooc-M;
+    }
+  
+    .tab-content{
+      display:none;
+      padding:20px; box-sizing: border-box;
+      padding-top: 0;
     }
 
-    .unb_bold{font-weight:bold;}
-    .unb_act{font-weight:bold; color:#4A96D2;}
+    .tab-content.current{
+      display:inherit;
+    }
+
+  .mob_icon{display:none;}
+
+
+
+/* =================================== #noticeBox =================================== */
+#noticeBox{
+width:1400px; height:80px;
+margin:auto; margin-top: 20px;
+background-color: #fff;
+box-shadow:0 0.5rem 1rem #ccc;
+padding:10px 20px; box-sizing: border-box;
+}
+
+.slideBar{
+  float:left;
+  width:600px; height:60px;
+  border:1px solid #D4D4D4;
+  padding-left:20px; box-sizing: border-box;
+  line-height: 60px;
+  font-size:12pt;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+  .slideBar > a {color:#333;}
+
+  .slideBar_act{color:#4A96D2; font-weight: bold;}
+
+@keyframes slidein {
+  from {
+    opacity:0;
+  }
+
+  to {
+  opacity: 1;
+}
+}
+
+.mob_slideBar{display:none;}
+
+.unb{
+  color:#333;
+  height:60px; margin-top: 5px;
+  text-align: right;
+  font-size:11pt;
+  line-height:25px;
+}
+
+  .unb_bold{font-weight:500;}
+  .unb_act{font-weight:500; color:#4A96D2;}
 
 /* =================================== #viewBox =================================== */
 #viewBox{
-  width:80%; height:717px;
+  width:1400px; height:717px;
   margin:auto; margin-top: 30px;
+  background-color: #fff;
 }
 
   .mob_notice{display:none;}
