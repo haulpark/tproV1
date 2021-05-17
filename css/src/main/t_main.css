@@ -81,7 +81,7 @@ h2{font-family:paybooc-B; font-size:14pt;}
         border:1px solid #ccc;
       }
 
-      #gnb > ul > li:last-child > dl > dd{width:120px;}
+      #gnb > ul > li:nth-child(5) > dl > dd{width:100px; margin-left:-5px;}
 
       #gnb > ul > li > dl > dd.current{
         background-color:#4A96D2; color:#fff; 
@@ -99,8 +99,6 @@ h2{font-family:paybooc-B; font-size:14pt;}
       }
 
     .mob_icon{display:none;}
-
-
 
 /* =================================== #noticeBox =================================== */
 #noticeBox{
@@ -287,8 +285,8 @@ h2{font-family:paybooc-B; font-size:14pt;}
       .period_content > ul > li{float:left; width:152px; height:100%; border-right:2px solid #ddd; box-sizing: border-box;}
       .period_content > ul > li:last-child{border-right: 0;}
       .period_content > ul > li > dl{width:100%; height:100%;}
-      .period_content > ul > li > dl > dt{float:left; width:60px; height:100%; font-size:1rem; font-weight:bold; line-height: 20px; text-align:right;}
-      .period_content > ul > li > dl > dd{float:left; width:90px; height:100%; font-size:1rem; line-height: 20px; text-align:center;}
+      .period_content > ul > li > dl > dt{float:left; width:60px; height:100%; font-size:1.1rem; font-weight:bold; line-height: 20px; text-align:right;}
+      .period_content > ul > li > dl > dd{float:left; width:90px; height:100%; font-size:1.1rem; line-height: 20px; text-align:center;}
 
       .period_content > ul > li:nth-child(1) {width:142px;}
       .period_content > ul > li:nth-child(1) > dl > dd {width:80px;}
@@ -569,5 +567,13 @@ h2{font-family:paybooc-B; font-size:14pt;}
       #store_history > tbody > tr > td:nth-child(2){padding-left:10px; box-sizing: border-box; text-align: left;}
       #store_history > tbody > tr > td:nth-child(3){text-align: right; padding-right:10px; box-sizing: border-box;}
       #store_history > tbody > tr > td:nth-child(5){text-align: right; padding-right:10px; box-sizing: border-box;}
+
+/* width: 1281 ~ 1600px (노트북 L 기준) */
+@media screen and (min-width: 1400px) and (max-width: 1919px) {
+
+  /* =================== #headBox ===================*/
+  #wrap{height:auto;}
+
+}
 
       

@@ -3,78 +3,98 @@
 
   #wrap{
     width:100%; height:1640px;
-    padding:20px 0; box-sizing:border-box;
   }
 
-  .slideBar{display: none;}
-  .unb{display:none;}
+  .mob_menuBar{display:none;}
+  .mob_infoBox{display:none;}
+
+  .visualize-key{display:none;}
   /* =================== #headBox ===================*/
   #headBox{
-    position: relative;
     width:320px; height:60px;
     padding:5px 10px; box-sizing: border-box;
+    margin:auto;
   }
 
-  .logo{width:50px; height:50px;}
-  .title{float:left; width:200px; font-size:14pt; font-weight:600; line-height:50px;}
-    
-    .mob_icon{
-      float:right;
+    #gnb{display:none;}
+
+    .mob_menu{
       display:block;
-      margin-top: 16px; margin-right:5px; 
+      float:left;
+      width:24px; height:24px; 
+      background-image: url(../../../img/icons/mob_menu.png);
+      background-position: 50% 50%;
+      background-size: contain;
+    }
+
+    h1{
+      float:left;
+      width:180px; height:60px;
+      font-family: paybooc-B;
+      margin:auto;
+    }
+
+      .logo{
+        float:left;
+        width:60px; height:60px;
+        background-image: url(../../../img/image/trade_logo.png);
+        background-position: 50% 50%;
+        background-size: 70%;
+        background-repeat: no-repeat;
+      }
+
+      h1 > span{
+        display:inline-block;
+        width:120px;
+        font-size:12pt; color:#4A96D2; 
+        line-height: 60px; 
+      }
+
+    .mob_info{
+      float:left;
+      display:block;
       width:24px; height:24px;
       background-image: url(../../../img/icons/mob_user.png);
       background-position: 50% 50%;
       background-size: contain;
       background-repeat: no-repeat;
     }
-
-    .mob_menu{
-      position: absolute; z-index:1000;
-      top:80%; left:15%; 
-      width:250px; height:144px;
-      background-color: #fff;
-      box-shadow:0 0.5rem 1rem #ccc;
-      color:#333;
-      font-size:0.9rem;
-      padding:20px 10px; box-sizing: border-box;
-    }
+    
   /* =================== #slideBox (mob) ===================*/
-    #slideBox{
-      display:block;
-      width:320px; height:40px;
-      background-color:#fff;
-      border:1px solid #ccc;
-      margin:16px auto;
+    #noticeBox{
+      width:320px; height:50px;
+      margin:auto; margin-top: 10px;
+      padding:5px 10px; box-sizing: border-box;
+    }
+
+    .slideBar{
+      float:left;
+      width:300px; height:40px;
+      border:1px solid #fff;
+      padding-left:10px; box-sizing: border-box;
+      line-height: 40px;
+      font-size:10pt;
       animation-duration: 3s;
       animation-name: slidein;
       animation-iteration-count: infinite;
     }
 
-    #slideBox > a{color:#333; font-size:1rem; text-align: center; background-color: #fff;}
-      
-      @keyframes slidein {
-        from {
-          opacity:0;
-        }
-      
-        to {
-         opacity: 1;
-       }
-      }
+    .unb{display:none;}
 
   /* =================== #viewBox .deal(left) ===================*/
 
   #viewBox{
-    width:320px; height:auto; margin-top: 0px;
+    width:320px; height:auto; margin-top: 10px;
   }
 
   .deal{
-    float:none; margin:auto;
-    width:100%; height:540px; margin-bottom: 20px;}
+    float:right; margin:auto; 
+    width:100%; height:540px; margin-bottom: 10px;}
 
   /* =================== #viewBox .board(right) ===================*/
-  .board{width:320px; height:900px;}
+  .board{
+    float:left;
+    width:320px; height:900px;}
 
   .user_percent{
     width:100%; height:10px;
