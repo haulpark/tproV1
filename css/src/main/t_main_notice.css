@@ -1,7 +1,7 @@
 /* t_main_notice.css */
 
 #wrap{
-  width:100%; height:auto;
+  width:100%; height:100%;
   background-color: #F8F8F8;
 }
 
@@ -10,8 +10,6 @@ h2{font-family:paybooc-B; font-size:12pt;}
 
 .mob_menuBar{display:none;}
 .mob_menu{display:none;}
-.mob_info{display:none;}
-.mob_infoBox{display:none;}
 
 .visualize-key{display:none;}
 
@@ -23,7 +21,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
 }
 
   .div{
-    width:1400px; height:auto;
+    width:1400px; height:100%;
     margin:auto;
   }
 
@@ -51,7 +49,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
 
   #gnb{
     float:right; 
-    width:540px; height:50px; 
+    width:180px; height:50px; 
     font-family: payBooc-M;
   }
 
@@ -65,92 +63,11 @@ h2{font-family:paybooc-B; font-size:12pt;}
 
     #gnb li a {color:#333;}
 
-    #gnb li > dl {width:100%; height:auto;}
-    #gnb ul > li > dl > dt {line-height: 60px; font-weight: 400; color:#333;}
-    #gnb li.current dt{color:#4a96d2; font-family: payBooc-M;}
-
-    #gnb > ul > li > dl > dd{
-      display:none;
-      position: relative; z-index: 1000;
-      width:90px; height:30px;
-      margin:auto;
-      font-size: 1rem; line-height: 30px;
-      background-color: #fff;
-      border:1px solid #ccc;
-    }
-
-    #gnb > ul > li:last-child > dl > dd{width:120px;}
-
-    #gnb > ul > li > dl > dd.current{
-      background-color:#4A96D2; color:#fff; 
-      font-family: payBooc-M;
-    }
-  
-    .tab-content{
-      display:none;
-      padding:20px; box-sizing: border-box;
-      padding-top: 0;
-    }
-
-    .tab-content.current{
-      display:inherit;
-    }
-
-  .mob_icon{display:none;}
-
-
-
-/* =================================== #noticeBox =================================== */
-#noticeBox{
-width:1400px; height:80px;
-margin:auto; margin-top: 20px;
-background-color: #fff;
-box-shadow:0 0.5rem 1rem #ccc;
-padding:10px 20px; box-sizing: border-box;
-}
-
-.slideBar{
-  float:left;
-  width:600px; height:60px;
-  border:1px solid #D4D4D4;
-  padding-left:20px; box-sizing: border-box;
-  line-height: 60px;
-  font-size:12pt;
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-}
-
-  .slideBar > a {color:#333;}
-
-  .slideBar_act{color:#4A96D2; font-weight: bold;}
-
-@keyframes slidein {
-  from {
-    opacity:0;
-  }
-
-  to {
-  opacity: 1;
-}
-}
-
-.mob_slideBar{display:none;}
-
-.unb{
-  color:#333;
-  height:60px; margin-top: 5px;
-  text-align: right;
-  font-size:11pt;
-  line-height:25px;
-}
-
-  .unb_bold{font-weight:500;}
-  .unb_act{font-weight:500; color:#4A96D2;}
+    #gnb li:last-child a {color:#4A96D2;}
 
 /* =================================== #viewBox =================================== */
 #viewBox{
-  width:1400px; height:717px;
+  width:1400px; height:auto;
   margin:auto; margin-top: 30px;
   background-color: #fff;
 }
@@ -158,7 +75,7 @@ padding:10px 20px; box-sizing: border-box;
   .mob_notice{display:none;}
 
   .noticeBox{
-    width:100%; height:700px;
+    width:100%; height:810px;
     box-shadow:0 0.5rem 1rem #ccc;
     padding:10px 20px; box-sizing: border-box;
   }
