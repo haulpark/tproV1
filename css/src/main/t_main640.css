@@ -7,69 +7,9 @@
 
   .visualize-key{display:none;}
 
-  .mob_menuBar{
-    position: absolute; z-index:10000;
-    width:100%; height:100%;
-  }
-  /*
-  .menu{
-    width:300px; height:100%;
-    background-color: #fff;
-    padding-top:30px; box-sizing: border-box;
-  }
-    .close_btn{
-      width:24px; height:24px;
-      margin-left: 250px;
-      background-image: url(../../../img/icons/close.png);
-    }
-
-    .menu > ul {width:100%; height:500px; padding-top: 50px;}
-    .menu > ul > li {
-      width:100%; height:48px; line-height: 48px; font-size:12pt;
-      padding-left:20px; box-sizing: border-box;
-      font-family: payBooc-M;
-    }
-    .menu > ul > li:nth-child(5){height:auto; padding-left: 0;}
-
-    .menu > ul > li:hover{background-color: #F2F8FC;}
-    .menu > ul > li:hover a {color:#4694D1; }
-
-    .menu > ul > li:nth-child(5):hover{background-color: #fff;}
-
-    .menu > ul > li:nth-child(6){margin-top:-20px;}
-
-    .menu ul li a {color:#333;}
-    .menu ul li:first-child a{color:#4694D1;}
-    
-      .menu ul li dl {width:100%; height:auto;}
-      .menu ul li dl dd {
-        width:100%; height:48px; line-height: 48px;
-        padding-left:10px;
-      }
-
-      .menu ul li dl dt .menu_img{
-        float:right;
-        width:24px; height:24px;
-        margin-top: 12px; margin-right: 12px;
-        background-image: url(../../../img/icons/down.png);
-      }
-      .menu ul li dl dd {  
-        display: none;
-        width:100%; height:38px; line-height: 38px;
-        padding-left:30px; box-sizing: border-box;
-        font-size:0.9rem;
-      }
-
-      .menu ul li dl dd:hover{background-color: #F2F8FC;}
-      .menu ul li dl dd:hover a{color:#4694D1;}
-
-      .menu > ul > li:nth-child(5) {background-color: #fff;}
-      .menu > ul > li:nth-child(5) a {color:#333;}
-  */
-
   /* =================== #headBox ===================*/
   #headBox{
-    width:100%; height:56px;
+    width:100%; height:112px;
     padding:5px 20px; box-sizing: border-box;
     margin:auto;
   }
@@ -77,8 +17,6 @@
     .div{
       width:100%; 
     } 
-
-    #gnb{display:none;}
 
     .mob_menu{
       display:block;
@@ -103,7 +41,7 @@
         background-repeat: no-repeat;
       }
 
-      h1 > span{
+      h1 > a > span{
         font-size:12pt; color:#4A96D2; 
         line-height: 50px; margin-left: 10px;
       }
@@ -129,6 +67,40 @@
       font-size:0.9rem;
       padding:20px 10px; box-sizing: border-box;
     }
+
+    #gnb{ 
+      width:100%; height:50px; 
+      font-family: payBooc-M;
+    }
+
+      #gnb ul{width:100%; height:100%;}
+
+
+      #gnb li{
+        float:left; width:20%; height:100%;
+        font-size:9pt; text-align: center;
+        line-height:56px; 
+      }
+
+      #gnb li a {color:#333;}
+
+      #gnb li:first-child{display:none;}
+
+      #gnb li > dl {width:100%; height:auto;}
+      #gnb ul > li > dl > dt {line-height: 56px; font-weight: 400; color:#333;}
+      #gnb li.current dt{color:#4a96d2; font-family: payBooc-M;}
+
+      #gnb > ul > li > dl > dd{
+        display:none;
+        position: relative; z-index: 1000;
+        width:60px; height:30px;
+        margin:auto;
+        font-size: 9pt; line-height: 30px;
+        background-color: #fff;
+        border:1px solid #ccc;
+      }
+
+      #gnb > ul > li:nth-child(5) > dl > dd{width:72px; margin:auto;}
 
   /* =================== #slideBox (mob) ===================*/
     #noticeBox{
@@ -484,15 +456,15 @@
 
   .profile > tbody > tr {height:50px;}
   .profile > tbody > tr > th{
-    width:20%; border:1px solid #fff; 
+    width:30%; border:1px solid #fff; 
     border-bottom:2px solid #f5f6f7; 
     padding-left:15px; box-sizing: border-box;
-    font-size:1rem; background-color: #fff;
+    font-size:0.9rem; background-color: #fff;
     color:#333; text-align: left;
     font-weight: bold;
   }
   .profile > tbody > tr > td{
-    width:80%; border:1px solid #fff; 
+    width:70%; border:1px solid #fff; 
     border-bottom:2px solid #f5f6f7; 
     padding-left:15px; box-sizing: border-box;
     font-size:0.9rem;
@@ -514,14 +486,14 @@
 .profile_modify_box{
   display:none;
   width:90%; height:auto;
-  margin:auto;
+  margin:auto; margin-left: 0;
   margin-top: 30px;
 }
 
   .profile_modify_box form{width:100%; height:100%;}
   .profile_modify_ul{width:100%; height:100%;}
   .profile_modify_ul > li{width:100%; height:50px;}
-  .profile_modify_ul > li > dl{width:100%; height:100%; font-size:1rem;}
+  .profile_modify_ul > li > dl{width:100%; height:100%; font-size:0.9rem;}
   .profile_modify_ul > li > dl > dt{float:left; width:20%; height:100%; text-align: left; line-height:65px;}
   .profile_modify_ul > li > dl > dd{float:left; width:80%; height:100%;}
   .profile_modify_ul > li > dl > dd > input{
@@ -534,7 +506,7 @@
   
 
   .profile_modify_btn{
-    margin:auto; margin-top: 20px;
+    margin:auto; margin-top: 30px;
     width:170px; height:32px; font-size:0.9rem; color:#fff;
   }
 
@@ -543,7 +515,7 @@
   .profile_modify_yes{float:right; background-color: #4694D1; color:#fff;}
   
   /* =========== 내 정보 - 상품구매내역 =========== */
-  #store_history{
+  .storeList{
     display:none;
   }
 

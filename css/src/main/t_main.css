@@ -46,7 +46,7 @@ h2{font-family:paybooc-B; font-size:14pt;}
         background-repeat: no-repeat;
       }
 
-      h1 > span{
+      h1 > a > span{
         float:left; 
         font-size:20pt; color:#4A96D2; 
         line-height: 60px; 

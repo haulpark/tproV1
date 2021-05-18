@@ -29,67 +29,24 @@
 <body>
 <!-- layout -->
 <div id="wrap">
-
-  <div class="mob_menuBar">
-    <div class="menu">
-      <div class="close_btn"></div>
-
-      <ul class="mob_tabs"> 
-        <li class="tab-link current" id="tab_menu_1" data-tab="tab-1"><span>메인</span></li>
-    
-          <li class="tab-link" id="tab_menu_2" data-tab="tab-2">
-            <dl class="side_tab_box">
-              <dt class="side_tab_box_dt">거래내역</dt>
-              <dd class="side_tab_link current" data-tab="side_tab_1">일일</dd>
-              <dd class="side_tab_link" data-tab="side_tab_2">주간</dd>
-              <dd class="side_tab_link" data-tab="side_tab_3">월</dd>
-              <dd class="side_tab_link" data-tab="side_tab_4">기간설정</dd>
-            </dl>
-          </li>
-    
-          <li class="tab-link" id="tab_menu_3" data-tab="tab-3">
-            <dl class="side_tab_lank_box">
-              <dt class="side_tab_lank_box_dt">거래순위</dt>
-              <dd class="side_tab_link_lank current" data-tab="side_tab_lank_1">일일</dd>
-              <dd class="side_tab_link_lank" data-tab="side_tab_lank_2">주간</dd>
-              <dd class="side_tab_link_lank" data-tab="side_tab_lank_3">월</dd>
-              <dd class="side_tab_link_lank" data-tab="side_tab_lank_4">기간설정</dd>
-            </dl>
-          </li>
-    
-          <li class="tab-link" id="tab_menu_4" data-tab="tab-4">
-            <dl class="side_tab_store_box">
-              <dt class="side_tab_store_box_dt">상점</dt>
-              <dd class="side_tab_link_store current" data-tab="side_tab_store_1">전체</dd>
-              <dd class="side_tab_link_store" data-tab="side_tab_store_2">충전</dd>
-              <dd class="side_tab_link_store" data-tab="side_tab_store_3">편의</dd>
-            </dl>
-          </li>
-    
-          <li class="tab-link" id="tab_menu_5" data-tab="tab-5">
-            <dl class="side_tab_myinfo_box">
-              <dt class="side_tab_myinfo_box_dt">내 정보</dt>
-              <dd class="side_tab_link_myinfo current" data-tab="side_tab_myinfo_1">기본등록정보</dd>
-              <dd class="side_tab_link_myinfo" data-tab="side_tab_myinfo_2">거래등록정보</dd>
-              <dd class="side_tab_link_myinfo" data-tab="side_tab_myinfo_3">상품구매내역</dd>
-              <dd class="side_tab_link_myinfo" data-tab="side_tab_myinfo_4">소명자료요청</dd>
-            </dl>
-          </li>
-
-          <li><a target="_blank" href="t_main_notice.html">공지사항</a></li>
-      </ul>
-    </div>
-  </div>
   <!-- =================== #headBox ======================== -->
   <header id="headBox">
     <div class="div">
 
-      <div class="mob_menu"></div>
-
       <h1>
-        <div class="logo"></div>
-        <span>Trading Pro V1</span>
+        <a href="./t_main.html">
+          <div class="logo"></div>
+          <span>Trading Pro V1</span>
+        </a>
       </h1>
+
+      <div class="mob_info"></div>
+
+      <div class="mob_infoBox">
+        거래신용도 [100%]<br /> 
+        G2 (박지훈)(프리미엄) 회원님 반갑습니다. <br /><br />
+        <span class="unb_bold">거래가능코인은</span> <span class="unb_act">(551023)CRE, (315,132,132)원</span>입니다.
+      </div>
 
       <nav id="gnb">
         <ul class="tabs">
@@ -138,13 +95,7 @@
         </ul>
       </nav>
 
-      <div class="mob_info"></div>
-
-      <div class="mob_infoBox">
-        거래신용도 [100%]<br /> 
-        G2 (박지훈)(프리미엄) 회원님 반갑습니다. <br /><br />
-        <span class="unb_bold">거래가능코인은</span> <span class="unb_act">(551023)CRE, (315,132,132)원</span>입니다.
-      </div>
+      
 
     </div>
   </header>
@@ -971,71 +922,73 @@
           </div>
 
           <div id="side_tab_myinfo_3" class="side_tab_content_myinfo">
-            <table class="profile" id="store_history">
-              <thead>
-                <th>거래번호</th>
-                <th>상품명</th>
-                <th>상품금액</th>
-                <th>수량</th>
-                <th>결제금액</th>
-                <th>결제일</th>
-                <th>상태</th>
-              </thead>
+            <div class="storeList">
+              <table class="profile" id="store_history">
+                <thead>
+                  <th>거래번호</th>
+                  <th>상품명</th>
+                  <th>상품금액</th>
+                  <th>수량</th>
+                  <th>결제금액</th>
+                  <th>결제일</th>
+                  <th>상태</th>
+                </thead>
 
-              <tbody>
-                <tr>
-                  <td>T-10334</td>
-                  <td>우선매칭권</td>
-                  <td>1,200₩</td>
-                  <td>3</td>
-                  <td>3,600₩ </td>
-                  <td>21.04.23</td>
-                  <td class="tdred">미사용</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td>T-10334</td>
+                    <td>우선매칭권</td>
+                    <td>1,200₩</td>
+                    <td>3</td>
+                    <td>3,600₩ </td>
+                    <td>21.04.23</td>
+                    <td class="tdred">미사용</td>
+                  </tr>
 
-                <tr class="td_1">
-                  <td>T-10124</td>
-                  <td>우선매칭권</td>
-                  <td>1,200₩</td>
-                  <td>1</td>
-                  <td>1,200₩ </td>
-                  <td>21.04.15</td>
-                  <td class="tdgreen">사용완료</td>
-                </tr>
+                  <tr class="td_1">
+                    <td>T-10124</td>
+                    <td>우선매칭권</td>
+                    <td>1,200₩</td>
+                    <td>1</td>
+                    <td>1,200₩ </td>
+                    <td>21.04.15</td>
+                    <td class="tdgreen">사용완료</td>
+                  </tr>
 
-                <tr>
-                  <td>T-09237</td>
-                  <td>우선매칭권</td>
-                  <td>1,200₩</td>
-                  <td>2</td>
-                  <td>2,400₩ </td>
-                  <td>21.04.04</td>
-                  <td class="tdgreen">사용완료</td>
-                </tr>
+                  <tr>
+                    <td>T-09237</td>
+                    <td>우선매칭권</td>
+                    <td>1,200₩</td>
+                    <td>2</td>
+                    <td>2,400₩ </td>
+                    <td>21.04.04</td>
+                    <td class="tdgreen">사용완료</td>
+                  </tr>
 
-                <tr class="td_1">
-                  <td>T-08472</td>
-                  <td>30일 Free Ip</td>
-                  <td>10,000₩</td>
-                  <td>1</td>
-                  <td>10,000₩ </td>
-                  <td>21.04.01</td>
-                  <td class="tdblue">사용중</td>
-                </tr>
+                  <tr class="td_1">
+                    <td>T-08472</td>
+                    <td>30일 Free Ip</td>
+                    <td>10,000₩</td>
+                    <td>1</td>
+                    <td>10,000₩ </td>
+                    <td>21.04.01</td>
+                    <td class="tdblue">사용중</td>
+                  </tr>
 
-                <tr>
-                  <td>T-04321</td>
-                  <td>100만 거래가능 (베이직)</td>
-                  <td>100,000₩</td>
-                  <td>1</td>
-                  <td>100,000₩ </td>
-                  <td>21.04.01</td>
-                  <td class="tdblue">사용중</td>
-                </tr>
-              </tbody>
-            </table>
+                  <tr>
+                    <td>T-04321</td>
+                    <td>100만 거래가능 (베이직)</td>
+                    <td>100,000₩</td>
+                    <td>1</td>
+                    <td>100,000₩ </td>
+                    <td>21.04.01</td>
+                    <td class="tdblue">사용중</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-              <div class="mob_storeList">
+            <div class="mob_storeList">
                 <table>
                   <thead>
                     <tr>
@@ -1053,46 +1006,57 @@
                   <tbody>
                     <tr>
                       <td>T-10123</td>
-                      <td>우선매칭권(10회)</td>
-                      <td>20,000 ₩</td>
+                      <td>우선매칭권</td>
+                      <td>1,200 ₩</td>
                     </tr>
                     <tr class="tr_bottom">
-                      <td>20,000 ₩</td>
-                      <td>21.05.12</td>
+                      <td>3,600 ₩</td>
+                      <td>21.04.23</td>
                       <td class="red">미사용</td>
                     </tr>
       
                     <tr>
-                      <td>A-10573</td>
-                      <td>수수료 인하권(3%)</td>
-                      <td>100,000,000 ₩</td>
+                      <td>T-10124</td>
+                      <td>우선매칭권</td>
+                      <td>1,200 ₩</td>
                     </tr>
                     <tr class="tr_bottom">
-                      <td>30,000,000 ₩</td>
-                      <td>21.05.06</td>
+                      <td>1,200  ₩</td>
+                      <td>21.04.15</td>
+                      <td class="green">사용완료</td>
+                    </tr>
+      
+                    <tr>
+                      <td>T-09237</td>
+                      <td>우선매칭권</td>
+                      <td>1,200 ₩</td>
+                    </tr>
+                    <tr class="tr_bottom">
+                      <td>2,400 ₩</td>
+                      <td>21.04.04</td>
+                      <td class="green">사용완료</td>
+                    </tr>
+      
+                    <tr>
+                      <td>T-08472</td>
+                      <td>30일 Free IP</td>
+                      <td>10,000 ₩</td>
+                    </tr>
+                    <tr>
+                      <td>10,000 ₩</td>
+                      <td>21.04.01</td>
                       <td class="blue">사용중</td>
                     </tr>
-      
+
                     <tr>
-                      <td>A-10421</td>
-                      <td>수수료 인하권(5%)</td>
-                      <td>50,000,000 ₩</td>
+                      <td>T-04321</td>
+                      <td>100만 거래가능</td>
+                      <td>100,000 ₩</td>
                     </tr>
                     <tr class="tr_bottom">
-                      <td>20,000,000 ₩</td>
-                      <td>21.04.21</td>
-                      <td class="green">사용완료</td>
-                    </tr>
-      
-                    <tr>
-                      <td>A-10334</td>
-                      <td>수수료 인하권(7%)</td>
-                      <td>30,000,000 ₩</td>
-                    </tr>
-                    <tr>
-                      <td>30,000,000 ₩</td>
+                      <td>100,000 ₩</td>
                       <td>21.04.01</td>
-                      <td class="green">사용완료</td>
+                      <td class="blue">사용중</td>
                     </tr>
                   </tbody>
                 </table>
