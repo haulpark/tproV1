@@ -1,17 +1,35 @@
 // t_main.js
 
 var windowW = window.innerWidth;
-var mobM = $('.mob_menu');
 
 var storeM = $('.store_modal');
 var storeExit = $('.store_exit');
 
 (function($){
 
-	$('.mob_icon').click(function(e){
-		e.preventDefault;
-		mobM.fadeToggle();
+	/*
+	$('.mob_menu').click(function(e){
+		e.preventDefault();
+	
+		$('.mob_menuBar').css({"background":"rgba(0, 0, 0, 0.8)"});
+		$('.mob_menuBar').toggle("slide");
 	});
+	
+	$('.close_btn').click(function(e){
+		e.preventDefault();
+	
+		$('.mob_menuBar').toggle("slide");
+	})
+	
+	$('.dd_mypage').click(function(e){
+		e.preventDefault();
+	
+		$('.dl_mypage').find('dd').slideToggle();
+	
+		$('.menu_img').css({"transform":"rotate(180deg)"});
+	
+	})
+	*/
 
 	/* ================================ store_modal ================================ */
 

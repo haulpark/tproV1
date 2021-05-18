@@ -61,6 +61,7 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 
 		$('.side_tab_link').hide();
+		$('.mob_menuBar').hide();
 	});
 
 	// ============== side tab 2 ==============
@@ -74,6 +75,7 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 
 		$('.side_tab_link_lank').hide();
+		$('.mob_menuBar').hide();
 	});
 
 	// ============== side tab 3 ==============
@@ -87,6 +89,7 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 
 		$('.side_tab_link_store').hide();
+		$('.mob_menuBar').hide();
 	});
 
 
@@ -104,6 +107,7 @@ $(document).ready(function(){
 		$('.profile_modify_box').hide();
 		$('.profile').show();
 		$('.profile_btn').show();
+		$('.mob_menuBar').hide();
 	});
 
 });

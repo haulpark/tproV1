@@ -34,23 +34,49 @@
     <div class="menu">
       <div class="close_btn"></div>
 
-      <ul>
-        <li><a href="./main.html">메인</a></li>
-        <li><a href="./deal.html">내역</a></li>
-        <li><a href="./wallet.html">지갑</a></li>
-        <li><a href="./api.html">API</a></li>
-        <li>
-          <dl class="dl_mypage">
-            <dt class="dd_mypage"><span>마이페이지</span><div class="menu_img"></div></dt>
-            <dd><a href="./mypage_info.html">기본등록정보</a></dd>
-            <dd><a href="./mypage_deal.html">거래등록정보</a></dd>
-            <dd><a href="./mypage_store.html">상품구매내역</a></dd>
-            <dd><a href="./mypage_data.html">소명자료요청</a></dd>
-            <dd><a href="./mypage_calculate.html">정산요청</a></dd>
-            <dd><a href="./mypage_qna.html">상담내역</a></dd>
-          </dl>
-        </li>
-        <li><a href="./store.html">상품소개</a></li>
+      <ul class="mob_tabs"> 
+        <li class="tab-link current" id="tab_menu_1" data-tab="tab-1"><span>메인</span></li>
+    
+          <li class="tab-link" id="tab_menu_2" data-tab="tab-2">
+            <dl class="side_tab_box">
+              <dt class="side_tab_box_dt">거래내역</dt>
+              <dd class="side_tab_link current" data-tab="side_tab_1">일일</dd>
+              <dd class="side_tab_link" data-tab="side_tab_2">주간</dd>
+              <dd class="side_tab_link" data-tab="side_tab_3">월</dd>
+              <dd class="side_tab_link" data-tab="side_tab_4">기간설정</dd>
+            </dl>
+          </li>
+    
+          <li class="tab-link" id="tab_menu_3" data-tab="tab-3">
+            <dl class="side_tab_lank_box">
+              <dt class="side_tab_lank_box_dt">거래순위</dt>
+              <dd class="side_tab_link_lank current" data-tab="side_tab_lank_1">일일</dd>
+              <dd class="side_tab_link_lank" data-tab="side_tab_lank_2">주간</dd>
+              <dd class="side_tab_link_lank" data-tab="side_tab_lank_3">월</dd>
+              <dd class="side_tab_link_lank" data-tab="side_tab_lank_4">기간설정</dd>
+            </dl>
+          </li>
+    
+          <li class="tab-link" id="tab_menu_4" data-tab="tab-4">
+            <dl class="side_tab_store_box">
+              <dt class="side_tab_store_box_dt">상점</dt>
+              <dd class="side_tab_link_store current" data-tab="side_tab_store_1">전체</dd>
+              <dd class="side_tab_link_store" data-tab="side_tab_store_2">충전</dd>
+              <dd class="side_tab_link_store" data-tab="side_tab_store_3">편의</dd>
+            </dl>
+          </li>
+    
+          <li class="tab-link" id="tab_menu_5" data-tab="tab-5">
+            <dl class="side_tab_myinfo_box">
+              <dt class="side_tab_myinfo_box_dt">내 정보</dt>
+              <dd class="side_tab_link_myinfo current" data-tab="side_tab_myinfo_1">기본등록정보</dd>
+              <dd class="side_tab_link_myinfo" data-tab="side_tab_myinfo_2">거래등록정보</dd>
+              <dd class="side_tab_link_myinfo" data-tab="side_tab_myinfo_3">상품구매내역</dd>
+              <dd class="side_tab_link_myinfo" data-tab="side_tab_myinfo_4">소명자료요청</dd>
+            </dl>
+          </li>
+
+          <li><a target="_blank" href="t_main_notice.html">공지사항</a></li>
       </ul>
     </div>
   </div>
@@ -137,12 +163,6 @@
 
   <!-- =================== #viewBox ======================== -->
   <section id="viewBox">
-    <div class="deal">
-      <iframe src="../trade/t_trade.html" frameborder="0" \
-       scrolling="no" width="100%" height="100%" \
-       margin-height="100"></iframe>
-    </div>
-
     <div class="board">
       <div class="store_modal">
         <div class="store_modal_content">
@@ -1029,6 +1049,12 @@
             </div>
           </div>
         </div>
+    </div>
+
+    <div class="deal">
+      <iframe src="../trade/t_trade.html" frameborder="0" \
+       scrolling="no" width="100%" height="100%" \
+       margin-height="100"></iframe>
     </div>
   </section>
 </div>
