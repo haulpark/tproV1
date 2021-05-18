@@ -31,6 +31,12 @@ var storeExit = $('.store_exit');
 	})
 	*/
 
+	$('.mob_info').click(function(e){
+		e.preventDefault();
+
+		$('.mob_infoBox').toggle();
+	})
+
 	/* ================================ store_modal ================================ */
 
 	$('.store_credit').click(function(e){

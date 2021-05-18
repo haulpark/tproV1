@@ -8,11 +8,6 @@
 h2{font-family:paybooc-B; font-size:12pt;}
 .title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
 
-.mob_menuBar{display:none;}
-.mob_menu{display:none;}
-
-.visualize-key{display:none;}
-
 /* =================================== #headBox =================================== */
 #headBox{
   width:100%; height:100px;
@@ -41,30 +36,11 @@ h2{font-family:paybooc-B; font-size:12pt;}
       background-repeat: no-repeat;
     }
 
-    h1 > span{
+    h1 > a > span{
       float:left; 
       font-size:20pt; color:#4A96D2; 
       line-height: 60px; 
     }
-
-  #gnb{
-    float:right; 
-    width:180px; height:50px; 
-    font-family: payBooc-M;
-  }
-
-    #gnb ul{width:100%; height:100%;}
-
-    #gnb li{
-      float:left; width:90px; height:100%;
-      font-size:12pt; text-align: center;
-      line-height:60px; 
-    }
-
-    #gnb li a {color:#333;}
-
-    #gnb li:last-child a {color:#4A96D2;}
-
 /* =================================== #viewBox =================================== */
 #viewBox{
   background-color: #fff;
@@ -121,21 +97,42 @@ h2{font-family:paybooc-B; font-size:12pt;}
 @media screen and (min-width: 1281px) and (max-width: 1600px) {
 
   #wrap{
-    width:100%; height:100%;
-    padding:90px 30px; box-sizing: border-box;
+    width:100%; height:auto;
   }
 
   /* =================== #headBox ===================*/
 
-  #headBox{ width:90%; height:8vw;}
-  .title{font-size:1.2rem;}
-  .unb{font-size:1rem;}
-  .slideBar{font-size:1.1rem;}
+  #headBox{
+    height:80px; padding:10px; box-sizing: border-box;}
+
+    .div{
+      width:100%; 
+    }
+
+    h1{
+      float:left;
+      width:250px; height:60px;
+      font-family: paybooc-B;
+      margin-top:0;
+    }
+
+      .logo{
+        float:left;
+        width:80px; height:60px;
+        background-image: url(../../../img/image/trade_logo.png);
+        background-position: 50% 50%;
+        background-size: 90%;
+        background-repeat: no-repeat;
+      }
+
+      h1 > a >span{
+        float:right; 
+        font-size:16pt; color:#4A96D2; 
+        line-height: 60px; 
+      }
 
    /* =================== #viewBox ===================*/
    #viewBox{width:90%; height:50vw;}
-
-
 }
 
 /* ============================================================================================ */
@@ -145,32 +142,39 @@ h2{font-family:paybooc-B; font-size:12pt;}
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
 
   #wrap{
-    width:100%; height:100%;
-    padding:45px 30px; box-sizing: border-box;
+    width:100%; height:auto;
   }
 
   /* =================== #headBox ===================*/
 
-  #headBox{ width:95%; height:9vw;}
-  .logo{height:8vw;}
-  .title{
-    height:4vw;
-    font-weight: bold;
-    font-size:1.2rem;
-    line-height: 5vw;
-  }
-  
-  .slideBar{height:3vw; font-size:0.9rem;}
-  .slideBar > a > span{color:#333; font-size:0.9rem; line-height:10px;}
+  #headBox{
+    height:80px; padding:10px; box-sizing: border-box;}
 
-   .unb{
-      font-weight:300;
-      height:2vw;
-      text-align: right;
-      font-size:1rem;
-      line-height:1.5vw;
-
+    .div{
+      width:100%; 
     }
+
+    h1{
+      float:left;
+      width:250px; height:60px;
+      font-family: paybooc-B;
+      margin-top:0;
+    }
+
+      .logo{
+        float:left;
+        width:80px; height:60px;
+        background-image: url(../../../img/image/trade_logo.png);
+        background-position: 50% 50%;
+        background-size: 90%;
+        background-repeat: no-repeat;
+      }
+
+      h1 > a >span{
+        float:right; 
+        font-size:16pt; color:#4A96D2; 
+        line-height: 60px; 
+      }
 
   /* =================== #viewBox ===================*/
   #viewBox{ width: 95%; height:54vw;}
@@ -181,74 +185,95 @@ h2{font-family:paybooc-B; font-size:12pt;}
 /* ======================================================================================== */
 /* ================================== 공지사항 반응형(~1024) ================================== */
 /* ======================================================================================== */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 641px) and (max-width: 1024px) {
 
   #wrap{
-    width:100%; height:730px;
-    padding:20px 0; box-sizing:border-box;
+    width:100%; height:auto;
   }
 
-  .slideBar{display: none;}
-  .unb{display:none;}
   /* =================== #headBox ===================*/
   #headBox{
-    position: relative;
-    width:320px; height:60px;
-    padding:5px 10px; box-sizing: border-box;
+    width:100%; height:80px;
+    margin:auto;
   }
 
-  .logo{width:50px; height:50px;}
-  .title{float:left; width:200px; font-size:14pt; font-weight:600; line-height:50px;}
-    
-    .mob_icon{
-      float:right;
-      display:block;
-      margin-top: 16px; margin-right:5px; 
-      width:24px; height:24px;
-      background-image: url(../../../img/icons/mob_user.png);
-      background-position: 50% 50%;
-      background-size: contain;
-      background-repeat: no-repeat;
+    .div{
+      width:100%; 
+    } 
+
+    h1{
+      float:left;
+      width:180px; height:40px;
+      font-family: paybooc-B;
+      margin:auto;
     }
 
-    .mob_menu{
-      position: absolute; z-index:1000;
-      top:80%; left:15%; 
-      width:250px; height:144px;
-      background-color: #fff;
-      box-shadow:0 0.5rem 1rem #ccc;
-      color:#333;
-      font-size:0.9rem;
-      padding:20px 10px; box-sizing: border-box;
-    }
-  /* =================== #slideBox (mob) ===================*/
-    #slideBox{
-      display:block;
-      width:320px; height:40px;
-      background-color:#fff;
-      border:1px solid #ccc;
-      margin:16px auto;
-      animation-duration: 3s;
-      animation-name: slidein;
-      animation-iteration-count: infinite;
+      .logo{
+        float:left;
+        width:60px; height:40px;
+        background-image: url(../../../img/image/trade_logo.png);
+        background-position: 50% 50%;
+        background-size: 70%;
+        background-repeat: no-repeat;
+      }
+
+      h1 > a > span{
+        display:inline-block;
+        width:120px;
+        font-size:12pt; color:#4A96D2; 
+        line-height: 40px; 
+      }
+
+  /* =================== #viewBox  ===================*/
+
+  #viewBox{ width: 95%; height:54vw;}
+
+
+}
+
+/* ======================================================================================== */
+/* ================================== 공지사항 반응형(~640px) =============================== */
+/* ======================================================================================== */
+@media screen and (max-width: 640px) {
+
+  #wrap{height:auto;}
+
+  #headBox{
+    width:100%; height:56px;
+    padding:5px 20px; box-sizing: border-box;
+    margin:auto;
+  }
+
+    .div{
+      width:100%; 
+    } 
+
+    #gnb{display:none;}
+
+    h1{
+      float:100%;
+      width:250px; height:30px; margin:auto;
+      font-family: paybooc-B;
     }
 
-    #slideBox > a{color:#333; font-size:1rem; text-align: center; background-color: #fff;}
-      
-      @keyframes slidein {
-        from {
-          opacity:0;
-        }
-      
-        to {
-         opacity: 1;
-       }
+      .logo{
+        float:left;
+        width:50px; height:50px;
+        background-image: url(../../../img/image/trade_logo.png);
+        background-position: 50% 50%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+
+      h1 > a > span{
+        font-size:12pt; color:#4A96D2; 
+        line-height: 50px; margin-left: 10px;
       }
 
   /* =================== #viewBox  ===================*/
 
   #viewBox{
-    width:320px; height:550px; margin-top: 0px;
+    width:100%; height:600px; margin-top: 10px;
   }
   
     .noticeBox{
@@ -257,7 +282,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
       padding:10px 20px; box-sizing: border-box;
       overflow-y:scroll; overflow-x:hidden;
     }
-  
+
       h1{font-size:1.2rem; margin-bottom: 30px; margin-left: 10px;}
       
       .notice_table{
@@ -289,6 +314,5 @@ h2{font-family:paybooc-B; font-size:12pt;}
         background-size: contain;
         background-position: 0 0;
       }
-
 
 }

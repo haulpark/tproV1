@@ -1,12 +1,9 @@
 /* width: ~ 640px(Mob 기준) */
-@media screen and (min-width: 320px) and (max-width: 640px) {
+@media screen and (max-width: 640px) {
 
   #wrap{
     width:100%; height:1600px;
   }
-
-  .mob_menuBar{display:none;}
-  .mob_infoBox{display:none;}
 
   .visualize-key{display:none;}
 
@@ -119,6 +116,18 @@
       background-position: 50% 50%;
       background-size: contain;
       background-repeat: no-repeat;
+    }
+
+    .mob_infoBox{
+      display:none;
+      position: absolute; z-index:10002;
+      right:30px;
+      width:250px; height:144px;
+      background-color: #fff;
+      box-shadow:0 0.5rem 1rem #ccc;
+      color:#333;
+      font-size:0.9rem;
+      padding:20px 10px; box-sizing: border-box;
     }
 
   /* =================== #slideBox (mob) ===================*/
@@ -317,11 +326,34 @@
 
   /* ======= 거래내역 표 ======= */
 
-    .overflow{width:100%; height:auto; overflow-x: scroll;}
-    #periodBox{
-      width:400px; height:340px; margin:auto;
+  .period_date{
+    width:100%; height:20px;
+    margin-top: 20px;
+  }
+
+    .period_date > span {display:none;}
+
+    .period_day{
+      float:left; height:20px;
     }
 
+    .period_day > input{width:90px; height:25px; font-size:0.875rem;}
+
+    .period_btn{
+      float:left; width:60px; height:25px; 
+      margin-left:10px;
+      background-color: #4A96D2; color:#fff;
+
+    }  
+  
+    #periodBox{
+      width:100%; height:340px; margin:auto;
+    }
+
+      #periodBox > thead > tr > th:nth-child(1) {display:none;}
+      #periodBox > tbody > tr > th:nth-child(1) {display:none;}
+
+      #periodBox > thead > tr > th{width:25%;}
       #periodBox > thead > tr > th{font-size:0.8rem; font-weight: normal; height:30px;}
 
       #periodBox > tbody > tr > th{font-size:0.8rem; font-weight: normal;}
@@ -411,28 +443,25 @@
     /* ============ store 내용 창 (8개) ============ */
     .all_store{
       width:100%; height:auto;
-      margin: auto; margin-top:0;
-      padding:0; 
+      margin: auto; margin-top:20px;
+      padding:0;
     }
-
+  
       .all_store ul{
         width:100%; height:100%;
       }
-
-      .all_store li{
-        float:left; width:135px; height:135px;
+  
+      .all_store ul li{
+        float:left; width:90px; height:90px;
         margin-right: 10px; margin-bottom: 10px;
-        padding-top:35px; line-height: 20px;
-        font-size:1rem;
+        line-height: 20px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        text-align: center;
+        padding-top:15px; box-sizing: border-box;
+        color:#fff; 
       }
-
-      .all_store li:nth-child(2n){margin-right: 0;}
-
-      .all_store .store_content_5 { padding-top: 45px;}
-      .all_store .store_content_6 { padding-top: 45px;}
-      .all_store .store_content_7 { padding-top: 45px;}
-      .all_store .store_content_8 { padding-top: 55px;}
-
   /* ============ .board_5 : 나의 정보 ============ */
 
   .side_tab_content_myinfo{
@@ -447,83 +476,130 @@
     width:100%; height:100%; box-sizing: border-box;}
 
     /* =========== 내 정보 - 기본등록정보 =========== */
-    .profile{
-      width:100%; height:auto;
-      margin:auto; margin-top: 160px;
+
+.profile{
+  width:90%; height:auto;
+  margin:auto; margin-top: 55px;
+}
+
+  .profile > tbody > tr {height:50px;}
+  .profile > tbody > tr > th{
+    width:20%; border:1px solid #fff; 
+    border-bottom:2px solid #f5f6f7; 
+    padding-left:15px; box-sizing: border-box;
+    font-size:1rem; background-color: #fff;
+    color:#333; text-align: left;
+    font-weight: bold;
+  }
+  .profile > tbody > tr > td{
+    width:80%; border:1px solid #fff; 
+    border-bottom:2px solid #f5f6f7; 
+    padding-left:15px; box-sizing: border-box;
+    font-size:0.9rem;
+  }
+
+  .profile_btn{
+    width:170px; height:32px; 
+    float:right; margin-top: 20px; margin-right: 5%;}
+
+  .profile_btn > button{
+    width:80px; height:32px;
+    border-radius: 5px; color:#fff; font-size:0.9rem;
+  }
+
+  .profile_cert{float:left; height:100%; background-color: #9F9F9F;}
+  .profile_modify{float:right; height:100%; background-color: #4A96D2;}
+
+/* =========== 내 정보 - 기본등록정보 - 수정 =========== */
+.profile_modify_box{
+  display:none;
+  width:90%; height:auto;
+  margin:auto;
+  margin-top: 30px;
+}
+
+  .profile_modify_box form{width:100%; height:100%;}
+  .profile_modify_ul{width:100%; height:100%;}
+  .profile_modify_ul > li{width:100%; height:50px;}
+  .profile_modify_ul > li > dl{width:100%; height:100%; font-size:1rem;}
+  .profile_modify_ul > li > dl > dt{float:left; width:20%; height:100%; text-align: left; line-height:65px;}
+  .profile_modify_ul > li > dl > dd{float:left; width:80%; height:100%;}
+  .profile_modify_ul > li > dl > dd > input{
+    width:100%; height:36px; margin-top: 14px;
+    margin-left: 30px; text-indent: 0.5rem; 
+    border:1px solid #ccc;
+  }
+
+  .profile_modify_ul > li > dl > dd > .input_readonly{background-color: #EBEBEB; outline:0;}
+  
+
+  .profile_modify_btn{
+    margin:auto; margin-top: 20px;
+    width:170px; height:32px; font-size:0.9rem; color:#fff;
+  }
+
+  .profile_modify_btn > button {width:80px; height:32px; border-radius: 5px;}
+  .profile_modify_no{float:left; background-color: #9f9f9f; color:#fff;}
+  .profile_modify_yes{float:right; background-color: #4694D1; color:#fff;}
+  
+  /* =========== 내 정보 - 상품구매내역 =========== */
+  #store_history{
+    display:none;
+  }
+
+  .mob_storeList{
+    display: block;
+    width:100%; height:auto;
+    padding-top: 20px;
+  }
+  
+  .mob_storeList table {width:100%; height:auto;}
+  .mob_storeList table thead tr th{
+    width:33.333333%; height:30px;
+    text-align: center; font-size:0.9rem;
+    background-color: #efefef;
+    border:1px solid #d3d3d3;
+    color:#333;
+    font-family: payBooc-B;
+  }
+
+  .mob_storeList table tbody tr td{
+    text-align: center; font-size:0.8rem;
+    height:30px; font-family: payBooc-M;
+    border:1px solid #d3d3d3;
+  }
+
+  .tr_bottom{border-bottom: 2px solid #d3d3d3;;}
+
+  td.red{color:#ae0000;}
+  td.blue{color:#4694D1;}
+  td.green{color:#48A75E;}
+  /* =========== 내 정보 - 소명자료요청 =========== */
+  .exBox{
+    width:100%; height:auto;
+    margin-top: 140px;
+  }
+
+    .ex_date{
+      width:99%; height:80px;
+      line-height: 80px; font-size:1rem;
+      margin:auto;
     }
 
-      .profile > tbody > tr > th{font-size:0.9rem;}
-      .profile > tbody > tr > td{font-size:0.8rem;}
+      .ex_date > span{float:left; margin-left: 10px;}
+      .ex_input_date{float:right;}
+      .ex_input_date > input{width:120px; height:35px; color:#333; font-size:0.9rem; }
 
-      .profile_btn{width:210px; height:30px; float:none; margin:auto; margin-top: 20px;}
-
-      .profile_btn > button{
-        width:100px; height:30px;
-        border-radius: 5px; color:#fff; font-size:0.9rem;
-      }
-
-    /* =========== 내 정보 - 기본등록정보 - 수정 =========== */
-    .profile_modify_box{
-      display:none;
-      width:100%; height:100%;
-      margin-top: 100px;
+    .ex_btn{
+      width:100px; height:35px;
+      margin:auto; margin-top: 20px; 
     }
 
-      .profile_modify_box form{width:100%; height:100%;}
-      .profile_modify_ul{width:100%; height:100%;}
-      .profile_modify_ul > li{width:100%; height:50px;}
-      .profile_modify_ul > li > dl{width:100%; height:100%; font-size:0.9rem;}
-      .profile_modify_ul > li > dl > dt{float:left; width:20%; height:100%; text-align: right;}
-      .profile_modify_ul > li > dl > dd{float:left; width:30%; height:100%;}
-      .profile_modify_ul > li > dl > dd > input{
-        width:180px; height:30px; margin-top: 5px;
-        margin-left: 30px; font-size:0.9rem;
-        border:1px solid #ccc;
+      .ex_btn > button{
+        width:100%; height:100%; background-color: #4998D3; 
+        border-radius: 5px; font-size: 1rem;
       }
 
-      .profile_modify_ul > li:last-child > dl > dt{width:20%;}
-      .profile_modify_ul > li:last-child > dl > dd{width:80%;}
-      .profile_modify_ul > li:last-child > dl > dd > input{margin-left: 15px;}
 
-      .profile_modify_ul > li:nth-child(2) > dl > dd > input{background-color: #EBEBEB;}
-      .profile_modify_ul > li:nth-child(6) > dl > dd > input{background-color: #EBEBEB;}
-      
 
-      .profile_modify_btn{
-        float:none; margin:auto; margin-top: 380px;
-        width:210px; height:30px; font-size:0.9rem; color:#fff;
-      }
-
-      .profile_modify_btn > button {width:100px; height:30px; border-radius: 5px;}
-
-    /* =========== 내 정보 - 소명자료요청 =========== */
-    .exBox{
-      position: relative;
-      width:100%; height:100px; margin:auto;
-      margin-top: 50px;
-    }
-
-      .ex_date{
-        width:100%; height:80px;
-        line-height: 80px; font-size:1rem;
-        margin:auto;
-      }
-
-        .ex_date > span{float:left; margin-left: 1px; }
-        .ex_input_date{float:right;}
-        .ex_input_date > input{width:90px; font-size:0.8rem; }
-
-      .ex_btn{
-        position: absolute;
-        left:0; right:0;
-        width:100px; height:35px;
-        margin:auto; margin-top: 20px; background-color: #4998D3;
-        color:#fff; font-size:0.9rem;
-        transition:transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
-        box-shadow:0 4px 6px #36709c;
-        border-radius: 5px;
-      }
-
-    #side_tab_myinfo_4{width:280px; overflow-x:scroll;}
-    #store_history{width:500px;}
-
+}
