@@ -1,9 +1,11 @@
 /* width: 1024 ~ 1280px (노트북 S 기준) */
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
 
   #wrap{
     width:100%; height:768px;
   }
+
+  #infoBox{display:none;}
 
   /* =================== #headBox ===================*/
 
