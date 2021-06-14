@@ -7,30 +7,6 @@ var storeExit = $('.store_exit');
 
 (function($){
 
-	/*
-	$('.mob_menu').click(function(e){
-		e.preventDefault();
-	
-		$('.mob_menuBar').css({"background":"rgba(0, 0, 0, 0.8)"});
-		$('.mob_menuBar').toggle("slide");
-	});
-	
-	$('.close_btn').click(function(e){
-		e.preventDefault();
-	
-		$('.mob_menuBar').toggle("slide");
-	})
-	
-	$('.dd_mypage').click(function(e){
-		e.preventDefault();
-	
-		$('.dl_mypage').find('dd').slideToggle();
-	
-		$('.menu_img').css({"transform":"rotate(180deg)"});
-	
-	})
-	*/
-
 	$('.mob_info').click(function(e){
 		e.preventDefault();
 
@@ -138,13 +114,23 @@ var storeExit = $('.store_exit');
 		$('.profile_btn').show();
 	})
 
+	/* =========================== aside hide/show =========================== */
+	// aside#infoBox 마우스 올릴 시 설명표시 slide
+  var infoBox = $('#infoBox');
+  var infoBoxExplain = $('.info_ex');
+
+  infoBox.on('mouseover',function(e){
+    e.preventDefault();
+    infoBoxExplain.show("slide", { direction: "right" });
+  });
+
+  infoBox.on('mouseleave',function(e){
+    e.preventDefault();
+
+    infoBoxExplain.hide("slide", { direction: "right" }, 300);
+  });
+
 })(jQuery);
-
-
-
-
-
-
 
 
 function myFunction() {

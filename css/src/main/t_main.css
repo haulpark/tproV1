@@ -101,6 +101,52 @@ h2{font-family:paybooc-B; font-size:14pt;}
 
     .mob_icon{display:none;}
 
+/* =================================== #infoBox =================================== */
+
+#infoBox{
+  position:fixed; margin-top:10px; right:0%;
+  width:50px; height:100px;
+}
+
+#infoBox > ul{
+  width:100%; height:100%;
+  padding:5px; box-sizing: border-box;
+}
+
+#infoBox li{
+  width:100%; height:40px;
+  margin-bottom:5px;
+  padding:5px;
+  box-sizing: border-box;
+  background-color: #426087;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 80%;
+  border:2px solid #fff;
+}
+
+#infoBox li:nth-child(1){background-image: url(../../../img/icons/questions.png);}
+#infoBox li:nth-child(2){background-image: url(../../../img/icons/request.png);}
+
+#infoBox li:last-child{margin-bottom: 0;}
+
+#infoBox li > a{
+  display:block; width: 100%; height: 100%;
+}
+
+.info_ex{
+  display:none;
+  float:right; 
+  width:100px; height:30px; 
+  margin-right:33px; 
+  line-height: 30px;
+  padding-left:5px;
+  font-size:0.9rem;
+  color:#fff;
+  background-color: #333;
+}
+
+
 /* =================================== #noticeBox =================================== */
 #noticeBox{
   width:1400px; height:80px;
